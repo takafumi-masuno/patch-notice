@@ -117,6 +117,61 @@ describe("runPipeline", () => {
     expect(items.map((item) => item.title)).toEqual(["最新のタイトル"]);
   });
 
+  it("今回取得した本文を項目の id で返す", async () => {
+    const { bodies, items } = await runPipeline(
+      [source("a", async () => [entry({ body: "本文" })])],
+      get,
+      now,
+      empty,
+    );
+    expect(bodies.get(items[0].id)).toBe("本文");
+    expect(JSON.stringify(items)).not.toContain("本文");
+  });
+
+  it("要約待ちの情報源は更新がなくても本文を取り直す", async () => {
+    const options: Array<boolean | undefined> = [];
+    const load = async (getter: Get) => {
+      await getter("https://example.com/", { conditional: true });
+      return [entry({ body: "本文" })];
+    };
+    const conditionalGet: Get = async (_url, requestOptions) => {
+      options.push(requestOptions?.conditional);
+      if (requestOptions?.conditional) throw new NotModifiedError();
+      return "";
+    };
+    const { bodies, status } = await runPipeline(
+      [{ id: "a", name: "a", load }],
+      conditionalGet,
+      now,
+      empty,
+      new Set(["a"]),
+    );
+    expect(options).toEqual([true, false]);
+    expect(bodies.size).toBe(1);
+    expect(status.sources[0].notModified).toBe(false);
+  });
+
+  it("要約待ちでなければ更新なしのまま取り直さない", async () => {
+    const options: Array<boolean | undefined> = [];
+    const load = async (getter: Get) => {
+      await getter("https://example.com/", { conditional: true });
+      return [];
+    };
+    const conditionalGet: Get = async (_url, requestOptions) => {
+      options.push(requestOptions?.conditional);
+      throw new NotModifiedError();
+    };
+    const { status } = await runPipeline(
+      [{ id: "a", name: "a", load }],
+      conditionalGet,
+      now,
+      empty,
+      new Set(["b"]),
+    );
+    expect(options).toEqual([true]);
+    expect(status.sources[0].notModified).toBe(true);
+  });
+
   it("過去の項目の CVE が KEV に載ったら要対応に上げる", async () => {
     const { items } = await runPipeline(
       [

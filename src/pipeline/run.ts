@@ -23,6 +23,8 @@ interface PipelineResult {
   items: Item[];
   status: Status;
   kevCves: string[];
+  /** 今回取得できた本文。公開データには保存せず、要約にだけ使う */
+  bodies: Map<string, string>;
 }
 
 function errorMessage(error: unknown): string {
@@ -35,11 +37,26 @@ export async function runPipeline(
   get: Get,
   now: Date,
   previous: Previous,
+  /** 要約待ちの項目があり、更新がなくても本文を取り直す情報源 */
+  needsBody: ReadonlySet<string> = new Set(),
 ): Promise<PipelineResult> {
+  const load = async (source: Source): Promise<Entry[]> => {
+    try {
+      return await source.load(get);
+    } catch (error) {
+      if (error instanceof NotModifiedError && needsBody.has(source.id)) {
+        return source.load((url, options) =>
+          get(url, { ...options, conditional: false }),
+        );
+      }
+      throw error;
+    }
+  };
+
   const results = await Promise.all(
     sources.map(async (source) => {
       try {
-        const entries = await source.load(get);
+        const entries = await load(source);
         return { source, entries, outcome: "ok" as const };
       } catch (error) {
         if (error instanceof NotModifiedError) {
@@ -64,24 +81,26 @@ export async function runPipeline(
   const cutoff = now.getTime() - WINDOW_DAYS * 24 * 60 * 60 * 1000;
 
   const items = new Map<string, Item>();
+  const bodies = new Map<string, string>();
   const statuses: SourceStatus[] = [];
+  const merge = (item: Item): boolean => {
+    const existing = items.get(item.id);
+    if (existing && item.publishedAt < existing.publishedAt) return false;
+    items.set(item.id, item);
+    return true;
+  };
   for (const result of results) {
     const { source, outcome, entries } = result;
     // フィードには直近の項目しかないので、前回の結果と合わせて期間内の履歴を保つ
-    const kept = previous.items
-      .filter(
-        (item) =>
-          item.source === source.id && Date.parse(item.publishedAt) >= cutoff,
-      )
-      .map((item) => applyKev(item, kevSet));
-    const fresh = entries
-      .filter((entry) => Date.parse(entry.publishedAt) >= cutoff)
-      .map((entry) => classify(entry, kevSet));
-    for (const item of [...kept, ...fresh]) {
-      const existing = items.get(item.id);
-      if (!existing || item.publishedAt >= existing.publishedAt) {
-        items.set(item.id, item);
+    for (const item of previous.items) {
+      if (item.source === source.id && Date.parse(item.publishedAt) >= cutoff) {
+        merge(applyKev(item, kevSet));
       }
+    }
+    for (const entry of entries) {
+      if (Date.parse(entry.publishedAt) < cutoff) continue;
+      const item = classify(entry, kevSet);
+      if (merge(item)) bodies.set(item.id, entry.body);
     }
     statuses.push({
       id: source.id,
@@ -101,5 +120,6 @@ export async function runPipeline(
     ),
     status: { fetchedAt: now.toISOString(), sources: statuses },
     kevCves,
+    bodies,
   };
 }
