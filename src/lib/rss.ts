@@ -23,7 +23,7 @@ export function escapeXml(text: string): string {
     .replaceAll("'", "&apos;");
 }
 
-function rssItem(item: Item): string {
+function rssItem(item: Item, source: string): string {
   const notice = noticeFor(item);
   const link = escapeXml(absoluteUrl(`/items/${item.id}/`));
   const label = notice.summaryOrigin === "ai" ? `${AI_SUMMARY_LABEL}: ` : "";
@@ -33,7 +33,7 @@ function rssItem(item: Item): string {
     `<link>${link}</link>`,
     `<guid isPermaLink="true">${link}</guid>`,
     `<pubDate>${new Date(item.publishedAt).toUTCString()}</pubDate>`,
-    `<description>${escapeXml(`${label}${notice.summary}`)}</description>`,
+    `<description>${escapeXml(`${label}${notice.summary}（出典: ${source}）`)}</description>`,
     "</item>",
   ].join("");
 }
@@ -45,6 +45,8 @@ export interface RssOptions {
   path: string;
   items: Item[];
   updatedAt: string;
+  /** 情報源の ID から画面に出す名前を返す */
+  sourceLabel: (id: string) => string;
 }
 
 export function rssResponse(options: RssOptions): Response {
@@ -65,7 +67,7 @@ export function buildRss(options: RssOptions): string {
     "<language>ja</language>",
     `<lastBuildDate>${new Date(options.updatedAt).toUTCString()}</lastBuildDate>`,
     `<atom:link href="${escapeXml(absoluteUrl(options.path))}" rel="self" type="application/rss+xml"/>`,
-    ...items.map(rssItem),
+    ...items.map((item) => rssItem(item, options.sourceLabel(item.source))),
     "</channel>",
     "</rss>",
     "",

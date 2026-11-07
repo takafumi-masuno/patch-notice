@@ -27,7 +27,14 @@ const rss = (items: Item[]) =>
     path: "/feed.xml",
     items,
     updatedAt: "2026-11-07T00:00:00.000Z",
+    sourceLabel: (id) => `${id} の名前`,
   });
+
+describe("出典", () => {
+  it("説明の末尾に情報源の名前を付ける", () => {
+    expect(rss([item()])).toContain("（出典: kev の名前）</description>");
+  });
+});
 
 describe("escapeXml", () => {
   it("XML の特殊文字を置き換える", () => {
@@ -67,7 +74,7 @@ describe("buildRss", () => {
 
   it("AI の要約には分かる表示を付け、定型文には付けない", () => {
     expect(rss([item({ summary: { text: "要約", origin: "ai" } })])).toContain(
-      "<description>AI 要約: 要約</description>",
+      "<description>AI 要約: 要約（出典: kev の名前）</description>",
     );
     expect(rss([item()])).not.toContain("AI 要約");
     expect(

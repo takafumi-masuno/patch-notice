@@ -10,6 +10,12 @@ test("データがなければ準備中を出す", async ({ page }) => {
   }
 });
 
+test("データがなければ更新停止の警告を出さない", async ({ page }) => {
+  await page.goto(ROOT);
+  await expect(page.getByText("現在準備中です。")).toBeVisible();
+  await expect(page.getByText("データの更新が止まっています")).toHaveCount(0);
+});
+
 test("データがなくても RSS は正しい XML で、項目は0件", async ({ request }) => {
   const xml = await (await request.get(`${ROOT}feed.xml`)).text();
   expect(XMLValidator.validate(xml)).toBe(true);

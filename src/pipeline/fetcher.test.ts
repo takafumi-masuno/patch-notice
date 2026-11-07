@@ -51,10 +51,4 @@ describe("createFetcher", () => {
     const fetchFn = vi.fn(async () => new Response("no", { status: 503 }));
     await expect(createFetcher({}, fetchFn)(URL)).rejects.toThrow("503");
   });
-
-  it("Accept を指定できる", async () => {
-    const fetchFn = vi.fn(async () => new Response("{}"));
-    await createFetcher({}, fetchFn)(URL, { accept: "application/json" });
-    expect(headersOf(fetchFn).Accept).toBe("application/json");
-  });
 });

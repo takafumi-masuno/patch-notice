@@ -5,9 +5,9 @@ import {
   DEFAULT_FILTERS,
   filterRows,
   filtersToSearch,
+  toRow as makeRow,
   parseFilters,
   priorityItems,
-  toRow,
 } from "./listing.ts";
 
 const NOW = Date.parse("2026-11-07T12:00:00.000Z");
@@ -31,7 +31,13 @@ const item = (overrides: Partial<Item> = {}): Item => ({
 
 const PRODUCTS: ProductId[] = ["chrome", "cisco"];
 
+const toRow = (entry: Item) => makeRow(entry, "CISA KEV");
+
 describe("toRow", () => {
+  it("情報源の名前を持つ", () => {
+    expect(toRow(item()).source).toBe("CISA KEV");
+  });
+
   it("日本時間の日付にする", () => {
     const row = toRow(item({ publishedAt: "2026-11-06T16:00:00.000Z" }));
     expect(row.date).toBe("2026/11/07");

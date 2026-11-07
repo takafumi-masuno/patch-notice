@@ -49,8 +49,10 @@ export interface Entry {
   exploited?: boolean;
   /** 国内機関の注意喚起 */
   nationalAlert?: boolean;
-  /** 月例更新のように CVE を列挙しない項目の件数 */
+  /** CVE を列挙しない項目の件数 */
   cveCount?: number;
+  /** 毎月の定例の更新日。内容を取得していないので、緊急度は要確認に留める */
+  monthlyUpdate?: boolean;
 }
 
 /** 画面に出す要約 */
@@ -85,13 +87,15 @@ export interface Item {
 
 export type Get = (
   url: string,
-  options?: { conditional?: boolean; accept?: string },
+  options?: { conditional?: boolean },
 ) => Promise<string>;
 
 export interface Source {
   id: string;
   name: string;
-  load(get: Get): Promise<Entry[]>;
+  /** 通信しない情報源。全情報源の失敗の判定と取得時刻の更新に数えない */
+  offline?: boolean;
+  load(get: Get, now: Date): Promise<Entry[]>;
 }
 
 export interface SourceStatus {

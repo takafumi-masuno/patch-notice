@@ -13,9 +13,11 @@ import {
   sourcesNeedingBody,
   summarizeItems,
 } from "./summary/summarize.ts";
-import type { Item } from "./types.ts";
+import type { Item, Status } from "./types.ts";
 
 const DATA_DIR = process.argv[2] ?? "data";
+/** データは保存済みで、運用者の確認が必要。例外での異常終了（1）と区別する */
+const EXIT_ATTENTION = 2;
 const OVERRIDES_PATH = fileURLToPath(
   new URL("./summary/overrides.json", import.meta.url),
 );
@@ -45,6 +47,10 @@ const state = await readJson<State>(join(DATA_DIR, "state.json"), {
   kevCves: [],
 });
 
+const previousStatus = await readJson<Partial<Status>>(
+  join(DATA_DIR, "status.json"),
+  {},
+);
 const previousStore = await readJson<SummaryStore>(
   join(DATA_DIR, "summaries.json"),
   {},
@@ -53,11 +59,17 @@ const overrides = parseOverrides(await readJson(OVERRIDES_PATH, {}));
 const now = new Date();
 const aiEnabled = Boolean(process.env.ANTHROPIC_API_KEY);
 
-const { items, status, kevCves, bodies } = await runPipeline(
+const { items, status, kevCves, bodies, allFailed } = await runPipeline(
   sources,
   createFetcher(state.http),
   now,
-  { items: previousItems, kevCves: state.kevCves },
+  {
+    items: previousItems,
+    kevCves: state.kevCves,
+    ...(previousStatus.fetchedAt
+      ? { fetchedAt: previousStatus.fetchedAt }
+      : {}),
+  },
   aiEnabled
     ? sourcesNeedingBody(previousItems, previousStore, overrides)
     : new Set(),
@@ -69,6 +81,11 @@ if (aiEnabled) {
   const result = await summarizeItems({
     items,
     bodies,
+    loadedSources: new Set(
+      status.sources
+        .filter((source) => source.ok && !source.notModified)
+        .map((source) => source.id),
+    ),
     store,
     overrides,
     summarize: createSummarizer(new Anthropic()),
@@ -108,12 +125,12 @@ if (unusedOverrides.length > 0) {
   console.log(`unused overrides: ${unusedOverrides.join(" ")}`);
 }
 
-if (status.sources.every((source) => !source.ok)) {
+if (allFailed) {
   console.error("all sources failed");
-  process.exitCode = 1;
+  process.exitCode = EXIT_ATTENTION;
 }
 if (fatalError) {
   // データは保存した上で、実行を失敗として知らせる
   console.error(`AI summaries stopped: ${fatalError}`);
-  process.exitCode = 1;
+  process.exitCode = EXIT_ATTENTION;
 }

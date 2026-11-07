@@ -1,4 +1,4 @@
-import { siteData } from "@/lib/data";
+import { siteData, sourceName } from "@/lib/data";
 import { rssResponse } from "@/lib/rss";
 
 export const dynamic = "force-static";
@@ -11,5 +11,6 @@ export function GET() {
     path: "/feed-action.xml",
     items: data?.items.filter((item) => item.urgency === "action") ?? [],
     updatedAt: data?.status.fetchedAt ?? new Date().toISOString(),
+    sourceLabel: (id) => (data ? sourceName(data.status, id) : id),
   });
 }

@@ -17,6 +17,8 @@ export class NotModifiedError extends Error {}
 interface Previous {
   items: Item[];
   kevCves: string[];
+  /** 前回の取得時刻。初回は省く */
+  fetchedAt?: string;
 }
 
 interface PipelineResult {
@@ -25,6 +27,8 @@ interface PipelineResult {
   kevCves: string[];
   /** 今回取得できた本文。公開データには保存せず、要約にだけ使う */
   bodies: Map<string, string>;
+  /** 通信する情報源がすべて失敗した */
+  allFailed: boolean;
 }
 
 function errorMessage(error: unknown): string {
@@ -42,11 +46,12 @@ export async function runPipeline(
 ): Promise<PipelineResult> {
   const load = async (source: Source): Promise<Entry[]> => {
     try {
-      return await source.load(get);
+      return await source.load(get, now);
     } catch (error) {
       if (error instanceof NotModifiedError && needsBody.has(source.id)) {
-        return source.load((url, options) =>
-          get(url, { ...options, conditional: false }),
+        return source.load(
+          (url, options) => get(url, { ...options, conditional: false }),
+          now,
         );
       }
       throw error;
@@ -114,12 +119,21 @@ export async function runPipeline(
     });
   }
 
+  const fetching = results.filter((result) => !result.source.offline);
+  const allFailed =
+    fetching.length > 0 &&
+    fetching.every((result) => result.outcome === "failed");
+  // 何も取得できなかった回は取得時刻を進めず、更新停止の警告と「直近」の基準を保つ
+  const fetchedAt =
+    allFailed && previous.fetchedAt ? previous.fetchedAt : now.toISOString();
+
   return {
     items: [...items.values()].sort((a, b) =>
       b.publishedAt.localeCompare(a.publishedAt),
     ),
-    status: { fetchedAt: now.toISOString(), sources: statuses },
+    status: { fetchedAt, sources: statuses },
     kevCves,
     bodies,
+    allFailed,
   };
 }

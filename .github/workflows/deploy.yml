@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -31,23 +31,13 @@ jobs:
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm e2e:build
       - run: pnpm e2e
-      # E2E のテストデータを公開しないよう、公開用は最後に作り直す
-      - run: pnpm build
-      - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: out
 
-  deploy:
+  # 公開用のビルドは E2E のビルドと分け、テストデータを公開しない
+  publish:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
-    runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v5
+    uses: ./.github/workflows/publish.yml

@@ -45,6 +45,7 @@ const run = (
   summarize: Summarizer,
   options: {
     bodies?: Map<string, string>;
+    loadedSources?: Set<string>;
     store?: SummaryStore;
     overrides?: Record<string, { summary: string | null; reason: string }>;
     limits?: { maxCostUsd: number; maxItems: number };
@@ -53,12 +54,65 @@ const run = (
   summarizeItems({
     items,
     bodies: options.bodies ?? new Map(items.map((entry) => [entry.id, "Body"])),
+    loadedSources: options.loadedSources ?? new Set(),
     store: options.store ?? {},
     overrides: options.overrides ?? {},
     summarize,
     now,
     ...(options.limits ? { limits: options.limits } : {}),
   });
+
+describe("本文を取得できない項目", () => {
+  const noBody = { bodies: new Map<string, string>() };
+
+  it("情報源を読めたのに本文がなければ、要約待ちから外す", async () => {
+    const summarize = always(success);
+    const { store, status } = await run([item("a")], summarize, {
+      ...noBody,
+      loadedSources: new Set(["kev"]),
+    });
+    expect(summarize).not.toHaveBeenCalled();
+    expect(store.a).toMatchObject({ failure: "no-body" });
+    expect(status.pending).toBe(0);
+    expect(sourcesNeedingBody([item("a")], store, {}).size).toBe(0);
+  });
+
+  it("情報源を読めて本文もあれば、通常どおり要約する", async () => {
+    const summarize = always(success);
+    const { store } = await run([item("a")], summarize, {
+      loadedSources: new Set(["kev"]),
+    });
+    expect(summarize).toHaveBeenCalledTimes(1);
+    expect(store.a.text).toBe(TEXT);
+  });
+
+  it("情報源を読めなかった場合は、要約待ちのまま残す", async () => {
+    const { store, status } = await run([item("a")], always(success), noBody);
+    expect(store.a).toBeUndefined();
+    expect(status.pending).toBe(1);
+  });
+
+  it("本文が戻れば要約する", async () => {
+    const { store: first } = await run([item("a")], always(success), {
+      ...noBody,
+      loadedSources: new Set(["kev"]),
+    });
+    const summarize = always(success);
+    const { store } = await run([item("a")], summarize, { store: first });
+    expect(summarize).toHaveBeenCalledTimes(1);
+    expect(store.a.text).toBe(TEXT);
+  });
+
+  it("要約済みの項目は、本文が読めなくても要約を消さない", async () => {
+    const saved = { a: { hash: "x", attempts: 1, text: TEXT } };
+    const { store } = await run([item("a")], always(success), {
+      ...noBody,
+      loadedSources: new Set(["kev"]),
+      store: saved,
+    });
+    expect(store.a.text).toBe(TEXT);
+  });
+});
 
 describe("summarizeItems", () => {
   it("要約を保存し、結果を集計する", async () => {
