@@ -16,6 +16,8 @@ import {
 import type { Item } from "./types.ts";
 
 const DATA_DIR = process.argv[2] ?? "data";
+/** データは保存済みで、運用者の確認が必要。例外での異常終了（1）と区別する */
+const EXIT_ATTENTION = 2;
 const OVERRIDES_PATH = fileURLToPath(
   new URL("./summary/overrides.json", import.meta.url),
 );
@@ -69,6 +71,11 @@ if (aiEnabled) {
   const result = await summarizeItems({
     items,
     bodies,
+    loadedSources: new Set(
+      status.sources
+        .filter((source) => source.ok && !source.notModified)
+        .map((source) => source.id),
+    ),
     store,
     overrides,
     summarize: createSummarizer(new Anthropic()),
@@ -110,10 +117,10 @@ if (unusedOverrides.length > 0) {
 
 if (status.sources.every((source) => !source.ok)) {
   console.error("all sources failed");
-  process.exitCode = 1;
+  process.exitCode = EXIT_ATTENTION;
 }
 if (fatalError) {
   // データは保存した上で、実行を失敗として知らせる
   console.error(`AI summaries stopped: ${fatalError}`);
-  process.exitCode = 1;
+  process.exitCode = EXIT_ATTENTION;
 }

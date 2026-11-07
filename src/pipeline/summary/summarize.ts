@@ -60,6 +60,8 @@ export function sourcesNeedingBody(
 interface SummarizeOptions {
   items: Item[];
   bodies: ReadonlyMap<string, string>;
+  /** 今回の取得で最新の内容を読めた情報源 */
+  loadedSources: ReadonlySet<string>;
   store: SummaryStore;
   overrides: Overrides;
   summarize: Summarizer;
@@ -78,7 +80,7 @@ interface SummarizeResult {
 export async function summarizeItems(
   options: SummarizeOptions,
 ): Promise<SummarizeResult> {
-  const { items, bodies, overrides, summarize, now } = options;
+  const { items, bodies, loadedSources, overrides, summarize, now } = options;
   const limits = options.limits ?? DEFAULT_LIMITS;
 
   // 期間外の項目を除いて、保存データが増え続けないようにする
@@ -96,6 +98,18 @@ export async function summarizeItems(
     hashes.set(item.id, hash);
     // 内容が変わった項目の古い要約は、新しい要約ができなくても残さない
     if (store[item.id] && store[item.id].hash !== hash) delete store[item.id];
+  }
+
+  // 情報源から消えた項目は本文を読めず、取り直しても要約できない。
+  // 障害で読めなかっただけの項目は、次回の取得で要約する
+  for (const item of items) {
+    if (
+      isPending(item, store, overrides) &&
+      !hashes.has(item.id) &&
+      loadedSources.has(item.source)
+    ) {
+      store[item.id] = { hash: "", attempts: MAX_ATTEMPTS, failure: "no-body" };
+    }
   }
 
   const remaining = items
