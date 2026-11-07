@@ -263,6 +263,28 @@ test.describe("証明書", () => {
   });
 });
 
+test.describe("更新停止の警告", () => {
+  const warning = (page: Page) =>
+    page.getByText("データの更新が止まっています");
+
+  test("取得から24時間以内は出さない", async ({ page }) => {
+    await page.clock.setFixedTime(new Date("2026-11-08T02:59:00.000Z"));
+    await page.goto(ROOT);
+    await expect(page.getByTestId("result-count")).toBeVisible();
+    await expect(warning(page)).toHaveCount(0);
+  });
+
+  test("24時間を過ぎたら、どのページでも最終更新とともに出す", async ({
+    page,
+  }) => {
+    await page.clock.setFixedTime(new Date("2026-11-08T03:01:00.000Z"));
+    for (const url of [ROOT, item(1), `${ROOT}certificates/`]) {
+      await page.goto(url);
+      await expect(warning(page)).toContainText("2026/11/07 12:00 JST");
+    }
+  });
+});
+
 test.describe("出典", () => {
   test("カード、一覧、RSS に情報源の名前を出す", async ({ page, request }) => {
     await page.goto(ROOT);

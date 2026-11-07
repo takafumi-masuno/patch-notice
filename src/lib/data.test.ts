@@ -2,7 +2,12 @@ import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { readSiteData, referenceTime, sourceName } from "./data.ts";
+import {
+  loadSiteData,
+  readSiteData,
+  referenceTime,
+  sourceName,
+} from "./data.ts";
 
 const STATUS = {
   fetchedAt: "2026-11-07T00:00:00.000Z",
@@ -18,21 +23,21 @@ const STATUS = {
   ],
 };
 
+let dir: string;
+const write = (name: string, value: unknown) =>
+  writeFileSync(
+    path.join(dir, name),
+    typeof value === "string" ? value : JSON.stringify(value),
+  );
+
+beforeEach(() => {
+  dir = mkdtempSync(path.join(tmpdir(), "patch-notice-"));
+});
+afterEach(() => {
+  rmSync(dir, { recursive: true });
+});
+
 describe("readSiteData", () => {
-  let dir: string;
-  const write = (name: string, value: unknown) =>
-    writeFileSync(
-      path.join(dir, name),
-      typeof value === "string" ? value : JSON.stringify(value),
-    );
-
-  beforeEach(() => {
-    dir = mkdtempSync(path.join(tmpdir(), "patch-notice-"));
-  });
-  afterEach(() => {
-    rmSync(dir, { recursive: true });
-  });
-
   it("データがなければ null を返す", () => {
     expect(readSiteData(path.join(dir, "missing"))).toBeNull();
     expect(readSiteData(dir)).toBeNull();
@@ -62,6 +67,27 @@ describe("readSiteData", () => {
   it("項目があるのに状態がなければビルドを止める", () => {
     write("items.json", [{ id: "1" }]);
     expect(() => readSiteData(dir)).toThrow(/status.json/);
+  });
+});
+
+describe("loadSiteData", () => {
+  it("必須でなければ、データなしを準備中として扱う", () => {
+    expect(loadSiteData(dir, false)).toBeNull();
+  });
+
+  it("公開用のビルドでは、データなしでビルドを止める", () => {
+    expect(() => loadSiteData(dir, true)).toThrow(/データがありません/);
+  });
+
+  it("公開用のビルドでは、0件のデータでもビルドを止める", () => {
+    write("items.json", []);
+    expect(() => loadSiteData(dir, true)).toThrow(/データがありません/);
+  });
+
+  it("データがあれば、必須でも読み込む", () => {
+    write("items.json", [{ id: "1" }]);
+    write("status.json", STATUS);
+    expect(loadSiteData(dir, true)?.items).toHaveLength(1);
   });
 });
 

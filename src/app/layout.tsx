@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { StaleNotice } from "@/components/StaleNotice";
+import { siteData } from "@/lib/data";
 import {
   absoluteUrl,
   BASE_PATH,
@@ -34,6 +36,7 @@ export const metadata: Metadata = {
  * 実際の出力と合わず、404 になる。移動そのものは先読みがなくても動く。
  */
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const data = siteData();
   return (
     <html lang="ja">
       <body className="font-sans">
@@ -78,6 +81,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-6" id="main">
+          {data && <StaleNotice fetchedAt={data.status.fetchedAt} />}
           {children}
         </main>
         <footer className="border-t border-line text-sm text-muted">

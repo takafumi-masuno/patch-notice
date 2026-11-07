@@ -37,13 +37,23 @@ export function readSiteData(dir: string): SiteData | null {
   return { items: items as Item[], status };
 }
 
+/** 公開用のビルドでは、取得の失敗で空のサイトを公開しないよう、データなしを失敗にする */
+export function loadSiteData(dir: string, required: boolean): SiteData | null {
+  const data = readSiteData(dir);
+  if (!data && required) {
+    throw new Error(`${dir} に公開するデータがありません`);
+  }
+  return data;
+}
+
 let cached: SiteData | null | undefined;
 
 /** ページごとに読み直さないよう、ビルド中は結果を使い回す */
 export function siteData(): SiteData | null {
   if (cached === undefined) {
-    cached = readSiteData(
+    cached = loadSiteData(
       process.env.PATCH_NOTICE_DATA_DIR ?? path.join(process.cwd(), "data"),
+      process.env.PATCH_NOTICE_REQUIRE_DATA === "1",
     );
   }
   return cached;
