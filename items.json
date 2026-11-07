@@ -2247,7 +2247,13 @@
       "KEV に掲載"
     ],
     "audience": "it",
-    "treatment": "ai-summary"
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Citrix NetScaler ADC および NetScaler Gateway に、メモリバッファの範囲内での操作の不適切な制限(CVE-2026-88772)に関する脆弱性があります。この脆弱性により、リモートからのコード実行やサービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T23:42:01.559Z"
+    }
   },
   {
     "id": "d829d5e96527cced",
@@ -3549,7 +3555,13 @@
       "KEV に掲載"
     ],
     "audience": "it",
-    "treatment": "ai-summary"
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "JFrog Artifactory に、パス名が制限されたディレクトリに適切に制限されない問題(CVE-2026-66384)があります。特定のリモートリポジトリの条件下で、認証済みのユーザーが本来の Docker キャッシュのパスの外にデータを書き込めるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T23:42:01.559Z"
+    }
   },
   {
     "id": "02457117d280f5e0",

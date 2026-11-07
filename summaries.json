@@ -6,6 +6,13 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "9a77a231cbc9aa91": {
+    "hash": "74f8a3a533b1649e",
+    "attempts": 1,
+    "text": "Apple の複数製品に、不適切な認証の脆弱性（CVE-2024-27834）があります。任意の読み取りおよび書き込みができる攻撃者が、ポインタ認証（pointer authentication）を回避できるおそれがあります。影響を受ける製品は Apple iOS、iPadOS、macOS、Safari、tvOS、watchOS 10.5 です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "c10cb30e1e92b02b": {
     "hash": "8699b303dc6b429e",
     "attempts": 1,
@@ -13,10 +20,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "9a77a231cbc9aa91": {
-    "hash": "74f8a3a533b1649e",
+  "0ba432857bb15318": {
+    "hash": "ea15a0f35ee89ec7",
     "attempts": 1,
-    "text": "Apple の複数製品に、不適切な認証の脆弱性（CVE-2024-27834）があります。任意の読み取りおよび書き込みができる攻撃者が、ポインタ認証（pointer authentication）を回避できるおそれがあります。影響を受ける製品は Apple iOS、iPadOS、macOS、Safari、tvOS、watchOS 10.5 です。",
+    "text": "Ivanti Connect Secure に、予測可能な数値または識別子の生成に関する脆弱性 (CVE-2026-118527) があります。リモートの認証済み攻撃者が、攻撃者が内容を制御できるファイルをディスク上の既知の場所にアップロードできるおそれがあります。この脆弱性は CVE-2026-104935 および CVE-2026-111357 と連鎖させることができます。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -34,10 +41,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "0ba432857bb15318": {
-    "hash": "ea15a0f35ee89ec7",
+  "b91600ac18a30f89": {
+    "hash": "0712f71e8bb92c5a",
     "attempts": 1,
-    "text": "Ivanti Connect Secure に、予測可能な数値または識別子の生成に関する脆弱性 (CVE-2026-118527) があります。リモートの認証済み攻撃者が、攻撃者が内容を制御できるファイルをディスク上の既知の場所にアップロードできるおそれがあります。この脆弱性は CVE-2026-104935 および CVE-2026-111357 と連鎖させることができます。",
+    "text": "Cisco Secure Firewall ASA Software と Cisco Secure FTD Software に、戻り値の未チェックに起因する NULL ポインタ参照の脆弱性 (CVE-2026-76418) があります。認証されていないリモートの攻撃者がデバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。影響を受ける製品は Cisco Secure Firewall ASA Software と Cisco Secure FTD Software です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -48,10 +55,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "b91600ac18a30f89": {
-    "hash": "0712f71e8bb92c5a",
+  "8cf517099069551d": {
+    "hash": "41e9fded32ba4074",
     "attempts": 1,
-    "text": "Cisco Secure Firewall ASA Software と Cisco Secure FTD Software に、戻り値の未チェックに起因する NULL ポインタ参照の脆弱性 (CVE-2026-76418) があります。認証されていないリモートの攻撃者がデバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。影響を受ける製品は Cisco Secure Firewall ASA Software と Cisco Secure FTD Software です。",
+    "text": "Linux Kernel に変数の初期化漏れの脆弱性(CVE-2026-46300)があります。ソケットバッファの結合時に共有フラグメントのマーカーが保持されず、ESP の入力処理が共有フラグメントをその場で復号してしまい、ページキャッシュを基にしたデータが意図せず変更されるおそれがあります。CVE-2026-109618 および CVE-2026-109619 と連鎖させることで、PHP ウェブシェルの埋め込みや root 権限でのコマンド実行につながるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -62,24 +69,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "8cf517099069551d": {
-    "hash": "41e9fded32ba4074",
-    "attempts": 1,
-    "text": "Linux Kernel に変数の初期化漏れの脆弱性(CVE-2026-46300)があります。ソケットバッファの結合時に共有フラグメントのマーカーが保持されず、ESP の入力処理が共有フラグメントをその場で復号してしまい、ページキャッシュを基にしたデータが意図せず変更されるおそれがあります。CVE-2026-109618 および CVE-2026-109619 と連鎖させることで、PHP ウェブシェルの埋め込みや root 権限でのコマンド実行につながるおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "4f5d1003817bef30": {
     "hash": "510bab9a2462ecc7",
     "attempts": 1,
     "text": "Google Brotli に戻り値の未検査(unchecked return value)の脆弱性があります。リモートの認証されていない攻撃者が、細工した Brotli 圧縮ストリームを使って、隣接するデコーダ状態のメモリを破損させたり、機密性のあるメモリ内容を漏えいさせたり、サービス拒否(DoS)を引き起こしたりするおそれがあります。任意のコードが実行される可能性もあります。(CVE-2026-111497)",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "27278a9265bafb27": {
-    "hash": "55790326acf0a50b",
-    "attempts": 1,
-    "text": "PHP に、内部のリクエスト状態が古いまま残る(stale internal request-state)脆弱性があります(CVE-2026-109619)。認証されていないリモートの攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は PHP Group の PHP です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -90,17 +83,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "27278a9265bafb27": {
+    "hash": "55790326acf0a50b",
+    "attempts": 1,
+    "text": "PHP に、内部のリクエスト状態が古いまま残る(stale internal request-state)脆弱性があります(CVE-2026-109619)。認証されていないリモートの攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は PHP Group の PHP です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "fc99ee962fcfab98": {
     "hash": "60cecba28d99c7ea",
     "attempts": 1,
     "text": "Arista VeloCloud Orchestrator のオンプレミス版にSQLインジェクションの脆弱性があります(CVE-2026-114625)。リモートの攻撃者が内部の特権機能にアクセスし、VCOホストに影響を及ぼすおそれがあります。悪用に成功すると、オーケストレーターおよびそれが管理するデータの機密性、完全性、可用性が損なわれるおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "10d9478e14213322": {
-    "hash": "450d203f1d59d004",
-    "attempts": 1,
-    "text": "EG Secure Solutions の SiteGuard Server Edition に、OS コマンドインジェクションの脆弱性（CVE-2026-106931）があります。攻撃者が、影響を受ける製品が動作するシステム上で、root または SYSTEM 権限により任意の OS コマンドを実行できるおそれがあります。影響を受ける製品は EG Secure Solutions SiteGuard Server Edition です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -111,10 +104,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "38ac3498b0ebe6e4": {
-    "hash": "a254b6d585560044",
+  "10d9478e14213322": {
+    "hash": "450d203f1d59d004",
     "attempts": 1,
-    "text": "Plex Media Server にサーバサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-96655)があります。認証済みのユーザーが '/video/:/transcode/universal' のパスパラメータを通じて、内部または外部の任意のアドレスへリクエストを送信できるおそれがあります。この脆弱性は CVE-2026-96652、CVE-2026-96654、CVE-2026-96656 と連鎖させることが可能です。",
+    "text": "EG Secure Solutions の SiteGuard Server Edition に、OS コマンドインジェクションの脆弱性（CVE-2026-106931）があります。攻撃者が、影響を受ける製品が動作するシステム上で、root または SYSTEM 権限により任意の OS コマンドを実行できるおそれがあります。影響を受ける製品は EG Secure Solutions SiteGuard Server Edition です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -125,10 +118,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "86062448b7f82ce5": {
-    "hash": "1bb9d7edabc9788e",
+  "38ac3498b0ebe6e4": {
+    "hash": "a254b6d585560044",
     "attempts": 1,
-    "text": "Plex Media Server にサーバーサイドリクエストフォージェリ (SSRF) の脆弱性 (CVE-2026-96652) があります。任意の X-Plex-Token の値を使う攻撃者が、'protocol' パラメーターに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
+    "text": "Plex Media Server にサーバサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-96655)があります。認証済みのユーザーが '/video/:/transcode/universal' のパスパラメータを通じて、内部または外部の任意のアドレスへリクエストを送信できるおそれがあります。この脆弱性は CVE-2026-96652、CVE-2026-96654、CVE-2026-96656 と連鎖させることが可能です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -139,6 +132,13 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "86062448b7f82ce5": {
+    "hash": "1bb9d7edabc9788e",
+    "attempts": 1,
+    "text": "Plex Media Server にサーバーサイドリクエストフォージェリ (SSRF) の脆弱性 (CVE-2026-96652) があります。任意の X-Plex-Token の値を使う攻撃者が、'protocol' パラメーターに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "0eb75c48ab96cfd2": {
     "hash": "22d3e8cb48949541",
     "attempts": 1,
@@ -146,17 +146,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "1796139615c24248": {
-    "hash": "c2e4669cea3e6f22",
-    "attempts": 1,
-    "text": "Fortinet の FortiOS、FortiPAM、FortiProxy、FortiSwitchManager にパストラバーサルの脆弱性(CVE-2025-61624)があります。管理者プロファイルを持ち、少なくとも読み書き権限を持つ認証済みの攻撃者が、特定の CLI コマンドを通じて任意のファイルを書き込んだり削除したりできるおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "9085f5ae4f3a38b7": {
     "hash": "fec7cc48fcbc1df9",
     "attempts": 1,
     "text": "BeyondTrust Remote Supportに、スプーフィングによる認証回避の脆弱性(CVE-2026-102764)があります。リモートの攻撃者が、アプライアンス上でファイル操作を実行できるおそれがあります。影響を受ける製品はBeyondTrust Remote Supportです。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "1796139615c24248": {
+    "hash": "c2e4669cea3e6f22",
+    "attempts": 1,
+    "text": "Fortinet の FortiOS、FortiPAM、FortiProxy、FortiSwitchManager にパストラバーサルの脆弱性(CVE-2025-61624)があります。管理者プロファイルを持ち、少なくとも読み書き権限を持つ認証済みの攻撃者が、特定の CLI コマンドを通じて任意のファイルを書き込んだり削除したりできるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -181,6 +181,13 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "bc920c758a0377d6": {
+    "hash": "a38b0c59d068d2af",
+    "attempts": 1,
+    "text": "Ahsay AhsayCBSに不適切な認証の脆弱性(CVE-2026-105133)があります。API コンポーネントのcheckSysPwd関数におけるrandomパラメータの操作により、リモートの攻撃者が認証を回避できるおそれがあります。この脆弱性はCVE-2026-105134と連鎖させることが可能です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "1592525748450ad8": {
     "hash": "0ab985595b7a11a4",
     "attempts": 1,
@@ -192,13 +199,6 @@
     "hash": "bd7ee731beb8c6f4",
     "attempts": 1,
     "text": "Ivanti Connect Secure に、なりすましによる認証回避の脆弱性(CVE-2026-104935)があります。リモートの認証されていない攻撃者が、任意のコマンドを実行できるおそれがあります。影響を受ける製品は Ivanti Connect Secure です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "bc920c758a0377d6": {
-    "hash": "a38b0c59d068d2af",
-    "attempts": 1,
-    "text": "Ahsay AhsayCBSに不適切な認証の脆弱性(CVE-2026-105133)があります。API コンポーネントのcheckSysPwd関数におけるrandomパラメータの操作により、リモートの攻撃者が認証を回避できるおそれがあります。この脆弱性はCVE-2026-105134と連鎖させることが可能です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -223,17 +223,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "3fb2590cd5b273c1": {
-    "hash": "d51d7a1726177eb9",
-    "attempts": 1,
-    "text": "ONLYOFFICE Docs に、JWT を使用している場合に画像アップロードのパラメータ内の /.. シーケンスを介して発生するパストラバーサルの脆弱性(CVE-2021-3199)があります。この問題により、リモートコード実行につながるおそれがあります。影響を受ける製品は ONLYOFFICE Docs(Docs Server)です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "59a9a506b2947179": {
     "hash": "bf4096d7fe634d59",
     "attempts": 1,
     "text": "Strapi に、機密情報が平文で保存される問題 (CVE-2023-22894) があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密情報を取得できるおそれがあります。この脆弱性は CVE-2023-22621 と組み合わせることで、リモートコード実行につながるおそれがあります。影響を受ける製品はサポート終了 (EoL) またはサービス終了 (EoS) の場合があります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "3fb2590cd5b273c1": {
+    "hash": "d51d7a1726177eb9",
+    "attempts": 1,
+    "text": "ONLYOFFICE Docs に、JWT を使用している場合に画像アップロードのパラメータ内の /.. シーケンスを介して発生するパストラバーサルの脆弱性(CVE-2021-3199)があります。この問題により、リモートコード実行につながるおそれがあります。影響を受ける製品は ONLYOFFICE Docs(Docs Server)です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -251,6 +251,13 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "b6d2d774b1178c4d": {
+    "hash": "fc2a16b41b7b7153",
+    "attempts": 1,
+    "text": "Zammad GmbH の Zammad に、不適切な権限管理の脆弱性(CVE-2026-102490)があります。ローカルの zammad ユーザーが root に権限昇格できるおそれがあります。この脆弱性は CVE-2026-102489 と連鎖させることができます。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "ba1c00bff0a7be3a": {
     "hash": "31a6b831de7a49d9",
     "attempts": 1,
@@ -258,10 +265,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "b6d2d774b1178c4d": {
-    "hash": "fc2a16b41b7b7153",
+  "6515f0cddeacb9ab": {
+    "hash": "8b82727057f7083d",
     "attempts": 1,
-    "text": "Zammad GmbH の Zammad に、不適切な権限管理の脆弱性(CVE-2026-102490)があります。ローカルの zammad ユーザーが root に権限昇格できるおそれがあります。この脆弱性は CVE-2026-102489 と連鎖させることができます。",
+    "text": "Fortinet FortiMail に、パストラバーサルと NULL バイト(NULL 文字)の不適切な無害化に関する脆弱性(CVE-2026-104286)があります。認証されていない攻撃者が、細工した HTTP または HTTPS リクエストを送ることで、基盤となるシステム上に任意のファイルを書き込めるおそれがあります。影響を受ける製品は Fortinet FortiMail です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -279,29 +286,24 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "6515f0cddeacb9ab": {
-    "hash": "8b82727057f7083d",
-    "attempts": 1,
-    "text": "Fortinet FortiMail に、パストラバーサルと NULL バイト(NULL 文字)の不適切な無害化に関する脆弱性(CVE-2026-104286)があります。認証されていない攻撃者が、細工した HTTP または HTTPS リクエストを送ることで、基盤となるシステム上に任意のファイルを書き込めるおそれがあります。影響を受ける製品は Fortinet FortiMail です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "54a888c0cd0bbb4b": {
     "hash": "dcc6153539892b1b",
-    "attempts": 1,
-    "failure": "check:word:CWE-119"
-  },
-  "55d86c6d4fa552d9": {
-    "hash": "104c6efeb88f43b3",
-    "attempts": 1,
-    "text": "MikroTik RouterOS に、動作ワークフローの不適切な強制(improper enforcement of behavioral workflow)に関する脆弱性(CVE-2026-67279)があります。認証されていないクライアントがセッションチャネルを開き、exec リクエストを送信できるおそれがあります。この脆弱性は連鎖させることで、CVE-2026-86060 を認証なしで悪用できる状態になるおそれがあります。",
+    "attempts": 2,
+    "text": "Citrix NetScaler ADC および NetScaler Gateway に、メモリバッファの範囲内での操作の不適切な制限(CVE-2026-88772)に関する脆弱性があります。この脆弱性により、リモートからのコード実行やサービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
     "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
+    "generatedAt": "2026-11-07T23:42:01.559Z"
   },
   "d829d5e96527cced": {
     "hash": "cb68fded3f675f49",
     "attempts": 1,
     "text": "Citrix NetScaler ADC および NetScaler Gateway に、不適切な入力検証の脆弱性(CVE-2026-88771)があります。認証されていない攻撃者が任意のコマンドを実行できるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "55d86c6d4fa552d9": {
+    "hash": "104c6efeb88f43b3",
+    "attempts": 1,
+    "text": "MikroTik RouterOS に、動作ワークフローの不適切な強制(improper enforcement of behavioral workflow)に関する脆弱性(CVE-2026-67279)があります。認証されていないクライアントがセッションチャネルを開き、exec リクエストを送信できるおそれがあります。この脆弱性は連鎖させることで、CVE-2026-86060 を認証なしで悪用できる状態になるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -312,13 +314,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "2db4a75bb734488e": {
-    "hash": "896bea42bf517850",
-    "attempts": 1,
-    "text": "WSO2 の複数製品にパストラバーサルの脆弱性(CVE-2026-5430)があります。これにより制限のないファイルアップロードが可能となり、リモートコード実行につながるおそれがあります。影響を受ける製品は WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "78e49010c82b8a95": {
     "hash": "a4f5dd2c1a18e2cb",
     "attempts": 1,
@@ -326,10 +321,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "e7c9601555db3eff": {
-    "hash": "fae47f7f07b5079b",
+  "2db4a75bb734488e": {
+    "hash": "896bea42bf517850",
     "attempts": 1,
-    "text": "Arista VeloCloud Orchestrator (VCO) のオンプレミス版に、不適切な入力検証の脆弱性(CVE-2026-93952)があります。リモートの攻撃者が内部の特権機能にアクセスし、VCO のホストに影響を及ぼすおそれがあります。悪用に成功すると、オーケストレーターおよびそこで管理されるデータの機密性、完全性、可用性が損なわれるおそれがあります。",
+    "text": "WSO2 の複数製品にパストラバーサルの脆弱性(CVE-2026-5430)があります。これにより制限のないファイルアップロードが可能となり、リモートコード実行につながるおそれがあります。影響を受ける製品は WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -337,6 +332,13 @@
     "hash": "635a6ca4c944147b",
     "attempts": 1,
     "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性(CVE-2026-71362)があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を取得できるおそれがあります。影響を受ける製品は Adobe Commerce と Magento です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "e7c9601555db3eff": {
+    "hash": "fae47f7f07b5079b",
+    "attempts": 1,
+    "text": "Arista VeloCloud Orchestrator (VCO) のオンプレミス版に、不適切な入力検証の脆弱性(CVE-2026-93952)があります。リモートの攻撃者が内部の特権機能にアクセスし、VCO のホストに影響を及ぼすおそれがあります。悪用に成功すると、オーケストレーターおよびそこで管理されるデータの機密性、完全性、可用性が損なわれるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -410,17 +412,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "385c492d87e07db8": {
-    "hash": "bf25a9c1735fedeb",
-    "attempts": 1,
-    "text": "ConnectWise ScreenConnect に、不適切な権限管理と認可の欠如に関する脆弱性(CVE-2026-84869)があります。攻撃者が、アクティブなリモートセッションを通じて、認可やホストの確認なしにファイルを転送し実行できるおそれがあります。影響を受ける製品は ConnectWise ScreenConnect です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "bd154d96a2a2a283": {
     "hash": "5daba4bca8899362",
     "attempts": 1,
     "text": "Cisco Secure Email Gateway (SEG) 向けの Cisco AsyncOS ソフトウェアに SQL インジェクションの脆弱性があります（CVE-2026-76461）。認証されていないリモートの攻撃者が、基盤となるオペレーティングシステム上で root 権限により任意のコマンドを実行できるおそれがあります。影響を受ける製品は Cisco Secure Email Gateway です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "385c492d87e07db8": {
+    "hash": "bf25a9c1735fedeb",
+    "attempts": 1,
+    "text": "ConnectWise ScreenConnect に、不適切な権限管理と認可の欠如に関する脆弱性(CVE-2026-84869)があります。攻撃者が、アクティブなリモートセッションを通じて、認可やホストの確認なしにファイルを転送し実行できるおそれがあります。影響を受ける製品は ConnectWise ScreenConnect です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -431,13 +433,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "786198bfe8236903": {
-    "hash": "90883d7c14681612",
-    "attempts": 1,
-    "text": "GitLab Community Edition および Enterprise Edition に、パストラバーサルの脆弱性(CVE-2026-85706)があります。リポジトリの commits API でパスの制限が不適切であり、認証も強制されていないことが原因です。認証されていないユーザーが任意のファイルを読み取れるおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "74cc0350f76e58b5": {
     "hash": "3d5b1423c96c53f0",
     "attempts": 1,
@@ -445,10 +440,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "0f03d43abdee44e9": {
-    "hash": "eb8e72c6b700da5f",
+  "786198bfe8236903": {
+    "hash": "90883d7c14681612",
     "attempts": 1,
-    "text": "Citrix NetScaler ADC および NetScaler Gateway に、代替パスまたは代替チャネルを利用した認証回避の脆弱性(CVE-2026-19490)があります。NetScaler が AAA 仮想サーバー、または Gateway(SSL VPN、ICA Proxy、CVPN、RDP Proxy)として構成されている場合、認証されていないリモートの攻撃者が認証を回避できるおそれがあります。",
+    "text": "GitLab Community Edition および Enterprise Edition に、パストラバーサルの脆弱性(CVE-2026-85706)があります。リポジトリの commits API でパスの制限が不適切であり、認証も強制されていないことが原因です。認証されていないユーザーが任意のファイルを読み取れるおそれがあります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "9af12c6fad4e6f4a": {
+    "hash": "98694346f8f589ac",
+    "attempts": 1,
+    "text": "MikroTik RouterOS に、コマンド内の引数区切り文字の不適切な無効化(Improper Neutralization of Argument Delimiters in a Command)に関する脆弱性(CVE-2026-86060)があります。攻撃者が信頼された RouterOS のポリシーマスクを変更でき、権限昇格につながるおそれがあります。影響を受ける製品は MikroTik RouterOS です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -459,10 +461,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "9af12c6fad4e6f4a": {
-    "hash": "98694346f8f589ac",
+  "0f03d43abdee44e9": {
+    "hash": "eb8e72c6b700da5f",
     "attempts": 1,
-    "text": "MikroTik RouterOS に、コマンド内の引数区切り文字の不適切な無効化(Improper Neutralization of Argument Delimiters in a Command)に関する脆弱性(CVE-2026-86060)があります。攻撃者が信頼された RouterOS のポリシーマスクを変更でき、権限昇格につながるおそれがあります。影響を受ける製品は MikroTik RouterOS です。",
+    "text": "Citrix NetScaler ADC および NetScaler Gateway に、代替パスまたは代替チャネルを利用した認証回避の脆弱性(CVE-2026-19490)があります。NetScaler が AAA 仮想サーバー、または Gateway(SSL VPN、ICA Proxy、CVPN、RDP Proxy)として構成されている場合、認証されていないリモートの攻撃者が認証を回避できるおそれがあります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "f977e98587da0fbc": {
+    "hash": "da3f058dfb53f35f",
+    "attempts": 1,
+    "text": "Fortinet の FortiOS、FortiSwitchManager、FortiSASE にヒープベースのバッファオーバーフローの脆弱性(CVE-2025-25249)があります。攻撃者が細工したパケットを送ることで、許可されていないコードやコマンドを実行できるおそれがあります。影響を受ける製品は Fortinet FortiOS、FortiSwitchManager、FortiSASE です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -477,13 +486,6 @@
     "hash": "18ba5e0681e10c69",
     "attempts": 1,
     "text": "Cisco Secure Firewall Management Center (FMC) Software と Cisco Security Cloud Control (SCC) Firewall Management に、代替パスまたはチャネルを使用した認証バイパスの脆弱性 (CVE-2026-20079) があります。認証されていないリモートの攻撃者が認証を回避し、影響を受けるデバイス上でスクリプトファイルを実行して、基盤となるオペレーティングシステムの root 権限を取得するおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "f977e98587da0fbc": {
-    "hash": "da3f058dfb53f35f",
-    "attempts": 1,
-    "text": "Fortinet の FortiOS、FortiSwitchManager、FortiSASE にヒープベースのバッファオーバーフローの脆弱性(CVE-2025-25249)があります。攻撃者が細工したパケットを送ることで、許可されていないコードやコマンドを実行できるおそれがあります。影響を受ける製品は Fortinet FortiOS、FortiSwitchManager、FortiSASE です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -515,13 +517,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "7e05094174f977f2": {
-    "hash": "9e74d01962d46f44",
-    "attempts": 1,
-    "text": "BerriAI LiteLLM の MCP Streamable HTTP エンドポイントに不適切な認証の脆弱性(CVE-2026-59822)があります。認証されていない攻撃者が、任意の Bearer トークンを使って認証済みの MCP セッションを確立できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "3fe94915195edb77": {
     "hash": "9ca0cb93eceb8ff8",
     "attempts": 1,
@@ -529,10 +524,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "cd3144266bc19fa6": {
-    "hash": "67bb62491f51df6c",
+  "7e05094174f977f2": {
+    "hash": "9e74d01962d46f44",
     "attempts": 1,
-    "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の環境では、ネットワークにアクセスできる認証されていない攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+    "text": "BerriAI LiteLLM の MCP Streamable HTTP エンドポイントに不適切な認証の脆弱性(CVE-2026-59822)があります。認証されていない攻撃者が、任意の Bearer トークンを使って認証済みの MCP セッションを確立できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "10c6fb453a75e160": {
+    "hash": "b66421bbcd29fe6e",
+    "attempts": 1,
+    "text": "Kludex Starlette に HTTP リクエスト/レスポンススマグリングの脆弱性(CVE-2026-48710)があります。攻撃者がホスト部分にパスを注入し、実際のパスの前に付加できるため、再構築された URL のパスに依存する認証では認証バイパスなどの問題につながるおそれがあります。この脆弱性は CVE-2026-42271 と連鎖させられる可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -543,10 +545,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "10c6fb453a75e160": {
-    "hash": "b66421bbcd29fe6e",
+  "cd3144266bc19fa6": {
+    "hash": "67bb62491f51df6c",
     "attempts": 1,
-    "text": "Kludex Starlette に HTTP リクエスト/レスポンススマグリングの脆弱性(CVE-2026-48710)があります。攻撃者がホスト部分にパスを注入し、実際のパスの前に付加できるため、再構築された URL のパスに依存する認証では認証バイパスなどの問題につながるおそれがあります。この脆弱性は CVE-2026-42271 と連鎖させられる可能性があります。",
+    "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の環境では、ネットワークにアクセスできる認証されていない攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -561,6 +563,13 @@
     "hash": "c565963acd626f9b",
     "attempts": 1,
     "text": "SonicWall SMA1000 Appliances にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性があります(CVE-2026-83548)。認証されていないリモートの攻撃者が、機密性の高い機能への不正なアクセスや、不正な操作を行えるおそれがあります。影響を受ける製品は SonicWall SMA1000 Appliances です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "6b4b7577fc45a1c4": {
+    "hash": "5e6d70e115c9d9dd",
+    "attempts": 1,
+    "text": "SonicWall SMA1000 Appliances に、OSコマンドインジェクションの脆弱性(CVE-2026-83549)があります。管理者として認証されたリモートの攻撃者が、任意のOSコマンドを実行できるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -585,13 +594,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "6b4b7577fc45a1c4": {
-    "hash": "5e6d70e115c9d9dd",
-    "attempts": 1,
-    "text": "SonicWall SMA1000 Appliances に、OSコマンドインジェクションの脆弱性(CVE-2026-83549)があります。管理者として認証されたリモートの攻撃者が、任意のOSコマンドを実行できるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "1a8c5d33557668c8": {
     "hash": "00667e02a37da98d",
     "attempts": 1,
@@ -601,8 +603,10 @@
   },
   "2977d6efd67cbe57": {
     "hash": "bb5b866a7f42d80b",
-    "attempts": 1,
-    "failure": "check:advice"
+    "attempts": 2,
+    "text": "JFrog Artifactory に、パス名が制限されたディレクトリに適切に制限されない問題(CVE-2026-66384)があります。特定のリモートリポジトリの条件下で、認証済みのユーザーが本来の Docker キャッシュのパスの外にデータを書き込めるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T23:42:01.559Z"
   },
   "02457117d280f5e0": {
     "hash": "f5e52c6c0560fb32",
@@ -615,6 +619,13 @@
     "hash": "3b37e8db82a01e7a",
     "attempts": 1,
     "text": "Red Hat の libuser に競合状態(レースコンディション)の脆弱性(CVE-2015-3246)があります。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "d82828f88a185ce1": {
+    "hash": "dc48f302df8dd85e",
+    "attempts": 1,
+    "text": "Red Hat Automatic Bug Reporting Tool (ABRT) に権限昇格の脆弱性があります(CVE-2015-5287)。予測可能な名前のファイルに対するシンボリックリンク攻撃により、特定の権限を持つローカルユーザーが権限を取得できるおそれがあります。影響を受ける製品は Red Hat Automatic Bug Reporting Tool (ABRT) で、サポートが終了している可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -632,24 +643,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "d82828f88a185ce1": {
-    "hash": "dc48f302df8dd85e",
-    "attempts": 1,
-    "text": "Red Hat Automatic Bug Reporting Tool (ABRT) に権限昇格の脆弱性があります(CVE-2015-5287)。予測可能な名前のファイルに対するシンボリックリンク攻撃により、特定の権限を持つローカルユーザーが権限を取得できるおそれがあります。影響を受ける製品は Red Hat Automatic Bug Reporting Tool (ABRT) で、サポートが終了している可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "106fea48675949de": {
     "hash": "2280aa51ad01f206",
     "attempts": 1,
     "text": "Microsoft SQL Server にリモートコード実行の脆弱性(CVE-2019-1068)があります。攻撃者が SQL Server Database Engine のサービスアカウントの権限でコードを実行できるおそれがあります。影響を受ける製品は Microsoft SQL Server です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "a90b5c576e2f583f": {
-    "hash": "485c60a2d199cdbc",
-    "attempts": 1,
-    "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -660,17 +657,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "e339ad776af4db55": {
-    "hash": "84c8726e5cf154e5",
+  "a90b5c576e2f583f": {
+    "hash": "485c60a2d199cdbc",
     "attempts": 1,
-    "text": "TrueConf Server に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-72529)があります。ネットワーク経由で 4307/TCP ポートにアクセスできる認証されていないリモートの攻撃者が、任意のスクリプトを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "1047cff57826af4e": {
-    "hash": "aac7e9d8de1acd6b",
-    "attempts": 1,
-    "text": "TrueConf Server にコードインジェクションの脆弱性(CVE-2026-72530)があります。ポート 4307/TCP にネットワーク経由でアクセスできる認証されていないリモートの攻撃者が、細工したスクリプトを使って隔離された環境から抜け出し、ホストシステム上で任意のコードを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
+    "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -681,6 +671,20 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
+  "1047cff57826af4e": {
+    "hash": "aac7e9d8de1acd6b",
+    "attempts": 1,
+    "text": "TrueConf Server にコードインジェクションの脆弱性(CVE-2026-72530)があります。ポート 4307/TCP にネットワーク経由でアクセスできる認証されていないリモートの攻撃者が、細工したスクリプトを使って隔離された環境から抜け出し、ホストシステム上で任意のコードを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "e339ad776af4db55": {
+    "hash": "84c8726e5cf154e5",
+    "attempts": 1,
+    "text": "TrueConf Server に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-72529)があります。ネットワーク経由で 4307/TCP ポートにアクセスできる認証されていないリモートの攻撃者が、任意のスクリプトを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
   "48e00341981dc3b1": {
     "hash": "b0524727cfe7cd05",
     "attempts": 1,
@@ -688,17 +692,17 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "f03234cffa3b31d9": {
-    "hash": "cc81f0d297d90fb8",
-    "attempts": 1,
-    "text": "Broadcom VMware vCenter にパストラバーサルの脆弱性(CVE-2026-59310)があります。vCenter にネットワークアクセスできる攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は Broadcom VMware vCenter です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "89c4c7d219d590bf": {
     "hash": "b29fc1f0210b6cc8",
     "attempts": 1,
     "text": "Microsoft Internet Key Exchange (IKE) Service Extensions に、二重解放(double free)の脆弱性(CVE-2026-33824)があります。この脆弱性により、リモートからコードを実行されるおそれがあります。影響を受ける製品は Microsoft Internet Key Exchange (IKE) Service Extensions です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "f03234cffa3b31d9": {
+    "hash": "cc81f0d297d90fb8",
+    "attempts": 1,
+    "text": "Broadcom VMware vCenter にパストラバーサルの脆弱性(CVE-2026-59310)があります。vCenter にネットワークアクセスできる攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は Broadcom VMware vCenter です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },

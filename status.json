@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T16:05:31.182Z",
+  "fetchedAt": "2026-11-07T23:42:01.559Z",
   "sources": [
     {
       "id": "kev",
@@ -93,8 +93,8 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 280,
       "items": 11
     },
     {
@@ -107,12 +107,12 @@
     }
   ],
   "ai": {
-    "requested": 107,
-    "summarized": 105,
-    "rejected": 2,
+    "requested": 2,
+    "summarized": 2,
+    "rejected": 0,
     "refused": 0,
     "errors": 0,
-    "pending": 2,
-    "costUsd": 0.31076800000000004
+    "pending": 0,
+    "costUsd": 0.005824
   }
 }
