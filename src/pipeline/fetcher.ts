@@ -23,7 +23,6 @@ export function createFetcher(
     const response = await fetchFn(url, {
       headers: {
         "User-Agent": USER_AGENT,
-        ...(options?.accept ? { Accept: options.accept } : {}),
         ...(cached?.etag ? { "If-None-Match": cached.etag } : {}),
         ...(cached?.lastModified
           ? { "If-Modified-Since": cached.lastModified }

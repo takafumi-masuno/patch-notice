@@ -1,4 +1,7 @@
-import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
+import {
+  RELATED_KEV_REASON,
+  WINDOWS_MONTHLY_SOURCE,
+} from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
 import { isHttpsUrl } from "./site.ts";
 
@@ -122,6 +125,9 @@ export function productLabel(product: ProductId): string {
 
 /** AI の要約がない項目に出す文。公開データの事実だけで組み立てる */
 function factsSummary(item: Item): string {
+  if (item.source === WINDOWS_MONTHLY_SOURCE) {
+    return "毎月第2火曜（米国時間）の定例の更新日です。更新の内容と重要度は公式情報で確認してください。";
+  }
   const parts = [`${PRODUCT_NAMES[item.product]}に関する公開情報です。`];
   if (item.version) parts.push(`バージョンは ${item.version} です。`);
   if (item.cveCount > 0) parts.push(`CVE は ${item.cveCount} 件です。`);

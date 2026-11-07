@@ -42,11 +42,12 @@ export async function runPipeline(
 ): Promise<PipelineResult> {
   const load = async (source: Source): Promise<Entry[]> => {
     try {
-      return await source.load(get);
+      return await source.load(get, now);
     } catch (error) {
       if (error instanceof NotModifiedError && needsBody.has(source.id)) {
-        return source.load((url, options) =>
-          get(url, { ...options, conditional: false }),
+        return source.load(
+          (url, options) => get(url, { ...options, conditional: false }),
+          now,
         );
       }
       throw error;

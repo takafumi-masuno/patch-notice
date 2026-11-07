@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { audienceFor } from "../pipeline/products.ts";
-import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
+import {
+  RELATED_KEV_REASON,
+  WINDOWS_MONTHLY_SOURCE,
+} from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
 import {
   EXPLOITATION_LABELS,
@@ -169,6 +172,20 @@ describe("noticeFor", () => {
     expect(notice.itAction).toContain(
       "関連する CVE の悪用が確認されています。",
     );
+  });
+
+  it("月例更新日は、取得していない内容を書かず公式情報へ案内する", () => {
+    const notice = noticeFor(
+      item({
+        source: WINDOWS_MONTHLY_SOURCE,
+        product: "windows-office",
+        urgency: "review",
+      }),
+    );
+    expect(notice.summary).toContain("定例の更新日です");
+    expect(notice.summary).toContain("公式情報で確認");
+    expect(notice.summary).not.toContain("CVE");
+    expect(notice.employee?.body).toContain("Windows Update");
   });
 
   it("情シス向けのみの製品には社員向けの文を出さない", () => {

@@ -1,11 +1,13 @@
 import { describe, expect, it, vi } from "vitest";
-import type { Get, Source } from "../types.ts";
+import type { Get } from "../types.ts";
 import { sources } from "./index.ts";
 
-function source(id: string): Source {
+const NOW = new Date("2026-11-08T00:00:00Z");
+
+function source(id: string) {
   const found = sources.find((candidate) => candidate.id === id);
   if (!found) throw new Error(`unknown source ${id}`);
-  return found;
+  return { load: (get: Get) => found.load(get, NOW) };
 }
 
 const rss = (items: string) =>
@@ -51,31 +53,6 @@ describe("kev", () => {
     await expect(
       source("kev").load(respond('{"vulnerabilities":[]}')),
     ).rejects.toThrow();
-  });
-});
-
-describe("cisco", () => {
-  it("評価を読み取り、URL の問い合わせ文字列を落とす", async () => {
-    const [entry] = await source("cisco").load(
-      respond(
-        rss(
-          item(
-            "Cisco Test",
-            "Summary. Security Impact Rating: Critical CVE: CVE-2026-2000",
-            "https://sec.test/advisory?vs_f=rss&amp;vs_k=1",
-          ),
-        ),
-      ),
-    );
-    expect(entry.vendorSeverity).toBe("critical");
-    expect(entry.url).toBe("https://sec.test/advisory");
-  });
-
-  it("Informational は info にする", async () => {
-    const [entry] = await source("cisco").load(
-      respond(rss(item("Cisco", "Security Impact Rating: Informational"))),
-    );
-    expect(entry.vendorSeverity).toBe("info");
   });
 });
 
@@ -174,13 +151,13 @@ describe("slack", () => {
   });
 });
 
-describe("php と python", () => {
+describe("php", () => {
   it("セキュリティに関する記事だけ取り込む", async () => {
-    const entries = await source("python").load(
+    const entries = await source("php").load(
       respond(
         rss(
-          item("Python 3.15 released", "Security fixes.", "https://x.test/1") +
-            item("PyCon news", "Conference.", "https://x.test/2"),
+          item("PHP 8.5.1 released", "Security fixes.", "https://x.test/1") +
+            item("PHP conference", "Conference.", "https://x.test/2"),
         ),
       ),
     );
@@ -188,76 +165,27 @@ describe("php と python", () => {
   });
 });
 
-describe("apple", () => {
-  it("正式版の OS だけ取り込み、ビルド違いを同じキーにする", async () => {
-    const entries = await source("apple").load(
-      respond(
-        rss(
-          item("iOS 27.2 (24B91020)", "", "https://x.test/1") +
-            item("iOS 27.2 (24B119)", "", "https://x.test/2") +
-            item("iOS 27.3 beta (24C5037i)", "", "https://x.test/3") +
-            item("Xcode 27.2", "", "https://x.test/4"),
-        ),
-      ),
+describe("掲載しない情報源", () => {
+  it("利用条件の懸念がある情報源を取得しない", () => {
+    const ids = sources.map((candidate) => candidate.id);
+    for (const excluded of ["cisco", "msrc", "apple", "python"]) {
+      expect(ids).not.toContain(excluded);
+    }
+  });
+
+  it("除外した提供元へ通信する URL を持たない", async () => {
+    const urls: string[] = [];
+    const get: Get = async (url) => {
+      urls.push(url);
+      throw new Error("stop");
+    };
+    await Promise.allSettled(
+      sources.map((candidate) => candidate.load(get, NOW)),
     );
-    expect(entries.map((entry) => entry.key)).toEqual(["iOS 27.2", "iOS 27.2"]);
-    expect(entries[0].version).toBe("27.2");
-  });
-});
-
-describe("msrc", () => {
-  const update = {
-    ID: "2026-Oct",
-    InitialReleaseDate: "2026-10-13T07:00:00Z",
-    CvrfUrl: "https://api.test/2026-Oct",
-  };
-  const document = {
-    Vulnerability: [
-      {
-        CVE: "CVE-2026-3000",
-        Title: { Value: "Windows Shell Bypass" },
-        Notes: [{ Type: 7, Value: "Windows Shell" }],
-        Threats: [
-          { Type: 1, Description: { Value: "Exploited:Yes" } },
-          { Type: 3, Description: { Value: "Critical" } },
-        ],
-        RevisionHistory: [{ Date: "2026-10-13T07:00:00" }],
-      },
-      {
-        CVE: "CVE-2026-3001",
-        Title: { Value: "Microsoft Word Bug" },
-        Notes: [{ Type: 7, Value: "Microsoft Office Word" }],
-        Threats: [{ Type: 1, Description: { Value: "Exploited:No" } }],
-      },
-      {
-        CVE: "CVE-2026-3002",
-        Title: { Value: "Linux kernel issue" },
-        Notes: [{ Type: 7, Value: "Mariner" }],
-        Threats: [{ Type: 1, Description: { Value: "Exploited:Yes" } }],
-      },
-    ],
-  };
-  const get: Get = vi.fn(async (url) =>
-    JSON.stringify(url.endsWith("updates") ? { value: [update] } : document),
-  );
-
-  it("月例の1件と悪用済みの CVE を取り込み、Linux 向けは除く", async () => {
-    const entries = await source("msrc").load(get);
-    expect(entries.map((entry) => entry.key)).toEqual([
-      "2026-Oct",
-      "CVE-2026-3000",
-    ]);
-    expect(entries[0].cveCount).toBe(2);
-    expect(entries[0].vendorSeverity).toBe("critical");
-    expect(entries[1].exploited).toBe(true);
-    expect(entries[1].product).toBe("windows-office");
-  });
-
-  it("JSON を指定して取得する", async () => {
-    await source("msrc").load(get);
-    expect(get).toHaveBeenCalledWith(update.CvrfUrl, {
-      accept: "application/json",
-    });
+    expect(urls.length).toBeGreaterThan(0);
+    for (const url of urls) {
+      expect(url).not.toMatch(/cisco|microsoft|apple|python\.org/);
+    }
   });
 });
 

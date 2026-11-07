@@ -43,6 +43,7 @@ export function classify(entry: Entry, kevCves: ReadonlySet<string>): Item {
   const action = reasons.length > 0;
 
   if (caIncident) reasons.push("認証局の事案らしい語句に一致");
+  if (entry.monthlyUpdate) reasons.push("毎月の定例の更新日");
   if (entry.vendorSeverity === "critical" || entry.vendorSeverity === "high") {
     reasons.push(`メーカーの評価が ${entry.vendorSeverity}`);
   }
@@ -51,7 +52,7 @@ export function classify(entry: Entry, kevCves: ReadonlySet<string>): Item {
   if (action) urgency = "action";
   else if (reasons.length > 0) urgency = "review";
 
-  // Python の更新のように本文で触れているだけの場合は、製品の更新のまま扱う
+  // 本文で触れているだけの場合は、製品の更新のまま扱う
   const product: ProductId = isCaIncident(entry.title)
     ? "ca-incident"
     : (entry.product ?? detectProduct(entry.title));

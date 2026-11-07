@@ -1,29 +1,9 @@
 import type { FeedEntry } from "../feed.ts";
 import { isCaIncident } from "../text.ts";
-import type { Entry, Source, VendorSeverity } from "../types.ts";
+import type { Entry, Source } from "../types.ts";
 import { feedSource } from "./feedSource.ts";
 import { kev } from "./kev.ts";
-import { msrc } from "./msrc.ts";
-
-function ciscoExtras(entry: FeedEntry): Partial<Entry> {
-  const rating = entry.body
-    .match(/Security Impact Rating:\s*(\w+)/i)?.[1]
-    ?.toLowerCase();
-  const severity: Record<string, VendorSeverity> = {
-    critical: "critical",
-    high: "high",
-    medium: "medium",
-    low: "low",
-    informational: "info",
-  };
-  const vendorSeverity = rating ? severity[rating] : undefined;
-  return {
-    // URL の問い合わせ文字列は配信の記録用なので、公開データには残さない
-    url: entry.url.split("?")[0],
-    key: entry.url.split("?")[0],
-    ...(vendorSeverity ? { vendorSeverity } : {}),
-  };
-}
+import { windowsMonthly } from "./windowsMonthly.ts";
 
 function chromeExtras(entry: FeedEntry): Partial<Entry> {
   const version = entry.body.match(/\b\d{2,3}\.0\.\d{3,5}\.\d{1,3}\b/)?.[0];
@@ -60,16 +40,6 @@ const slack = (platform: string, path: string) =>
 
 export const sources: Source[] = [
   kev,
-  feedSource({
-    id: "cisco",
-    name: "Cisco",
-    urls: [
-      "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml",
-    ],
-    treatment: "ai-summary",
-    product: "cisco",
-    map: ciscoExtras,
-  }),
   feedSource({
     id: "mozilla",
     name: "Mozilla Security Blog",
@@ -118,7 +88,7 @@ export const sources: Source[] = [
     filter: (entry) => entry.title === "Stable Channel Update for Desktop",
     map: chromeExtras,
   }),
-  msrc,
+  windowsMonthly,
   slack("Windows", "windows"),
   slack("Mac", "mac"),
   feedSource({
@@ -139,34 +109,10 @@ export const sources: Source[] = [
       /critical/i.test(entry.title) ? { vendorSeverity: "critical" } : {},
   }),
   feedSource({
-    id: "python",
-    name: "Python",
-    urls: ["https://blog.python.org/feeds/posts/default"],
-    treatment: "facts",
-    product: "python",
-    filter: mentionsSecurity,
-  }),
-  feedSource({
     id: "wordpress",
     name: "WordPress",
     urls: ["https://wordpress.org/news/category/security/feed/"],
     treatment: "facts",
     product: "wordpress",
-  }),
-  feedSource({
-    id: "apple",
-    name: "Apple Developer",
-    urls: ["https://developer.apple.com/news/releases/rss/releases.rss"],
-    treatment: "version-link",
-    product: "apple",
-    filter: (entry) =>
-      /^(iOS|iPadOS|macOS) \d/.test(entry.title) &&
-      !/beta|\bRC\b/i.test(entry.title),
-    map: (entry) => {
-      const version = entry.title.match(/\d+(?:\.\d+)+/)?.[0];
-      const os = entry.title.split(" ")[0];
-      // 同じバージョンのビルド違いは1件にまとめる
-      return version ? { version, key: `${os} ${version}` } : {};
-    },
   }),
 ];
