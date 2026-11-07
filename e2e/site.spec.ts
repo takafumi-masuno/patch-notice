@@ -8,6 +8,7 @@ const item = (number: number) => `${ROOT}items/a00000000000000${number}/`;
 const PAGES = [
   ROOT,
   `${ROOT}certificates/`,
+  `${ROOT}sources/`,
   item(1),
   item(2),
   item(3),
@@ -259,6 +260,35 @@ test.describe("証明書", () => {
     await expect(incidents.getByRole("listitem")).toHaveCount(1);
     await expect(incidents).toContainText("サンプル認証局の信頼停止");
     await expect(incidents).toContainText("要確認");
+  });
+});
+
+test.describe("出典", () => {
+  test("カード、一覧、RSS に情報源の名前を出す", async ({ page, request }) => {
+    await page.goto(ROOT);
+    const card = page.locator("section[aria-labelledby=priority] li").first();
+    await expect(card).toContainText("出典: サンプル配信");
+    await expect(page.locator("tbody tr").first()).toContainText(
+      "出典: サンプル配信",
+    );
+    const xml = await (await request.get(`${ROOT}feed.xml`)).text();
+    const { rss } = new XMLParser().parse(xml);
+    expect(rss.channel.item[0].description).toContain("（出典: サンプル配信）");
+  });
+
+  test("情報源のページに帰属表示と、取得していない製品の案内を出す", async ({
+    page,
+  }) => {
+    await page.goto(ROOT);
+    await page.getByRole("link", { name: "情報源" }).click();
+    await expect(page).toHaveURL(/\/patch-notice\/sources\/$/);
+    await expect(page.getByText("© The Kubernetes Authors")).toBeVisible();
+    await expect(page.getByRole("link", { name: /CC BY 4.0/ })).toHaveAttribute(
+      "href",
+      "https://creativecommons.org/licenses/by/4.0/",
+    );
+    const unfetched = page.locator("section[aria-labelledby=unfetched]");
+    await expect(unfetched.getByRole("listitem")).toHaveCount(4);
   });
 });
 

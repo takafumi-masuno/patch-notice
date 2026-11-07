@@ -71,6 +71,7 @@ function ItemRow({ row }: { row: ListRow }) {
       </td>
       <td className="hidden px-3 py-2 text-sm md:table-cell">
         {productLabel(row.product)}
+        <p className="mt-1 text-xs text-muted">出典: {row.source}</p>
       </td>
       <td className="px-3 py-2">
         <Link
@@ -82,7 +83,7 @@ function ItemRow({ row }: { row: ListRow }) {
         </Link>
         {/* 幅が狭いと列を隠すので、同じ内容をタイトルの下に出す */}
         <p className="mt-1 text-xs text-muted md:hidden">
-          {row.date}・{productLabel(row.product)}
+          {row.date}・{productLabel(row.product)}・出典: {row.source}
         </p>
         <p className="md:hidden">
           <ExploitationText status={row.exploitation} />

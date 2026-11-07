@@ -64,6 +64,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                     証明書
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="hover:underline"
+                    href="/sources/"
+                    prefetch={false}
+                  >
+                    情報源
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

@@ -3,7 +3,7 @@ import { ExploitationText, UrgencyBadge } from "@/components/Badges";
 import { ItemTable } from "@/components/ItemTable";
 import { Preparing } from "@/components/Preparing";
 import { CERTIFICATE_DEADLINES, nextDeadline } from "@/lib/certificates";
-import { referenceTime, type SiteData, siteData } from "@/lib/data";
+import { referenceTime, type SiteData, siteData, sourceName } from "@/lib/data";
 import { formatDate, formatDateTime } from "@/lib/format";
 import { byNewest, priorityItems, RECENT_DAYS, toRow } from "@/lib/listing";
 import {
@@ -25,14 +25,15 @@ function Tile(props: { label: string; value: string; note?: string }) {
   );
 }
 
-function PriorityCard({ item }: { item: Item }) {
+function PriorityCard({ item, source }: { item: Item; source: string }) {
   const notice = noticeFor(item);
   return (
     <li className="rounded-lg border border-line bg-surface p-3">
       <div className="flex flex-wrap items-center gap-2">
         <UrgencyBadge urgency={item.urgency} />
         <span className="text-sm text-muted">
-          {formatDate(item.publishedAt)}・{productLabel(item.product)}
+          {formatDate(item.publishedAt)}・{productLabel(item.product)}・出典:{" "}
+          {source}
         </span>
         <ExploitationText status={exploitationStatus(item)} />
       </div>
@@ -114,7 +115,11 @@ function Dashboard({ items, status }: SiteData) {
         ) : (
           <ul className="mt-3 space-y-2">
             {priority.map((item) => (
-              <PriorityCard item={item} key={item.id} />
+              <PriorityCard
+                item={item}
+                key={item.id}
+                source={sourceName(status, item.source)}
+              />
             ))}
           </ul>
         )}
@@ -127,7 +132,9 @@ function Dashboard({ items, status }: SiteData) {
         <ItemTable
           now={now}
           products={products}
-          rows={byNewest(items).map(toRow)}
+          rows={byNewest(items).map((item) =>
+            toRow(item, sourceName(status, item.source)),
+          )}
         />
       </section>
     </>

@@ -31,6 +31,8 @@ export interface ListRow {
   exploitation: ExploitationStatus;
   audience: Audience;
   cveCount: number;
+  /** 情報源の名前 */
+  source: string;
   /** 語句の絞り込みに使う。CVE 番号でも探せるようにする */
   search: string;
 }
@@ -55,7 +57,7 @@ function normalize(text: string): string {
   return text.normalize("NFKC").toLowerCase();
 }
 
-export function toRow(item: Item): ListRow {
+export function toRow(item: Item, source: string): ListRow {
   return {
     id: item.id,
     title: item.title,
@@ -66,6 +68,7 @@ export function toRow(item: Item): ListRow {
     exploitation: exploitationStatus(item),
     audience: item.audience,
     cveCount: item.cveCount,
+    source,
     search: normalize([item.title, ...item.cves].join(" ")),
   };
 }
