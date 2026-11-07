@@ -1,0 +1,81 @@
+name: Update data
+
+on:
+  schedule:
+    # 6時間ごと。毎時0分は混み合うので避ける
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    # 実行中に取り消すと、API の費用をかけた結果を保存できなくなる
+    concurrency:
+      group: data-update
+      cancel-in-progress: false
+    outputs:
+      attention: ${{ steps.pipeline.outputs.attention }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+          persist-credentials: false
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # 終了コード 2 はデータを保存済みなので、保存と公開まで進めてから失敗にする
+      - id: pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          code=0
+          node src/pipeline/cli.ts data || code=$?
+          if [ "$code" -ne 0 ] && [ "$code" -ne 2 ]; then
+            exit "$code"
+          fi
+          attention=false
+          if [ "$code" -eq 2 ] || [ -z "$ANTHROPIC_API_KEY" ]; then
+            attention=true
+          fi
+          echo "attention=$attention" >> "$GITHUB_OUTPUT"
+      - name: Save to the data branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        working-directory: data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: データを更新"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:data
+
+  # GITHUB_TOKEN の push では他のワークフローが起動しないので、ここで公開する
+  publish:
+    needs: update
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publish.yml
+
+  attention:
+    needs: [update, publish]
+    if: ${{ !cancelled() && needs.update.outputs.attention == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::error::The data was saved, but the run needs attention. Check the pipeline log and the ANTHROPIC_API_KEY secret."
+          exit 1
