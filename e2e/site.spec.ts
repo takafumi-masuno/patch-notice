@@ -113,7 +113,12 @@ test.describe("絞り込み", () => {
     await expect(page.getByLabel("期間")).toHaveValue("7");
   });
 
-  test("期間はデータの取得時刻を基準にする", async ({ page }) => {
+  test("期間はビルドや閲覧の時刻ではなく、データの取得時刻を基準にする", async ({
+    page,
+  }) => {
+    // サンプル言語の更新は、取得時刻の6日23時間前に公開された項目
+    await page.goto(`${ROOT}?period=7`);
+    await expect(count(page)).toHaveText("4 件");
     await page.goto(`${ROOT}?period=30`);
     await expect(count(page)).toHaveText("6 件");
   });
