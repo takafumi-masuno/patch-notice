@@ -3,7 +3,6 @@ import { extractCves } from "../text.ts";
 interface CheckInput {
   title: string;
   body: string;
-  exploited: boolean;
 }
 
 const MIN_LENGTH = 20;
@@ -16,13 +15,25 @@ const LATIN_WORD = /[A-Za-z][A-Za-z0-9+#_-]{2,}/g;
 const ADVICE =
   /ください|すべき|しましょう|必要があります|を推奨|を検討|を制限|を監視|を確認して/;
 const MENTIONS_MISSING =
-  /記載がありません|記載されていません|明記されていません|確認できません/;
+  /記載がありません|記載されていません|明記されていません|示されていません|確認できません/;
 const SOURCE_LEAK =
-  /<\/?source>|(?<!open[ -])\bsource\b(?! code)|(?<!オープン)ソース(?!コード)|情報源|提供された情報/i;
-const UNSUPPORTED_EXPLOIT = /悪用の有無|悪用は確認されて/;
+  /<\/?source>|(?<!open[ -])\bsource\b(?! code)|(?<![ァ-ヶー])ソース(?!コード)|情報源|提供された情報/i;
+// 悪用の状況はコードの判定だけで示す。項目単位の判定を AI が文にすると、
+// CVE が複数ある項目で全件が悪用されているように読めてしまう
+const EXPLOIT_CLAIM = /悪用.{0,8}確認|悪用されて[いお]|悪用の有無|悪用の報告/;
 
 function matches(text: string, pattern: RegExp): string[] {
   return text.match(pattern) ?? [];
+}
+
+/** DoS と denial of service のように、略語が元データの語の頭文字に一致するか */
+function isAbbreviationIn(word: string, lowerSource: string): boolean {
+  if (!/[A-Z]/.test(word) || !/^[A-Za-z]+$/.test(word)) return false;
+  const initials = lowerSource
+    .split(/[^a-z0-9]+/)
+    .map((token) => token.charAt(0))
+    .join("");
+  return initials.includes(word.toLowerCase());
 }
 
 /**
@@ -54,7 +65,10 @@ export function checkSummary(input: CheckInput, summary: string): string[] {
   }
 
   for (const word of matches(summary, LATIN_WORD)) {
-    if (!lowerSource.includes(word.toLowerCase())) {
+    if (
+      !lowerSource.includes(word.toLowerCase()) &&
+      !isAbbreviationIn(word, lowerSource)
+    ) {
       problems.push(`word:${word}`);
     }
   }
@@ -63,11 +77,6 @@ export function checkSummary(input: CheckInput, summary: string): string[] {
   if (SOURCE_LEAK.test(summary)) problems.push("source-leak");
   if (MENTIONS_MISSING.test(summary)) problems.push("mentions-missing");
   if (ADVICE.test(summary)) problems.push("advice");
-  if (input.exploited && !summary.includes("悪用")) {
-    problems.push("exploit-missing");
-  }
-  if (!input.exploited && UNSUPPORTED_EXPLOIT.test(summary)) {
-    problems.push("exploit-unsupported");
-  }
+  if (EXPLOIT_CLAIM.test(summary)) problems.push("exploit-claim");
   return problems;
 }

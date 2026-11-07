@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { audienceFor } from "../pipeline/products.ts";
+import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
 import { noticeFor, PRODUCT_NAMES } from "./notice.ts";
 
@@ -97,6 +98,22 @@ describe("noticeFor", () => {
       "【要対応】Google Chromeの更新のお願い",
     );
     expect(notice.employee?.body).toContain("悪用が確認されています");
+  });
+
+  it("関連する CVE が KEV にある項目は、項目全体の悪用と断定しない", () => {
+    const notice = noticeFor(
+      item({
+        product: "cisco",
+        audience: "it",
+        urgency: "action",
+        exploited: true,
+        urgencyReasons: [RELATED_KEV_REASON],
+      }),
+    );
+    expect(notice.summary).toContain("関連する CVE の悪用が確認されています。");
+    expect(notice.itAction).toContain(
+      "関連する CVE の悪用が確認されています。",
+    );
   });
 
   it("情シス向けのみの製品には社員向けの文を出さない", () => {

@@ -119,13 +119,13 @@ describe("summarizeItems", () => {
     expect(summarize).toHaveBeenCalledOnce();
   });
 
-  it("悪用の判定が変わったら作り直す", async () => {
+  it("悪用の判定が変わっても、本文が同じなら作り直さない", async () => {
     const first = await run([item("a")], always(success));
-    const summarize = always({ ...success, text: `${TEXT}悪用があります。` });
+    const summarize = always(success);
     await run([item("a", { exploited: true })], summarize, {
       store: first.store,
     });
-    expect(summarize).toHaveBeenCalledOnce();
+    expect(summarize).not.toHaveBeenCalled();
   });
 
   it("本文が変わって作り直せなければ古い要約を残さない", async () => {

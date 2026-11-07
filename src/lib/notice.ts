@@ -1,3 +1,4 @@
+import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
 
 export const PRODUCT_NAMES: Record<ProductId, string> = {
@@ -79,12 +80,19 @@ export interface Notice {
   employee?: EmployeeNotice;
 }
 
+/** 関連する CVE の一部だけが悪用されている場合があるので、項目全体の断定と分ける */
+function exploitationNote(item: Item): string {
+  return item.urgencyReasons.includes(RELATED_KEV_REASON)
+    ? "関連する CVE の悪用が確認されています。"
+    : "悪用が確認されています。";
+}
+
 /** AI の要約がない項目に出す文。公開データの事実だけで組み立てる */
 function factsSummary(item: Item): string {
   const parts = [`${PRODUCT_NAMES[item.product]}に関する公開情報です。`];
   if (item.version) parts.push(`バージョンは ${item.version} です。`);
   if (item.cveCount > 0) parts.push(`CVE は ${item.cveCount} 件です。`);
-  if (item.exploited) parts.push("悪用が確認されています。");
+  if (item.exploited) parts.push(exploitationNote(item));
   if (item.vendorSeverity) {
     parts.push(`メーカーの評価は ${item.vendorSeverity} です。`);
   }
@@ -102,7 +110,7 @@ function itLead(item: Item): string {
     return "対象の認証局の証明書を自社で使っていないか確認し、ブラウザや OS の更新情報を追ってください。";
   }
   if (item.exploited) {
-    return "悪用が確認されています。自社での利用を確認し、公式情報で修正版と回避策を確認して、優先して対応してください。";
+    return `${exploitationNote(item)}自社での利用を確認し、公式情報で修正版と回避策を確認して、優先して対応してください。`;
   }
   // 要対応の根拠のうち、悪用以外は国内機関の注意喚起だけ
   if (item.urgency === "action") {
@@ -125,7 +133,7 @@ function employeeNotice(item: Item): EmployeeNotice | undefined {
   const steps = EMPLOYEE_STEPS[item.product];
   if (!steps) return undefined;
   const lines = [EMPLOYEE_LEAD[item.urgency]];
-  if (item.exploited) lines.push("この問題は悪用が確認されています。");
+  if (item.exploited) lines.push(exploitationNote(item));
   lines.push(steps);
   if (item.version) {
     lines.push(`更新後のバージョンが ${item.version} 以上か確認してください。`);

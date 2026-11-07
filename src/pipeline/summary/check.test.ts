@@ -4,14 +4,12 @@ import { checkSummary } from "./check.ts";
 const source = {
   title: "ExampleOS Web UI Path Traversal Vulnerability",
   body: "CVE-2026-12345 affects ExampleOS 11.2.3. An authenticated attacker can read files via open source components.",
-  exploited: false,
 };
 
 const good =
   "ExampleOS 11.2.3 の Web UI にパストラバーサルの脆弱性があります。認証済みの攻撃者がファイルを読み取れるおそれがあります。";
 
-const problemsOf = (summary: string, exploited = false) =>
-  checkSummary({ ...source, exploited }, summary);
+const problemsOf = (summary: string) => checkSummary(source, summary);
 
 describe("checkSummary", () => {
   it("元データの事実だけの要約は通す", () => {
@@ -52,6 +50,28 @@ describe("checkSummary", () => {
     );
   });
 
+  it("元データの語の略語は通す", () => {
+    const denial = {
+      ...source,
+      body: `${source.body} A server-side request forgery or denial-of-service condition.`,
+    };
+    expect(checkSummary(denial, `${good}DoS のおそれがあります。`)).toEqual([]);
+    expect(checkSummary(denial, `${good}SSRF のおそれがあります。`)).toEqual(
+      [],
+    );
+  });
+
+  it("元データの語に対応しない略語は落とす", () => {
+    expect(problemsOf(`${good}DoS のおそれがあります。`)).toContain("word:DoS");
+    expect(problemsOf(`${good}SSRF のおそれがあります。`)).toContain(
+      "word:SSRF",
+    );
+  });
+
+  it("綴りの誤りは略語として通さない", () => {
+    expect(problemsOf(`${good}Enginee の問題です。`)).toContain("word:Enginee");
+  });
+
   it("URL を落とす", () => {
     expect(problemsOf(`${good}詳細は www.example.com です。`)).toContain("url");
   });
@@ -78,23 +98,40 @@ describe("checkSummary", () => {
     expect(problemsOf(`ソースコードに問題があります。${good}`)).toEqual([]);
   });
 
+  it("「リソース」は入力元の言及として扱わない", () => {
+    expect(problemsOf(`リソースを読み取れます。${good}`)).toEqual([]);
+  });
+
+  it("単独の「ソース」は入力元の言及として落とす", () => {
+    expect(problemsOf(`ソースによると、${good}`)).toContain("source-leak");
+  });
+
   it("分からないと書いた要約を落とす", () => {
     expect(problemsOf(`影響範囲は記載されていません。${good}`)).toContain(
       "mentions-missing",
     );
   });
 
-  it("悪用の情報があるのに書いていない要約を落とす", () => {
-    expect(problemsOf(good, true)).toContain("exploit-missing");
+  it.each([
+    "悪用が確認されています。",
+    "これらの脆弱性は実際に悪用が確認されています。",
+    "悪用は確認されていません。",
+    "この脆弱性は悪用されています。",
+    "すでに悪用されており、被害が出ています。",
+    "悪用の有無は不明です。",
+  ])("悪用の状況を書いた要約を落とす: %s", (claim) => {
+    expect(problemsOf(`${good}${claim}`)).toContain("exploit-claim");
   });
 
-  it("悪用の情報があり、書いていれば通す", () => {
-    expect(problemsOf(`${good}悪用が確認されています。`, true)).toEqual([]);
+  it("攻撃の仕組みとしての「悪用すると」は通す", () => {
+    expect(
+      problemsOf(`${good}攻撃者が悪用すると、ファイルを読み取れます。`),
+    ).toEqual([]);
   });
 
-  it("悪用の情報がないのに有無に触れた要約を落とす", () => {
-    expect(problemsOf(`${good}悪用は確認されていません。`)).toContain(
-      "exploit-unsupported",
+  it("「示されていません」を分からない表現として落とす", () => {
+    expect(problemsOf(`${good}影響は具体的に示されていません。`)).toContain(
+      "mentions-missing",
     );
   });
 

@@ -29,7 +29,7 @@ export type SummaryStore = Record<string, SummaryRecord>;
 
 function contentHash(item: Item, body: string): string {
   return createHash("sha256")
-    .update(`${item.title}\n${body}\n${item.exploited}`)
+    .update(`${item.title}\n${body}`)
     .digest("hex")
     .slice(0, 16);
 }
@@ -116,7 +116,7 @@ export async function summarizeItems(
   const summarizeOne = async (item: Item): Promise<void> => {
     const hash = hashes.get(item.id) as string;
     const body = bodies.get(item.id) as string;
-    const input = { title: item.title, body, exploited: item.exploited };
+    const input = { title: item.title, body };
     const attempts = (store[item.id]?.attempts ?? 0) + 1;
 
     status.requested += 1;

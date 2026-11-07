@@ -18,7 +18,6 @@ const OUTPUT_FORMAT = betaJSONSchemaOutputFormat({
 export interface SummaryRequest {
   title: string;
   body: string;
-  exploited: boolean;
 }
 
 export type SummaryResult =
