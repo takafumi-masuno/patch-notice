@@ -65,6 +65,9 @@ const EMPLOYEE_LEAD: Record<Urgency, string> = {
 const MANAGED_NOTE =
   "会社の管理で更新が配信される端末は、情シスの案内に従ってください。";
 
+/** AI の文章を出す場所では、必ずこの表示を付ける */
+export const AI_SUMMARY_LABEL = "AI 要約";
+
 export interface EmployeeNotice {
   subject: string;
   body: string;

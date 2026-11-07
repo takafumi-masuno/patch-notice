@@ -1,6 +1,6 @@
 import type { Item } from "../pipeline/types.ts";
 import { byNewest } from "./listing.ts";
-import { noticeFor, URGENCY_LABELS } from "./notice.ts";
+import { AI_SUMMARY_LABEL, noticeFor, URGENCY_LABELS } from "./notice.ts";
 import { absoluteUrl, SITE_NAME } from "./site.ts";
 
 export const RSS_LIMIT = 50;
@@ -26,7 +26,7 @@ export function escapeXml(text: string): string {
 function rssItem(item: Item): string {
   const notice = noticeFor(item);
   const link = escapeXml(absoluteUrl(`/items/${item.id}/`));
-  const label = notice.summaryOrigin === "ai" ? "AI 要約: " : "";
+  const label = notice.summaryOrigin === "ai" ? `${AI_SUMMARY_LABEL}: ` : "";
   return [
     "<item>",
     `<title>${escapeXml(`[${URGENCY_LABELS[item.urgency]}] ${item.title}`)}</title>`,
