@@ -1,0 +1,4105 @@
+[
+  {
+    "id": "ea6cea835b9807f9",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月05日）",
+    "url": "https://jvn.jp/vu/JVNVU90841469/",
+    "publishedAt": "2026-11-06T00:30:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "15a00885f0ee054b",
+    "source": "kev",
+    "product": "other",
+    "title": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-19868"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "SonicWall SonicOS の SSLVPN に、単一要素認証が使われる脆弱性（CVE-2026-19868）があります。別の認証方式の有効な認証情報を持つユーザーが、SAML 認証の制御を回避できるおそれがあります。これにより、SAML で強制されている多要素認証（MFA）も回避される可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "f49791178d599ba9",
+    "source": "kubernetes",
+    "product": "kubernetes",
+    "title": "CVE-2026-116472",
+    "url": "https://github.com/kubernetes/kubernetes/issues/143852",
+    "publishedAt": "2026-11-05T17:21:19.000Z",
+    "cves": [
+      "CVE-2026-116472"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "c5ebd97e6551b724",
+    "source": "jvn",
+    "product": "other",
+    "title": "SHIRASAGIにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN55454512/",
+    "publishedAt": "2026-11-05T05:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "dde25d98c2cdeebb",
+    "source": "jvn",
+    "product": "other",
+    "title": "Hinemosにおける不適切な権限の割り当ての脆弱性",
+    "url": "https://jvn.jp/jp/JVN46901199/",
+    "publishedAt": "2026-11-04T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "cf6be132e06d6fc7",
+    "source": "jvn",
+    "product": "other",
+    "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
+    "url": "https://jvn.jp/jp/JVN12040144/",
+    "publishedAt": "2026-11-04T03:00:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "b3eb23ee2b636486",
+    "source": "jvn",
+    "product": "other",
+    "title": "複数のAkeeba製品におけるクロスサイトリクエストフォージェリの脆弱性",
+    "url": "https://jvn.jp/jp/JVN44272550/",
+    "publishedAt": "2026-11-04T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "988f3331f911a4b2",
+    "source": "jvn",
+    "product": "other",
+    "title": "INFINITT Healthcare製INFINITT PACS System Managerにおける複数の任意コード実行の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU99859918/",
+    "publishedAt": "2026-11-04T01:15:30.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "2c2ba2e16af1c91e",
+    "source": "jvn",
+    "product": "other",
+    "title": "Androidアプリ「BaseChat - Audio Dating App」における複数の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU92281274/",
+    "publishedAt": "2026-11-04T01:15:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "6f226be172d14b3d",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月03日）",
+    "url": "https://jvn.jp/vu/JVNVU91151184/",
+    "publishedAt": "2026-11-04T01:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "9a77a231cbc9aa91",
+    "source": "kev",
+    "product": "apple",
+    "title": "Apple Multiple Products Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-04T00:00:00.000Z",
+    "cves": [
+      "CVE-2024-27834"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apple の複数製品に、不適切な認証の脆弱性（CVE-2024-27834）があります。任意の読み取りおよび書き込みができる攻撃者が、ポインタ認証（pointer authentication）を回避できるおそれがあります。影響を受ける製品は Apple iOS、iPadOS、macOS、Safari、tvOS、watchOS 10.5 です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "9ab32f34cbf02828",
+    "source": "nodejs",
+    "product": "nodejs",
+    "title": "Wednesday, November 11, 2026 Security Releases",
+    "url": "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases",
+    "publishedAt": "2026-11-03T23:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "d4377554f751c236",
+    "source": "chrome",
+    "product": "chrome",
+    "title": "Chrome 157.0.8103.38（Stable）",
+    "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
+    "publishedAt": "2026-11-03T20:38:18.791Z",
+    "cves": [
+      "CVE-2026-121029",
+      "CVE-2026-121030",
+      "CVE-2026-121031",
+      "CVE-2026-121032",
+      "CVE-2026-121033",
+      "CVE-2026-121034",
+      "CVE-2026-121035",
+      "CVE-2026-121036",
+      "CVE-2026-121037",
+      "CVE-2026-121038",
+      "CVE-2026-121039",
+      "CVE-2026-121040",
+      "CVE-2026-121041",
+      "CVE-2026-121042",
+      "CVE-2026-121043",
+      "CVE-2026-121044",
+      "CVE-2026-121045",
+      "CVE-2026-121046",
+      "CVE-2026-121047",
+      "CVE-2026-121048",
+      "CVE-2026-121049",
+      "CVE-2026-121050",
+      "CVE-2026-121051",
+      "CVE-2026-121052",
+      "CVE-2026-121053",
+      "CVE-2026-121054",
+      "CVE-2026-121055",
+      "CVE-2026-121057",
+      "CVE-2026-121059",
+      "CVE-2026-121060",
+      "CVE-2026-121061",
+      "CVE-2026-121062",
+      "CVE-2026-121063",
+      "CVE-2026-121064",
+      "CVE-2026-121065",
+      "CVE-2026-121066",
+      "CVE-2026-121067",
+      "CVE-2026-121068",
+      "CVE-2026-121069",
+      "CVE-2026-121070",
+      "CVE-2026-121071",
+      "CVE-2026-121072",
+      "CVE-2026-121073",
+      "CVE-2026-121074",
+      "CVE-2026-121075",
+      "CVE-2026-121076",
+      "CVE-2026-121077",
+      "CVE-2026-121078",
+      "CVE-2026-121079",
+      "CVE-2026-121080",
+      "CVE-2026-121081",
+      "CVE-2026-121082",
+      "CVE-2026-121083",
+      "CVE-2026-121084",
+      "CVE-2026-121085",
+      "CVE-2026-121086",
+      "CVE-2026-121087",
+      "CVE-2026-121088",
+      "CVE-2026-121089",
+      "CVE-2026-121090",
+      "CVE-2026-121091",
+      "CVE-2026-121092",
+      "CVE-2026-121093",
+      "CVE-2026-121094",
+      "CVE-2026-121095",
+      "CVE-2026-121096",
+      "CVE-2026-121097",
+      "CVE-2026-121098",
+      "CVE-2026-121099",
+      "CVE-2026-121100",
+      "CVE-2026-121101",
+      "CVE-2026-121102",
+      "CVE-2026-121103",
+      "CVE-2026-121104",
+      "CVE-2026-121105",
+      "CVE-2026-121106",
+      "CVE-2026-121107",
+      "CVE-2026-121108",
+      "CVE-2026-121109",
+      "CVE-2026-121110",
+      "CVE-2026-121111",
+      "CVE-2026-121112",
+      "CVE-2026-121113",
+      "CVE-2026-121114",
+      "CVE-2026-121115",
+      "CVE-2026-121116",
+      "CVE-2026-121117",
+      "CVE-2026-121118",
+      "CVE-2026-121119",
+      "CVE-2026-121120",
+      "CVE-2026-121121",
+      "CVE-2026-121122",
+      "CVE-2026-121123",
+      "CVE-2026-121124",
+      "CVE-2026-121125",
+      "CVE-2026-121126",
+      "CVE-2026-121127",
+      "CVE-2026-121128",
+      "CVE-2026-121129",
+      "CVE-2026-121130",
+      "CVE-2026-121131",
+      "CVE-2026-121132",
+      "CVE-2026-121133",
+      "CVE-2026-121134",
+      "CVE-2026-121135",
+      "CVE-2026-121136",
+      "CVE-2026-121137",
+      "CVE-2026-121138",
+      "CVE-2026-121140",
+      "CVE-2026-121141",
+      "CVE-2026-121142",
+      "CVE-2026-121143",
+      "CVE-2026-121148",
+      "CVE-2026-121156",
+      "CVE-2026-121157",
+      "CVE-2026-121158",
+      "CVE-2026-121159",
+      "CVE-2026-121160",
+      "CVE-2026-121161",
+      "CVE-2026-121162",
+      "CVE-2026-121163",
+      "CVE-2026-121164",
+      "CVE-2026-121165",
+      "CVE-2026-121166",
+      "CVE-2026-121167",
+      "CVE-2026-121168",
+      "CVE-2026-121169",
+      "CVE-2026-121170",
+      "CVE-2026-121171",
+      "CVE-2026-121172",
+      "CVE-2026-121173",
+      "CVE-2026-121174",
+      "CVE-2026-121175",
+      "CVE-2026-121176",
+      "CVE-2026-121177",
+      "CVE-2026-121178",
+      "CVE-2026-121179",
+      "CVE-2026-121180",
+      "CVE-2026-121181",
+      "CVE-2026-121182",
+      "CVE-2026-121183",
+      "CVE-2026-121184",
+      "CVE-2026-121185",
+      "CVE-2026-121186",
+      "CVE-2026-121187",
+      "CVE-2026-121188",
+      "CVE-2026-121189",
+      "CVE-2026-121190",
+      "CVE-2026-121193",
+      "CVE-2026-121194",
+      "CVE-2026-121195",
+      "CVE-2026-121196",
+      "CVE-2026-121197",
+      "CVE-2026-121198",
+      "CVE-2026-121199",
+      "CVE-2026-121200",
+      "CVE-2026-121201",
+      "CVE-2026-121202",
+      "CVE-2026-121203",
+      "CVE-2026-121204",
+      "CVE-2026-121205",
+      "CVE-2026-121206",
+      "CVE-2026-121207",
+      "CVE-2026-121208",
+      "CVE-2026-121209",
+      "CVE-2026-121210",
+      "CVE-2026-121211",
+      "CVE-2026-121212",
+      "CVE-2026-121213",
+      "CVE-2026-121214",
+      "CVE-2026-121215",
+      "CVE-2026-121216",
+      "CVE-2026-121217",
+      "CVE-2026-121218",
+      "CVE-2026-121219",
+      "CVE-2026-121220",
+      "CVE-2026-121221",
+      "CVE-2026-121222",
+      "CVE-2026-121223",
+      "CVE-2026-121224",
+      "CVE-2026-121225",
+      "CVE-2026-121226",
+      "CVE-2026-121227",
+      "CVE-2026-121228",
+      "CVE-2026-121229",
+      "CVE-2026-121230",
+      "CVE-2026-121231",
+      "CVE-2026-121232",
+      "CVE-2026-121233",
+      "CVE-2026-121234",
+      "CVE-2026-121235",
+      "CVE-2026-121236",
+      "CVE-2026-121237",
+      "CVE-2026-121238",
+      "CVE-2026-121239",
+      "CVE-2026-121240",
+      "CVE-2026-121241",
+      "CVE-2026-121242",
+      "CVE-2026-121243",
+      "CVE-2026-121244",
+      "CVE-2026-121245",
+      "CVE-2026-121246",
+      "CVE-2026-121247",
+      "CVE-2026-121248",
+      "CVE-2026-121249",
+      "CVE-2026-121250",
+      "CVE-2026-121251",
+      "CVE-2026-121252",
+      "CVE-2026-121253",
+      "CVE-2026-121254",
+      "CVE-2026-121255",
+      "CVE-2026-121256",
+      "CVE-2026-121257"
+    ],
+    "cveCount": 213,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "157.0.8103.38"
+  },
+  {
+    "id": "9b65d14d23a1b36f",
+    "source": "slack-windows",
+    "product": "slack",
+    "title": "Slack for Windows 4.53.280",
+    "url": "https://slack.com/release-notes/windows#13094",
+    "publishedAt": "2026-11-03T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.53.280"
+  },
+  {
+    "id": "df2e2ae3134bc7c6",
+    "source": "slack-mac",
+    "product": "slack",
+    "title": "Slack for Mac 4.53.280",
+    "url": "https://slack.com/release-notes/osx#13104",
+    "publishedAt": "2026-11-03T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.53.280"
+  },
+  {
+    "id": "c10cb30e1e92b02b",
+    "source": "kev",
+    "product": "wordpress",
+    "title": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-03T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-119977"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "WordPress Core に time-of-check time-of-use (TOCTOU) のレースコンディションの脆弱性 (CVE-2026-119977) があります。フルパッケージによるコアのアップグレード時に、予測可能でWeb経由でアクセスできるステージングパスが使われていることが原因です。認証されていない攻撃者が、アップグレード中の時間帯にサーバー上でコードを実行できるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "7e5e7f2a5ae207fd",
+    "source": "jvn",
+    "product": "other",
+    "title": "Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
+    "url": "https://jvn.jp/jp/JVN23328936/",
+    "publishedAt": "2026-11-02T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "4fd3ee0b028e71b9",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年10月）",
+    "url": "https://jvn.jp/vu/JVNVU90141693/",
+    "publishedAt": "2026-11-02T00:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "b1b9f34d79055cf8",
+    "source": "ipa",
+    "product": "php",
+    "title": "更新：PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+    "publishedAt": "2026-11-01T15:00:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "0dda84ef66e45fd8",
+    "source": "jvn",
+    "product": "other",
+    "title": "三菱電機製の複数製品における複数の脆弱性（2026-006）",
+    "url": "https://jvn.jp/vu/JVNVU93251594/",
+    "publishedAt": "2026-10-30T05:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "20ea36f08ac02fae",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月29日）",
+    "url": "https://jvn.jp/vu/JVNVU95856220/",
+    "publishedAt": "2026-10-30T00:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "0ba432857bb15318",
+    "source": "kev",
+    "product": "ivanti",
+    "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "cveCount": 3,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ivanti Connect Secure に、予測可能な数値または識別子の生成に関する脆弱性 (CVE-2026-118527) があります。リモートの認証済み攻撃者が、攻撃者が内容を制御できるファイルをディスク上の既知の場所にアップロードできるおそれがあります。この脆弱性は CVE-2026-104935 および CVE-2026-111357 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "cac9f3c01bbc4298",
+    "source": "kev",
+    "product": "ivanti",
+    "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-104935",
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "cveCount": 3,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ivanti Connect Secure に、重要な機能に対する認証の欠如(Missing Authentication for Critical Function)の脆弱性(CVE-2026-111357)があります。ローカルで認証済みの攻撃者が権限を昇格できるおそれがあります。この脆弱性は CVE-2026-104935 および CVE-2026-118527 と組み合わせて利用できるとされています。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0d984f22836dba0b",
+    "source": "chrome",
+    "product": "chrome",
+    "title": "Chrome 156.0.8078.79（Stable）",
+    "url": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+    "publishedAt": "2026-10-29T21:26:20.252Z",
+    "cves": [
+      "CVE-2026-119260",
+      "CVE-2026-119261",
+      "CVE-2026-119262",
+      "CVE-2026-119263",
+      "CVE-2026-119264",
+      "CVE-2026-119265",
+      "CVE-2026-119266",
+      "CVE-2026-119267",
+      "CVE-2026-119268",
+      "CVE-2026-119269",
+      "CVE-2026-119270",
+      "CVE-2026-119271",
+      "CVE-2026-119272",
+      "CVE-2026-76024",
+      "CVE-2026-76025",
+      "CVE-2026-76026",
+      "CVE-2026-76027",
+      "CVE-2026-76028",
+      "CVE-2026-76029",
+      "CVE-2026-76030",
+      "CVE-2026-76031"
+    ],
+    "cveCount": 21,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "156.0.8078.79"
+  },
+  {
+    "id": "c28660e1cad8cf1a",
+    "source": "slack-windows",
+    "product": "slack",
+    "title": "Slack for Windows 4.53.276",
+    "url": "https://slack.com/release-notes/windows#13040",
+    "publishedAt": "2026-10-29T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.53.276"
+  },
+  {
+    "id": "89d276d72f9daf52",
+    "source": "slack-mac",
+    "product": "slack",
+    "title": "Slack for Mac 4.53.276",
+    "url": "https://slack.com/release-notes/osx#13033",
+    "publishedAt": "2026-10-29T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.53.276"
+  },
+  {
+    "id": "9e050b2d957b71a3",
+    "source": "jpcert",
+    "product": "php",
+    "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+    "publishedAt": "2026-10-29T06:43:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "ac1ad87ec883bad9",
+    "source": "jvn",
+    "product": "other",
+    "title": "Apache Struts 2 RESTプラグインにおける、@StrutsParameterの制限が@JsonAnySetterに適用されない問題",
+    "url": "https://jvn.jp/jp/JVN82782759/",
+    "publishedAt": "2026-10-29T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "ca39b683bf1700ce",
+    "source": "kev",
+    "product": "other",
+    "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "GitLab Community Edition および Enterprise Edition に、整数オーバーフローまたはラップアラウンドの脆弱性(CVE-2026-97229)があります。CI/CD 設定内の正規表現の検証が不十分なため、認証されていないユーザーが特別に細工した正規表現を使って、GitLab サーバー上で任意のコードを実行できるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b91600ac18a30f89",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76418"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Secure Firewall ASA Software と Cisco Secure FTD Software に、戻り値の未チェックに起因する NULL ポインタ参照の脆弱性 (CVE-2026-76418) があります。認証されていないリモートの攻撃者がデバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。影響を受ける製品は Cisco Secure Firewall ASA Software と Cisco Secure FTD Software です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b07716caeccccbbe",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.1.4",
+    "url": "https://wordpress.org/news/2026/10/wordpress-7-1-4/",
+    "publishedAt": "2026-10-28T17:13:02.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "6763b76bf0f4bc4d",
+    "source": "jvn",
+    "product": "php",
+    "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+    "url": "https://jvn.jp/vu/JVNVU99905564/",
+    "publishedAt": "2026-10-28T07:30:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "f53650f568a1563c",
+    "source": "jvn",
+    "product": "other",
+    "title": "ヤマハ製NWR100における複数の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU91027179/",
+    "publishedAt": "2026-10-28T05:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "c74069800bb11366",
+    "source": "jvn",
+    "product": "windows-office",
+    "title": "Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
+    "url": "https://jvn.jp/jp/JVN23695234/",
+    "publishedAt": "2026-10-28T05:00:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "848fa48ede92c3e8",
+    "source": "jvn",
+    "product": "other",
+    "title": "ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
+    "url": "https://jvn.jp/jp/JVN30675482/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "f8734de8aa31fa7b",
+    "source": "kev",
+    "product": "other",
+    "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-41709"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Broadcom VMware ESX に、ログ記録が不十分となる脆弱性(CVE-2026-41709)があります。管理者権限を持つ攻撃者が、特定の操作をログに記録されないまま実行できるおそれがあります。影響を受ける製品は Broadcom VMware ESX です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "8cf517099069551d",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619",
+      "CVE-2026-46300"
+    ],
+    "cveCount": 3,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux Kernel に変数の初期化漏れの脆弱性(CVE-2026-46300)があります。ソケットバッファの結合時に共有フラグメントのマーカーが保持されず、ESP の入力処理が共有フラグメントをその場で復号してしまい、ページキャッシュを基にしたデータが意図せず変更されるおそれがあります。CVE-2026-109618 および CVE-2026-109619 と連鎖させることで、PHP ウェブシェルの埋め込みや root 権限でのコマンド実行につながるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "58112d51c2a70a05",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
+    "url": "https://jvn.jp/vu/JVNVU96093239/",
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "155882d05914bc25",
+    "source": "jvn",
+    "product": "other",
+    "title": "GROWIにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN51223238/",
+    "publishedAt": "2026-10-27T06:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "2a5680daae32d00e",
+    "source": "kev",
+    "product": "adobe",
+    "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-48356"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Adobe Commerce と Magento に、危険な種類のファイルを無制限にアップロードできる脆弱性(CVE-2026-48356)があります。この脆弱性により、現在のユーザーの権限で任意のコードが実行され、被害者のアカウントやセッションに対する昇格したアクセスや制御が奪われるおそれがあります。影響を受ける製品は Adobe Commerce と Magento です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "4f5d1003817bef30",
+    "source": "kev",
+    "product": "other",
+    "title": "Google Brotli Unchecked Return Value Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Google Brotli に戻り値の未検査(unchecked return value)の脆弱性があります。リモートの認証されていない攻撃者が、細工した Brotli 圧縮ストリームを使って、隣接するデコーダ状態のメモリを破損させたり、機密性のあるメモリ内容を漏えいさせたり、サービス拒否(DoS)を引き起こしたりするおそれがあります。任意のコードが実行される可能性もあります。(CVE-2026-111497)",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "6b8f1ade2e1987c0",
+    "source": "php",
+    "product": "php",
+    "title": "Updated PHP Windows builds for Brotli security fix",
+    "url": "https://www.php.net/index.php#2026-10-26-1",
+    "publishedAt": "2026-10-26T11:57:45.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "0cf4aecdbbf3bbd4",
+    "source": "jpcert",
+    "product": "other",
+    "title": "注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起 (公開)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260034.html",
+    "publishedAt": "2026-10-26T07:25:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "7a825934996fa369",
+    "source": "kev",
+    "product": "php",
+    "title": "PHP Memory Corruption Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "PHP にメモリ破壊の脆弱性（CVE-2026-109618）があり、メモリ不足状態に起因する問題とされています。認証されていないリモートの攻撃者が、コードを実行できるおそれがあります。影響を受ける製品は PHP Group の PHP です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "27278a9265bafb27",
+    "source": "kev",
+    "product": "php",
+    "title": "PHP Stale Internal Request-State Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-109619"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "PHP に、内部のリクエスト状態が古いまま残る(stale internal request-state)脆弱性があります(CVE-2026-109619)。認証されていないリモートの攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は PHP Group の PHP です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d47df438264ad0d2",
+    "source": "jpcert",
+    "product": "other",
+    "title": "注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起 (更新)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+    "publishedAt": "2026-10-23T02:37:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "fc99ee962fcfab98",
+    "source": "kev",
+    "product": "other",
+    "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-114625"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Arista VeloCloud Orchestrator のオンプレミス版にSQLインジェクションの脆弱性があります(CVE-2026-114625)。リモートの攻撃者が内部の特権機能にアクセスし、VCOホストに影響を及ぼすおそれがあります。悪用に成功すると、オーケストレーターおよびそれが管理するデータの機密性、完全性、可用性が損なわれるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b0d7901360d5fe2e",
+    "source": "kev",
+    "product": "other",
+    "title": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-110447"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Collabora Online の Built-in CODE Server に、OS コマンドインジェクションの脆弱性(CVE-2026-110447)があります。NextCloud プラットフォーム内で使用され、CODE サーバーが動作していない場合に、リモートからコードを実行されるおそれがあります。影響を受ける製品は、NextCloud 上で利用される Collabora Online の Built-in CODE Server です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "41cc2a99734355f3",
+    "source": "nodejs",
+    "product": "nodejs",
+    "title": "Wednesday, October 21, 2026 Security Releases",
+    "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+    "publishedAt": "2026-10-21T22:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "8e1499c10df13d97",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "Critical PHP Security Release",
+    "url": "https://wordpress.org/news/2026/10/critical-php-security-release/",
+    "publishedAt": "2026-10-21T13:44:09.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "b9612266fa675cb7",
+    "source": "php",
+    "product": "php",
+    "title": "Security advisory: Critical remote code execution vulnerabilities, update now",
+    "url": "https://www.php.net/index.php#2026-10-21-5",
+    "publishedAt": "2026-10-21T00:35:26.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "メーカーの評価が critical"
+    ],
+    "audience": "it",
+    "treatment": "facts",
+    "vendorSeverity": "critical"
+  },
+  {
+    "id": "1f9821dbfbaf6ff6",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.5.12 Released!",
+    "url": "https://www.php.net/index.php#2026-10-21-4",
+    "publishedAt": "2026-10-21T00:24:52.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "18b237a6ebcde977",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.4.27 Released!",
+    "url": "https://www.php.net/index.php#2026-10-21-3",
+    "publishedAt": "2026-10-21T00:20:54.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "0850fe4ffa560001",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.3.36 Released!",
+    "url": "https://www.php.net/index.php#2026-10-21-2",
+    "publishedAt": "2026-10-21T00:14:54.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "eda9134191192b6a",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.2.35 Released!",
+    "url": "https://www.php.net/index.php#2026-10-21-1",
+    "publishedAt": "2026-10-21T00:05:37.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "1d8a65a8b82e572d",
+    "source": "php",
+    "product": "php",
+    "title": "Upcoming Critical PHP Security Release",
+    "url": "https://www.php.net/index.php#2026-10-20-1",
+    "publishedAt": "2026-10-20T20:32:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "メーカーの評価が critical"
+    ],
+    "audience": "it",
+    "treatment": "facts",
+    "vendorSeverity": "critical"
+  },
+  {
+    "id": "1ee6e148b706c656",
+    "source": "ipa",
+    "product": "php",
+    "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+    "publishedAt": "2026-10-20T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "9aa2f45d911218f4",
+    "source": "ipa",
+    "product": "java",
+    "title": "Oracle Java の脆弱性対策について(2026年10月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html",
+    "publishedAt": "2026-10-20T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "fa752d9c3174b4d9",
+    "source": "mozilla",
+    "product": "ca-incident",
+    "title": "Protecting Firefox users following the compromise of eMudhra intermediate certificates",
+    "url": "https://blog.mozilla.org/security/2026/10/20/protecting-firefox-users-following-the-compromise-of-emudhra-intermediate-certificates/",
+    "publishedAt": "2026-10-20T12:54:54.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "認証局の事案らしい語句に一致"
+    ],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "8f924d6d4c3049b9",
+    "source": "slack-windows",
+    "product": "slack",
+    "title": "Slack for Windows 4.52.182",
+    "url": "https://slack.com/release-notes/windows#12890",
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "メーカーの評価が high"
+    ],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.52.182",
+    "vendorSeverity": "high"
+  },
+  {
+    "id": "c4d0320d2adf99d0",
+    "source": "slack-mac",
+    "product": "slack",
+    "title": "Slack for Mac 4.52.182",
+    "url": "https://slack.com/release-notes/osx#12883",
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "メーカーの評価が high"
+    ],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "4.52.182",
+    "vendorSeverity": "high"
+  },
+  {
+    "id": "10d9478e14213322",
+    "source": "kev",
+    "product": "other",
+    "title": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-106931"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "EG Secure Solutions の SiteGuard Server Edition に、OS コマンドインジェクションの脆弱性（CVE-2026-106931）があります。攻撃者が、影響を受ける製品が動作するシステム上で、root または SYSTEM 権限により任意の OS コマンドを実行できるおそれがあります。影響を受ける製品は EG Secure Solutions SiteGuard Server Edition です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d6e7755676f3146e",
+    "source": "kev",
+    "product": "other",
+    "title": "Plex Media Server External Control of File Name or Path Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-96652",
+      "CVE-2026-96654",
+      "CVE-2026-96655",
+      "CVE-2026-96656"
+    ],
+    "cveCount": 4,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Plex Media Server に、ファイル名またはパスの外部制御に関する脆弱性(CVE-2026-96656)があります。管理者ユーザーが任意のファイルを書き込めるようになり、書き込まれたファイルが読み込み時に実行されるおそれがあります。この脆弱性は CVE-2026-96652、CVE-2026-96654、CVE-2026-96655 と組み合わせて利用できる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "38ac3498b0ebe6e4",
+    "source": "kev",
+    "product": "other",
+    "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-96652",
+      "CVE-2026-96654",
+      "CVE-2026-96655",
+      "CVE-2026-96656"
+    ],
+    "cveCount": 4,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Plex Media Server にサーバサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-96655)があります。認証済みのユーザーが '/video/:/transcode/universal' のパスパラメータを通じて、内部または外部の任意のアドレスへリクエストを送信できるおそれがあります。この脆弱性は CVE-2026-96652、CVE-2026-96654、CVE-2026-96656 と連鎖させることが可能です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "16dac782112731e0",
+    "source": "kev",
+    "product": "other",
+    "title": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-96652",
+      "CVE-2026-96654",
+      "CVE-2026-96655",
+      "CVE-2026-96656"
+    ],
+    "cveCount": 4,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Plex Media Server に、Webページ内のエンコードされた URI スキームが適切に無害化されない脆弱性（CVE-2026-96654）があります。攻撃者が他のプラグインの関数を呼び出し、独自のパラメータを渡せるおそれがあります。この脆弱性は CVE-2026-96652、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "86062448b7f82ce5",
+    "source": "kev",
+    "product": "other",
+    "title": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-96652",
+      "CVE-2026-96654",
+      "CVE-2026-96655",
+      "CVE-2026-96656"
+    ],
+    "cveCount": 4,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Plex Media Server にサーバーサイドリクエストフォージェリ (SSRF) の脆弱性 (CVE-2026-96652) があります。任意の X-Plex-Token の値を使う攻撃者が、'protocol' パラメーターに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0eb75c48ab96cfd2",
+    "source": "kev",
+    "product": "other",
+    "title": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-110936"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Siemens Software Center に、信頼されない検索パスの要素 (Uncontrolled Search Path Element) に関する脆弱性があります (CVE-2026-110936)。認証済みのローカル攻撃者が、アプリケーションが検索するディレクトリに細工した DLL を配置することで、影響を受けるアプリケーションの権限で任意のコードを実行できるおそれがあります。影響を受ける製品は Siemens Software Center です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "9085f5ae4f3a38b7",
+    "source": "kev",
+    "product": "other",
+    "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "BeyondTrust Remote Supportに、スプーフィングによる認証回避の脆弱性(CVE-2026-102764)があります。リモートの攻撃者が、アプライアンス上でファイル操作を実行できるおそれがあります。影響を受ける製品はBeyondTrust Remote Supportです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "1796139615c24248",
+    "source": "kev",
+    "product": "fortinet",
+    "title": "Fortinet Multiple Products Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-61624"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Fortinet の FortiOS、FortiPAM、FortiProxy、FortiSwitchManager にパストラバーサルの脆弱性(CVE-2025-61624)があります。管理者プロファイルを持ち、少なくとも読み書き権限を持つ認証済みの攻撃者が、特定の CLI コマンドを通じて任意のファイルを書き込んだり削除したりできるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "2c362e2f398f7b40",
+    "source": "kev",
+    "product": "other",
+    "title": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-21589"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "CVE-2026-21589 は、外部の第三者からファイルやディレクトリにアクセスできてしまう脆弱性です。認証を受けていない攻撃者が、Webアプリケーションのルートディレクトリ内の特定のファイルにアクセスできるおそれがあります。影響を受ける製品は、Bitbucket Data Center、Confluence Data Center、Jira Service Management Data Center、Jira Software Data Center、Bamboo Data Center、Crowd Data Center、Crucible、Fisheye の影響を受けるバージョンです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "001c3f709b6b5e99",
+    "source": "jpcert",
+    "product": "other",
+    "title": "注意喚起: SiteGuard Server EditionにおけるOSコマンドインジェクションの脆弱性（CVE-2026-106931）に関する注意喚起 (公開)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260032.html",
+    "publishedAt": "2026-10-14T05:18:00.000Z",
+    "cves": [
+      "CVE-2026-106931"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "7c2e1c4a5ddb2842",
+    "source": "jpcert",
+    "product": "other",
+    "title": "注意喚起: 2026年10月マイクロソフトセキュリティ更新プログラムに関する注意喚起 (公開)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260031.html",
+    "publishedAt": "2026-10-14T02:25:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "78695a279395f284",
+    "source": "kev",
+    "product": "other",
+    "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ahsay AhsayCBS に、コマンドインジェクションの脆弱性(CVE-2026-105134)があります。Replication Receiver コンポーネントの /rps/api/json/UpdateReceivers.do エンドポイントで random パラメータを操作されることにより、リモートの攻撃者がオペレーティングシステムのコマンドを実行できるおそれがあります。この脆弱性は CVE-2026-105133 と組み合わせて利用される可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "e1c98542c773290d",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76519"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Secure Email Gateway に、相対パストラバーサルの脆弱性（CVE-2026-76519）があります。認証されていないリモートの攻撃者が、基盤となるオペレーティングシステム上に任意のファイルを書き込めるおそれがあります。影響を受ける製品は Cisco Secure Email Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "bc920c758a0377d6",
+    "source": "kev",
+    "product": "other",
+    "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ahsay AhsayCBSに不適切な認証の脆弱性(CVE-2026-105133)があります。API コンポーネントのcheckSysPwd関数におけるrandomパラメータの操作により、リモートの攻撃者が認証を回避できるおそれがあります。この脆弱性はCVE-2026-105134と連鎖させることが可能です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "1592525748450ad8",
+    "source": "kev",
+    "product": "paloalto",
+    "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-0322"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Palo Alto Networks PAN-OS にコードインジェクションの脆弱性(CVE-2026-0322)があります。ネットワークにアクセスできる認証済みの攻撃者が、ファイアウォール上で root 権限により任意のコードを実行できるおそれがあります。影響を受ける製品は Palo Alto Networks PAN-OS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "7cb30245bf9aa2bc",
+    "source": "windows-monthly",
+    "product": "windows-office",
+    "title": "Windows / Office の月例更新日（2026年10月）",
+    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct",
+    "publishedAt": "2026-10-13T18:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "毎月の定例の更新日"
+    ],
+    "audience": "both",
+    "treatment": "facts"
+  },
+  {
+    "id": "03dea6d752f27f33",
+    "source": "ipa",
+    "product": "windows-office",
+    "title": "Microsoft 製品の脆弱性対策について(2026年10月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/1014-ms.html",
+    "publishedAt": "2026-10-13T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "1ecc4e67e4a24434",
+    "source": "kev",
+    "product": "ivanti",
+    "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-13T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-104935"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ivanti Connect Secure に、なりすましによる認証回避の脆弱性(CVE-2026-104935)があります。リモートの認証されていない攻撃者が、任意のコマンドを実行できるおそれがあります。影響を受ける製品は Ivanti Connect Secure です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "056fda01a55f58e8",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Windows Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-13T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Windows Shell にコマンドインジェクションの脆弱性(CVE-2026-96951)があります。認証されていない攻撃者がネットワーク経由でセキュリティ機能を回避できるおそれがあります。影響を受ける製品は Microsoft Windows です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "daf93442133a13b7",
+    "source": "ipa",
+    "product": "other",
+    "title": "不正アクセスによる漏えい等の事案を踏まえ、速やかに実施すべき対策等について",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+    "publishedAt": "2026-10-08T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "32e9afb64e229c85",
+    "source": "kev",
+    "product": "other",
+    "title": " ISC BIND Data Processing Errors Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2015-5477"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "ISC BIND にデータ処理エラーの脆弱性(CVE-2015-5477)があります。リモートの攻撃者が TKEY クエリを送ることで、サービス拒否(DoS)を引き起こすおそれがあります。影響を受ける製品は ISC BIND です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "cf1120ddc89fd01c",
+    "source": "kev",
+    "product": "other",
+    "title": "Apache Struts Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2016-3081"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apache Struts にコマンドインジェクションの脆弱性（CVE-2016-3081）があります。Dynamic Method Invocation が有効な場合、method:prefix を介して、リモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Apache Struts です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "59a9a506b2947179",
+    "source": "kev",
+    "product": "other",
+    "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2023-22621",
+      "CVE-2023-22894"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Strapi に、機密情報が平文で保存される問題 (CVE-2023-22894) があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密情報を取得できるおそれがあります。この脆弱性は CVE-2023-22621 と組み合わせることで、リモートコード実行につながるおそれがあります。影響を受ける製品はサポート終了 (EoL) またはサービス終了 (EoS) の場合があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "3fb2590cd5b273c1",
+    "source": "kev",
+    "product": "other",
+    "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2021-3199"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "ONLYOFFICE Docs に、JWT を使用している場合に画像アップロードのパラメータ内の /.. シーケンスを介して発生するパストラバーサルの脆弱性(CVE-2021-3199)があります。この問題により、リモートコード実行につながるおそれがあります。影響を受ける製品は ONLYOFFICE Docs(Docs Server)です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "01f4cd5d397b77f0",
+    "source": "kev",
+    "product": "other",
+    "title": "ProFTPD Improper Access Control Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2015-3306"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "ProFTPD に不適切なアクセス制御の脆弱性(CVE-2015-3306)があります。site cpfr および site cpto コマンドを介して、リモートの攻撃者が任意のファイルの読み取りおよび書き込みを行えるおそれがあります。影響を受ける製品は ProFTPD です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "8289fb52de6294eb",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.1.3 Maintenance and Security Release",
+    "url": "https://wordpress.org/news/2026/10/wordpress-7-1-3-maintenance-and-security-release/",
+    "publishedAt": "2026-10-06T17:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "d54a9572458ee1a6",
+    "source": "ipa",
+    "product": "other",
+    "title": "「Movable Type」における複数の脆弱性について（JVN#91153973）",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/20261007-jvn.html",
+    "publishedAt": "2026-10-06T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "0b396369f86f9fa3",
+    "source": "kev",
+    "product": "citrix",
+    "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-04T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-88779"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Citrix NetScaler ADC(旧 Citrix ADC)および Citrix NetScaler Gateway(旧 Citrix Gateway)に、メモリバッファの境界内での操作の不適切な制限の脆弱性(CVE-2026-88779)があります。この脆弱性により、サービス拒否(DoS)が引き起こされるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "de971e32bde5f177",
+    "source": "jpcert",
+    "product": "citrix",
+    "title": "注意喚起: NetScaler ADCおよびNetScaler Gatewayにおける複数の脆弱性（CVE-2026-88771、CVE-2026-88772等）に関する注意喚起 (更新)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260029.html",
+    "publishedAt": "2026-10-02T05:15:00.000Z",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "b6d2d774b1178c4d",
+    "source": "kev",
+    "product": "other",
+    "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-102489",
+      "CVE-2026-102490"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Zammad GmbH の Zammad に、不適切な権限管理の脆弱性(CVE-2026-102490)があります。ローカルの zammad ユーザーが root に権限昇格できるおそれがあります。この脆弱性は CVE-2026-102489 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ba1c00bff0a7be3a",
+    "source": "kev",
+    "product": "other",
+    "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-102489",
+      "CVE-2026-102490"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Zammad GmbH の Zammad にセッション固定(Session Fixation)の脆弱性(CVE-2026-102489)があります。この脆弱性により、zammad ユーザーとしてリモートコード実行が可能になるおそれがあります。この脆弱性は CVE-2026-102490 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "6515f0cddeacb9ab",
+    "source": "kev",
+    "product": "fortinet",
+    "title": "Fortinet FortiMail Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-01T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-104286"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Fortinet FortiMail に、パストラバーサルと NULL バイト(NULL 文字)の不適切な無害化に関する脆弱性(CVE-2026-104286)があります。認証されていない攻撃者が、細工した HTTP または HTTPS リクエストを送ることで、基盤となるシステム上に任意のファイルを書き込めるおそれがあります。影響を受ける製品は Fortinet FortiMail です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b6792d6d712a88e7",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-30T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76504"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Catalyst SD-WAN Manager に、HTTP リクエスト内の URI エンコードの扱いが不適切であることに起因する hex encoding の脆弱性(CVE-2026-76504)があります。認証されていないリモートの攻撃者が、admin ユーザーの権限で影響を受けるシステムにアクセスできるおそれがあります。影響を受ける製品は Cisco Catalyst SD-WAN Manager です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b468ce0a66c911cc",
+    "source": "kev",
+    "product": "apple",
+    "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-29T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apple の iOS、macOS、iPadOS に含まれる CoreGraphics に、境界外書き込み(Out-of-Bounds Write)の脆弱性があります(CVE-2026-86950)。この脆弱性により、任意のコードが実行されるおそれがあります。影響を受ける製品は Apple iOS、macOS、iPadOS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d9ce53da25a639c8",
+    "source": "ipa",
+    "product": "citrix",
+    "title": "NetScaler ADCおよびNetScaler Gatewayの脆弱性について(CVE-2026-88771、CVE-2026-88772等)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20260928.html",
+    "publishedAt": "2026-09-27T15:00:00.000Z",
+    "cves": [
+      "CVE-2026-88771",
+      "CVE-2026-88772"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "54a888c0cd0bbb4b",
+    "source": "kev",
+    "product": "citrix",
+    "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-88772"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "d829d5e96527cced",
+    "source": "kev",
+    "product": "citrix",
+    "title": "Citrix NetScaler Improper Input Validation Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-88771"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Citrix NetScaler ADC および NetScaler Gateway に、不適切な入力検証の脆弱性(CVE-2026-88771)があります。認証されていない攻撃者が任意のコマンドを実行できるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "55d86c6d4fa552d9",
+    "source": "kev",
+    "product": "other",
+    "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-25T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-67279",
+      "CVE-2026-86060"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "MikroTik RouterOS に、動作ワークフローの不適切な強制(improper enforcement of behavioral workflow)に関する脆弱性(CVE-2026-67279)があります。認証されていないクライアントがセッションチャネルを開き、exec リクエストを送信できるおそれがあります。この脆弱性は連鎖させることで、CVE-2026-86060 を認証なしで悪用できる状態になるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0540d726361bd0b4",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft SharePoint Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-25T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-65660"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft SharePoint にコードインジェクションの脆弱性（CVE-2026-65660）があります。認可された攻撃者がネットワーク経由でコードを実行できるおそれがあります。影響を受ける製品は Microsoft SharePoint です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "78e49010c82b8a95",
+    "source": "kev",
+    "product": "wordpress",
+    "title": "WordPress Core Remote File Inclusion Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-25T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "WordPress Core にリモートファイルインクルードの脆弱性(CVE-2026-87902)があります。認証されていない攻撃者が、ページテンプレートの解決処理で、有効なテーマのディレクトリ外にある読み取り可能な任意のローカル `.php` ファイルを読み込ませることができ、リモートコード実行につながるおそれがあります。影響を受ける製品は WordPress Core です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "f15c544b80b7179c",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.4.26 Released!",
+    "url": "https://www.php.net/index.php#2026-09-24-5",
+    "publishedAt": "2026-09-24T15:26:06.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "0f1f76ac71036efc",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.2.34 Released!",
+    "url": "https://www.php.net/index.php#2026-09-24-4",
+    "publishedAt": "2026-09-24T13:53:04.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "5902fb026940c87a",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.5.11 Released!",
+    "url": "https://www.php.net/index.php#2026-09-24-3",
+    "publishedAt": "2026-09-24T11:40:51.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "9a51e99c191a0203",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.3.35 Released!",
+    "url": "https://www.php.net/index.php#2026-09-24-2",
+    "publishedAt": "2026-09-24T09:51:44.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "2db4a75bb734488e",
+    "source": "kev",
+    "product": "other",
+    "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-5430"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "WSO2 の複数製品にパストラバーサルの脆弱性(CVE-2026-5430)があります。これにより制限のないファイルアップロードが可能となり、リモートコード実行につながるおそれがあります。影響を受ける製品は WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "9ce4928278f27562",
+    "source": "kev",
+    "product": "adobe",
+    "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-71362"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性(CVE-2026-71362)があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を取得できるおそれがあります。影響を受ける製品は Adobe Commerce と Magento です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d0f2d3729b8c17b3",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.1.2 Release",
+    "url": "https://wordpress.org/news/2026/09/wordpress-7-1-2-release/",
+    "publishedAt": "2026-09-22T14:01:20.000Z",
+    "cves": [
+      "CVE-2026-87902"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "e7c9601555db3eff",
+    "source": "kev",
+    "product": "other",
+    "title": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-22T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-93952"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Arista VeloCloud Orchestrator (VCO) のオンプレミス版に、不適切な入力検証の脆弱性(CVE-2026-93952)があります。リモートの攻撃者が内部の特権機能にアクセスし、VCO のホストに影響を及ぼすおそれがあります。悪用に成功すると、オーケストレーターおよびそこで管理されるデータの機密性、完全性、可用性が損なわれるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "f950a647b1b7d6ac",
+    "source": "kev",
+    "product": "other",
+    "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-22T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-94127"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "F5 BIG-IP APM に、仮想サーバーにアクセスポリシーと OAuth プロファイルが設定されている場合にヒープベースのバッファオーバーフローが発生する脆弱性(CVE-2026-94127)があります。認証を受けていない攻撃者が、リモートでコードを実行できるおそれがあります。影響を受ける製品は F5 BIG-IP APM です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "1f79dc04e4dfa430",
+    "source": "kev",
+    "product": "other",
+    "title": "Check Point Multiple Products Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-22T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-93616"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Check Point の複数製品にパストラバーサルの脆弱性があります。認証されていない攻撃者が任意のスクリプトをアップロードして実行できるおそれがあります。影響を受ける製品は、Security Management Server、Multi-Domain Security Management Server、Log Server、Multi-Domain Log Server、SmartEvent です。(CVE-2026-93616)",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "e4dbb0fe29d1aaa6",
+    "source": "kev",
+    "product": "other",
+    "title": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-22T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-85102"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Check Point Security Gateway と Check Point Spark Firewall で、Site to Site VPN または Remote Access VPN を使用している場合に、証明書の検証が不適切になる脆弱性(CVE-2026-85102)があります。認証されていないリモートの攻撃者が、Gateway 上で任意のコードを実行できるおそれがあります。影響を受ける製品は Check Point Security Gateway と Check Point Spark Firewall です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "614b24e8eaac55d1",
+    "source": "kev",
+    "product": "other",
+    "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-21T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-7273"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Zyxel GS1900シリーズスイッチのCGIプログラムに、スタックベースのバッファオーバーフローの脆弱性(CVE-2026-7273)があります。LAN上の認証されていない攻撃者が、細工したHTTPリクエストを送信することで、OSコマンドを実行できる可能性があります。影響を受ける製品はZyxel GS1900シリーズスイッチです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "fcc424fdf9073a6b",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Race Condition Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-39964"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux Kernel にレース条件の脆弱性(CVE-2025-39964)があります。同一の AF_ALG ソケットに対して同時に書き込みが行われると、データが予期しない形で入り交じり、ソケットの内部状態に不整合が生じるおそれがあります。影響を受ける製品は Linux Kernel です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "28f5c6e7791735b6",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-53266"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux Kernel の ebtables SNAT ターゲットに境界外書き込み(out-of-bounds write)の脆弱性があります(CVE-2026-53266)。ARP の送信元ハードウェアアドレスを書き換える処理が、splice で取り込まれたファイルページを背後に持つ非線形 socket buffer のフラグメントへ直接書き込んでしまいます。影響を受ける製品は Linux Kernel で、対象製品はサポート終了(EoL/EoS)となっている可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ecd75cd241a07dc8",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-39682"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux KernelのTLS受信処理において、特殊な状態や例外的な状態の確認が不適切であるという問題(CVE-2025-39682)があります。rx_listから取り出されたゼロ長のレコードがrecvmsg()によるレコードタイプの処理を回避し、後続のTLSレコードが誤ったゼロコピーおよびキューイングの前提で処理されるおそれがあります。影響を受ける製品はLinux Kernelで、サポート終了(EoL/EoS)となっている製品が含まれる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "099d9926d100586c",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.1.1 Maintenance and Security Release",
+    "url": "https://wordpress.org/news/2026/09/wordpress-7-1-1-maintenance-and-security-release/",
+    "publishedAt": "2026-09-17T19:53:09.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "74706ad83ba2c9c4",
+    "source": "kev",
+    "product": "other",
+    "title": "Google Pixel Improper Authorization Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-16T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-58704"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Google Pixel のセルラーモデムに、不適切な認可の脆弱性(CVE-2026-58704)があります。ロジックの誤りにより、攻撃者が権限チェックを回避し、権限を昇格できるおそれがあります。影響を受ける製品は Google Pixel デバイスです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "a7f7899e9c2062c3",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-16T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76460"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Identity Services Engine (ISE) と Cisco ISE Passive Identity Connector (ISE-PIC) に、特権 API の不適切な使用に関する脆弱性 (CVE-2026-76460) があります。認証されていないリモートの攻撃者が、Web ベースの管理インターフェースを回避して、影響を受けるデバイスへ不正にアクセスするおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ba827ce882014ab8",
+    "source": "kev",
+    "product": "other",
+    "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-16T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-87886"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Acronis Backup の cPanel & WHM 向けプラグインおよび Plesk 向け拡張機能に、デフォルトの権限設定が不適切であるという脆弱性(CVE-2026-87886)があります。この問題により、権限昇格が可能になるおそれがあります。影響を受ける製品は、Acronis Backup の cPanel & WHM 用プラグインと Plesk 用拡張機能です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "cdf2c44a2071d5cc",
+    "source": "kubernetes",
+    "product": "kubernetes",
+    "title": "CVE-2026-76654",
+    "url": "https://github.com/kubernetes/kubernetes/issues/142098",
+    "publishedAt": "2026-09-14T16:42:26.000Z",
+    "cves": [
+      "CVE-2026-76654"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "adfb46aa477a4928",
+    "source": "kubernetes",
+    "product": "kubernetes",
+    "title": "CVE-2026-2270",
+    "url": "https://github.com/kubernetes/kubernetes/issues/142097",
+    "publishedAt": "2026-09-14T16:42:20.000Z",
+    "cves": [
+      "CVE-2026-2270"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "bd154d96a2a2a283",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-14T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76461"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Secure Email Gateway (SEG) 向けの Cisco AsyncOS ソフトウェアに SQL インジェクションの脆弱性があります（CVE-2026-76461）。認証されていないリモートの攻撃者が、基盤となるオペレーティングシステム上で root 権限により任意のコマンドを実行できるおそれがあります。影響を受ける製品は Cisco Secure Email Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "385c492d87e07db8",
+    "source": "kev",
+    "product": "other",
+    "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-84869"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "ConnectWise ScreenConnect に、不適切な権限管理と認可の欠如に関する脆弱性(CVE-2026-84869)があります。攻撃者が、アクティブなリモートセッションを通じて、認可やホストの確認なしにファイルを転送し実行できるおそれがあります。影響を受ける製品は ConnectWise ScreenConnect です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "8dcb0292838e0aee",
+    "source": "kev",
+    "product": "other",
+    "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-42016"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "JFrog Artifactoryに、不適切な認可の脆弱性(CVE-2026-42016)があります。トークンのスコープではなく、トークンの署名や発行者の検証チェックのみが行われることが原因で、権限昇格攻撃につながるおそれがあります。影響を受ける製品はJFrog Artifactoryです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "74cc0350f76e58b5",
+    "source": "kev",
+    "product": "other",
+    "title": "JFrog Artifactory Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-42018"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-42018)があり、匿名アクセスが無効に設定されている場合でも、内部の匿名ユーザー用トークンが未認証の呼び出し元に返されるおそれがあります。これにより、攻撃者が機密性の高いリソースにアクセスできる可能性があります。影響を受ける製品は JFrog Artifactory です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "786198bfe8236903",
+    "source": "kev",
+    "product": "other",
+    "title": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-85706"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "GitLab Community Edition および Enterprise Edition に、パストラバーサルの脆弱性(CVE-2026-85706)があります。リポジトリの commits API でパスの制限が不適切であり、認証も強制されていないことが原因です。認証されていないユーザーが任意のファイルを読み取れるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "9af12c6fad4e6f4a",
+    "source": "kev",
+    "product": "other",
+    "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-86060"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "MikroTik RouterOS に、コマンド内の引数区切り文字の不適切な無効化(Improper Neutralization of Argument Delimiters in a Command)に関する脆弱性(CVE-2026-86060)があります。攻撃者が信頼された RouterOS のポリシーマスクを変更でき、権限昇格につながるおそれがあります。影響を受ける製品は MikroTik RouterOS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "c2f751e1972d7cdd",
+    "source": "kev",
+    "product": "other",
+    "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-67277"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "MikroTik RouterOS の btest サービスに、重要な機能に対する認証が欠如している脆弱性(CVE-2026-67277)があります。攻撃者はカーネルメモリの情報を取得したり、サービス拒否(DoS)を引き起こしたりできるおそれがあります。影響を受ける製品は MikroTik RouterOS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0f03d43abdee44e9",
+    "source": "kev",
+    "product": "citrix",
+    "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-09T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-19490"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Citrix NetScaler ADC および NetScaler Gateway に、代替パスまたは代替チャネルを利用した認証回避の脆弱性(CVE-2026-19490)があります。NetScaler が AAA 仮想サーバー、または Gateway(SSL VPN、ICA Proxy、CVPN、RDP Proxy)として構成されている場合、認証されていないリモートの攻撃者が認証を回避できるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "f977e98587da0fbc",
+    "source": "kev",
+    "product": "fortinet",
+    "title": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-09T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-25249"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Fortinet の FortiOS、FortiSwitchManager、FortiSASE にヒープベースのバッファオーバーフローの脆弱性(CVE-2025-25249)があります。攻撃者が細工したパケットを送ることで、許可されていないコードやコマンドを実行できるおそれがあります。影響を受ける製品は Fortinet FortiOS、FortiSwitchManager、FortiSASE です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d6a2e68cc863fee9",
+    "source": "kev",
+    "product": "chrome",
+    "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-09T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-87491"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Google Chromium の V8 に境界外書き込み(out of bounds write)の脆弱性があります。リモートの攻撃者が細工した HTML ページを通じて、サンドボックス内で任意のコードを実行できるおそれがあります。Chromium を利用する複数のウェブブラウザーが影響を受ける可能性があり、Google Chrome、Microsoft Edge、Opera などが含まれますが、これらに限られません。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "b2985d59eb8de53c",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-09T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-20079"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Secure Firewall Management Center (FMC) Software と Cisco Security Cloud Control (SCC) Firewall Management に、代替パスまたはチャネルを使用した認証バイパスの脆弱性 (CVE-2026-20079) があります。認証されていないリモートの攻撃者が認証を回避し、影響を受けるデバイス上でスクリプトファイルを実行して、基盤となるオペレーティングシステムの root 権限を取得するおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "2e75e8b35fdaa4e3",
+    "source": "windows-monthly",
+    "product": "windows-office",
+    "title": "Windows / Office の月例更新日（2026年9月）",
+    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Sep",
+    "publishedAt": "2026-09-08T18:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "毎月の定例の更新日"
+    ],
+    "audience": "both",
+    "treatment": "facts"
+  },
+  {
+    "id": "c45ff52c6312d045",
+    "source": "ipa",
+    "product": "windows-office",
+    "title": "Microsoft 製品の脆弱性対策について(2026年9月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html",
+    "publishedAt": "2026-09-08T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "64b62dd8867e151c",
+    "source": "ipa",
+    "product": "adobe",
+    "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年9月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html",
+    "publishedAt": "2026-09-08T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "4df57446bd3acf1b",
+    "source": "kev",
+    "product": "adobe",
+    "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-75650"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Adobe Commerce と Magento Open Source に、テンプレートエンジンで使用される特殊要素の不適切な無効化の脆弱性（CVE-2026-75650）があります。攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Adobe Commerce と Magento Open Source です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "3cf9cfd8ae341036",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Windows Link Following Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-81963"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Windows の Update Stack にリンク追跡(Link Following)の脆弱性があり、CVE-2026-81963 として識別されています。ローカルの攻撃者が権限をSYSTEMまで昇格できるおそれがあります。影響を受ける製品は Microsoft Windows です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "9a052d4158ad09f3",
+    "source": "kev",
+    "product": "other",
+    "title": "N-able N-central Static Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-86218"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "N-able N-central に静的コードインジェクションの脆弱性(CVE-2026-86218)があります。この脆弱性により、認証前のリモートコード実行が可能になるおそれがあります。影響を受ける製品は N-able N-central です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "a2e68c72a81b09d8",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-08T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-85880"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Windows の Advanced Local Procedure Call に、ヒープベースのバッファオーバーフローの脆弱性(CVE-2026-85880)があります。攻撃者がローカルで権限を昇格させることができるおそれがあります。影響を受ける製品は Microsoft Windows です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "3fe94915195edb77",
+    "source": "kev",
+    "product": "chrome",
+    "title": "Google Chromium V8 Type Confusion Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-04T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-85046"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Google Chromium の V8 に型混同(Type Confusion)の脆弱性があります。リモートの攻撃者が細工した HTML ページを通じて、サンドボックス内で任意のコードを実行できるおそれがあります。Chromium を利用する複数のウェブブラウザ(Google Chrome、Microsoft Edge、Opera など)が影響を受ける可能性があります。(CVE-2026-85046)",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "7e05094174f977f2",
+    "source": "kev",
+    "product": "other",
+    "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-59822"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "BerriAI LiteLLM の MCP Streamable HTTP エンドポイントに不適切な認証の脆弱性(CVE-2026-59822)があります。認証されていない攻撃者が、任意の Bearer トークンを使って認証済みの MCP セッションを確立できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "10c6fb453a75e160",
+    "source": "kev",
+    "product": "other",
+    "title": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-42271",
+      "CVE-2026-48710"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Kludex Starlette に HTTP リクエスト/レスポンススマグリングの脆弱性(CVE-2026-48710)があります。攻撃者がホスト部分にパスを注入し、実際のパスの前に付加できるため、再構築された URL のパスに依存する認証では認証バイパスなどの問題につながるおそれがあります。この脆弱性は CVE-2026-42271 と連鎖させられる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "853745872a1b36fb",
+    "source": "kev",
+    "product": "other",
+    "title": "Kestra OSS OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-49869"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Kestra OSS に OS コマンドインジェクションの脆弱性があります(CVE-2026-49869)。認証されていないリモートの攻撃者が、認証情報なしで任意のワークフローを作成して実行できるおそれがあります。影響を受ける製品は Kestra の Kestra OSS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "cd3144266bc19fa6",
+    "source": "kev",
+    "product": "other",
+    "title": "JFrog Artifactory Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-82329"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の環境では、ネットワークにアクセスできる認証されていない攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "f5760850d270ba9e",
+    "source": "kev",
+    "product": "other",
+    "title": "Sangoma Switchvox SQL Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-9586"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Sangoma Switchvox に SQL インジェクションの脆弱性(CVE-2026-9586)があります。認証されていないリモートの攻撃者が、細工した単一のリクエストにより、バックエンドの PostgreSQL データベースに対して任意の SQL 文を実行できるおそれがあります。これによりデータベース操作やリモートコード実行が行われるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ee295326bfe8a36c",
+    "source": "kev",
+    "product": "other",
+    "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-83548"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "SonicWall SMA1000 Appliances にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性があります(CVE-2026-83548)。認証されていないリモートの攻撃者が、機密性の高い機能への不正なアクセスや、不正な操作を行えるおそれがあります。影響を受ける製品は SonicWall SMA1000 Appliances です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "6b4b7577fc45a1c4",
+    "source": "kev",
+    "product": "other",
+    "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-09-02T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-83549"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "SonicWall SMA1000 Appliances に、OSコマンドインジェクションの脆弱性(CVE-2026-83549)があります。管理者として認証されたリモートの攻撃者が、任意のOSコマンドを実行できるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0dbabcea6c2d94d9",
+    "source": "kev",
+    "product": "other",
+    "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-31T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-81578",
+      "CVE-2026-82078"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "PaperCut NG/MF に unsafe reflection の脆弱性があり、攻撃者がシステム設定パラメータを操作できるおそれがあります。これにより、アプリケーションのクラスパス上にある任意の Java バイトコードが PaperCut サーバープロセスのセキュリティコンテキストで実行されるおそれがあります。この脆弱性は CVE-2026-81578 と連鎖させることができます(CVE-2026-82078)。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "2e404958d11bd295",
+    "source": "kev",
+    "product": "other",
+    "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-31T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-81578",
+      "CVE-2026-82078"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "PaperCut NG/MF に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-81578)があります。認証されていないリモートの攻撃者が、特定のシステム設定を変更できるおそれがあります。この脆弱性は CVE-2026-82078 と連鎖させることができます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "989aa559dde3d5b9",
+    "source": "kev",
+    "product": "other",
+    "title": "ownCloud Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2023-49105"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "ownCloud に不適切な認証の脆弱性（CVE-2023-49105）があります。被害者のユーザー名が分かっており、かつ被害者に signing-key が設定されていない場合、攻撃者が認証なしで任意のファイルにアクセスしたり、変更したり、削除したりできるおそれがあります。影響を受ける製品は ownCloud です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "1a8c5d33557668c8",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Unspecified Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-53362"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux Kernel に詳細が特定されていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワークサブシステムを介して権限昇格が可能になるおそれがあります。攻撃者が権限を昇格できる可能性があります。影響を受ける製品は Suse、Red Hat をはじめ、Linux を使用する複数の製品にわたります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "2977d6efd67cbe57",
+    "source": "kev",
+    "product": "other",
+    "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-66384"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "02457117d280f5e0",
+    "source": "kev",
+    "product": "other",
+    "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2021-23758"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ajax.NET Professional(AjaxPro)に、信頼できないデータのデシリアライズに関する脆弱性(CVE-2021-23758)があります。任意の .NET クラスを介してリモートコード実行が可能になるおそれがあります。影響を受ける製品は Ajax.NET Professional で、サポート終了(EoL/EoS)となっている可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "0a5d7800fe76d8b2",
+    "source": "kev",
+    "product": "other",
+    "title": "Red Hat Libuser Race Condition Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2015-3246"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Red Hat の libuser に競合状態(レースコンディション)の脆弱性(CVE-2015-3246)があります。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d82828f88a185ce1",
+    "source": "kev",
+    "product": "other",
+    "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2015-5287"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Red Hat Automatic Bug Reporting Tool (ABRT) に権限昇格の脆弱性があります(CVE-2015-5287)。予測可能な名前のファイルに対するシンボリックリンク攻撃により、特定の権限を持つローカルユーザーが権限を取得できるおそれがあります。影響を受ける製品は Red Hat Automatic Bug Reporting Tool (ABRT) で、サポートが終了している可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "5d9e9d80c228bc6b",
+    "source": "kev",
+    "product": "other",
+    "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2022-0995"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Linux Kernelに境界外メモリ書き込み(out-of-bounds write)の脆弱性があります(CVE-2022-0995)。ローカルユーザーが特権を取得したり、システムをサービス拒否(DoS)状態にしたりするおそれがあります。影響を受ける製品はLinux Kernelです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "8ea3fa7b7a03d0ac",
+    "source": "kev",
+    "product": "citrix",
+    "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-8452"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Citrix NetScaler ADC および NetScaler Gateway に、メモリバッファの境界内での操作に対する不適切な制限の脆弱性（CVE-2026-8452）があります。この問題により、サービス拒否（DoS）が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "106fea48675949de",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-26T00:00:00.000Z",
+    "cves": [
+      "CVE-2019-1068"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft SQL Server にリモートコード実行の脆弱性(CVE-2019-1068)があります。攻撃者が SQL Server Database Engine のサービスアカウントの権限でコードを実行できるおそれがあります。影響を受ける製品は Microsoft SQL Server です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "49a7e7f0bc5973d4",
+    "source": "kev",
+    "product": "other",
+    "title": "Gitea Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-25T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-60004"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Giteaにコードインジェクションの脆弱性(CVE-2026-60004)があります。リポジトリへの書き込み権限を持つ攻撃者が、diffpatch APIエンドポイントに悪意のあるパッチを送信することで、実行可能なGitフックを仕込むことができます。その結果、Giteaのサービスアカウントとしてシェルコマンドを実行されるおそれがあります。影響を受ける製品はGiteaです。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "a90b5c576e2f583f",
+    "source": "kev",
+    "product": "oracle",
+    "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-21962"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "7bf9b2525ac085d7",
+    "source": "kev",
+    "product": "other",
+    "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-21T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-73570"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Synacor の Zimbra Collaboration Suite (ZCS) に OS コマンドインジェクションの脆弱性 (CVE-2026-73570) があります。認証されていない攻撃者が細工した SMTP リクエストを送信することで、Zimbra ユーザーの権限で任意のオペレーティングシステムコマンドを実行されるおそれがあります。影響を受ける製品は Zimbra Collaboration Suite (ZCS) です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "1047cff57826af4e",
+    "source": "kev",
+    "product": "other",
+    "title": "TrueConf Server Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-72530"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "TrueConf Server にコードインジェクションの脆弱性(CVE-2026-72530)があります。ポート 4307/TCP にネットワーク経由でアクセスできる認証されていないリモートの攻撃者が、細工したスクリプトを使って隔離された環境から抜け出し、ホストシステム上で任意のコードを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "e339ad776af4db55",
+    "source": "kev",
+    "product": "other",
+    "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-72529"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "TrueConf Server に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-72529)があります。ネットワーク経由で 4307/TCP ポートにアクセスできる認証されていないリモートの攻撃者が、任意のスクリプトを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "48e00341981dc3b1",
+    "source": "kev",
+    "product": "other",
+    "title": "MLflow Server-Side Request Forgery Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-19T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-64849"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "MLflow にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-64849)があります。攻撃者が内部サービスやクラウドのメタデータサービスにアクセスし、response_status と response_body を受け取ることができるおそれがあります。影響を受ける製品は MLflow です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "89c4c7d219d590bf",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-33824"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Internet Key Exchange (IKE) Service Extensions に、二重解放(double free)の脆弱性(CVE-2026-33824)があります。この脆弱性により、リモートからコードを実行されるおそれがあります。影響を受ける製品は Microsoft Internet Key Exchange (IKE) Service Extensions です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "f03234cffa3b31d9",
+    "source": "kev",
+    "product": "other",
+    "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-59310"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Broadcom VMware vCenter にパストラバーサルの脆弱性(CVE-2026-59310)があります。vCenter にネットワークアクセスできる攻撃者が、任意のコードを実行できるおそれがあります。影響を受ける製品は Broadcom VMware vCenter です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ca5f9dd3a1868a33",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-55040"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft SharePoint に、弱い認証(weak authentication)に関する脆弱性(CVE-2026-55040)があります。認証されていない攻撃者がネットワーク経由でセキュリティ機能を回避できるおそれがあります。影響を受ける製品は Microsoft SharePoint です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "d5b74f3d7f688986",
+    "source": "kev",
+    "product": "apple",
+    "title": "Apple macOS Improper Authentication Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-65400"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apple macOS に不適切な認証の脆弱性(CVE-2026-65400)があります。ネットワーク上の攻撃者が、有効な認証情報なしで画面共有(Screen Sharing)に認証できるおそれがあります。影響を受ける製品は Apple macOS です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "031f65aaf44edc65",
+    "source": "kev",
+    "product": "other",
+    "title": "Ray-Project Ray Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-17T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-62593"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "19dd6d12a0f2cddf",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.0.4 Release",
+    "url": "https://wordpress.org/news/2026/08/wordpress-7-0-4-release/",
+    "publishedAt": "2026-08-12T14:45:53.000Z",
+    "cves": [
+      "CVE-2026-65640"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "16e2ca4929e73d9d",
+    "source": "ipa",
+    "product": "windows-office",
+    "title": "Microsoft 製品の脆弱性対策について(2026年8月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
+    "publishedAt": "2026-08-11T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "01fb1e6166bdb4e8",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-20349"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Secure Firewall Adaptive Security Appliance (ASA) および Secure Firewall Threat Defense (FTD) に、ヒープ検査 (heap inspection) に関する脆弱性 (CVE-2026-20349) があります。認証されていないリモートの攻撃者が、デバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "8ebc43cef790338d",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-68820"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Windows の Ancillary Function Driver for WinSock に、use-after-free(解放後使用)の脆弱性(CVE-2026-68820)があります。権限を持つ攻撃者がローカルで権限を昇格できるおそれがあります。影響を受ける製品は Microsoft Windows の Ancillary Function Driver for WinSock です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "fab09ba699b12110",
+    "source": "kev",
+    "product": "other",
+    "title": "Metabase SQL Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-08-11T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-72898"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "MetabaseにSQLインジェクションの脆弱性があり、認証されていないリモートの攻撃者がMetabaseのアプリケーションデータベースに任意のSQLを注入できるおそれがあります。これにより、攻撃者がインスタンスの管理者権限を得られる可能性があります。その結果、アプリケーション設定の変更、接続先データベースの保存済み認証情報の窃取、それらの接続経由で参照できるデータの読み取りやエクスポートが行われるおそれがあります。対象製品はMetabase(CVE-2026-72898)です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-07T16:05:31.182Z"
+    }
+  },
+  {
+    "id": "ef83e37b08c730cc",
+    "source": "kubernetes",
+    "product": "kubernetes",
+    "title": "CVE-2026-19444",
+    "url": "https://github.com/kubernetes/kubernetes/issues/141294",
+    "publishedAt": "2026-08-10T14:49:49.000Z",
+    "cves": [
+      "CVE-2026-19444"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  }
+]

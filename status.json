@@ -1,0 +1,118 @@
+{
+  "fetchedAt": "2026-11-07T16:05:31.182Z",
+  "sources": [
+    {
+      "id": "kev",
+      "name": "CISA KEV",
+      "ok": true,
+      "notModified": false,
+      "entries": 1769,
+      "items": 107
+    },
+    {
+      "id": "mozilla",
+      "name": "Mozilla Security Blog",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 1
+    },
+    {
+      "id": "jpcert",
+      "name": "JPCERT/CC",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 6
+    },
+    {
+      "id": "ipa",
+      "name": "IPA",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 10
+    },
+    {
+      "id": "jvn",
+      "name": "JVN",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 20
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "ok": true,
+      "notModified": false,
+      "entries": 95,
+      "items": 4
+    },
+    {
+      "id": "chrome",
+      "name": "Chrome Releases",
+      "ok": true,
+      "notModified": false,
+      "entries": 2,
+      "items": 2
+    },
+    {
+      "id": "windows-monthly",
+      "name": "Windows 月例更新日（日付の計算）",
+      "ok": true,
+      "notModified": false,
+      "entries": 2,
+      "items": 2
+    },
+    {
+      "id": "slack-windows",
+      "name": "Slack (Windows)",
+      "ok": true,
+      "notModified": false,
+      "entries": 41,
+      "items": 3
+    },
+    {
+      "id": "slack-mac",
+      "name": "Slack (Mac)",
+      "ok": true,
+      "notModified": false,
+      "entries": 44,
+      "items": 3
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "ok": true,
+      "notModified": false,
+      "entries": 78,
+      "items": 2
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 11
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "ok": true,
+      "notModified": true,
+      "entries": 0,
+      "items": 6
+    }
+  ],
+  "ai": {
+    "requested": 107,
+    "summarized": 105,
+    "rejected": 2,
+    "refused": 0,
+    "errors": 0,
+    "pending": 2,
+    "costUsd": 0.31076800000000004
+  }
+}
