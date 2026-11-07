@@ -52,6 +52,7 @@ function toEntry(date: Date): Entry {
 export const windowsMonthly: Source = {
   id: WINDOWS_MONTHLY_SOURCE,
   name: "Windows 月例更新日（日付の計算）",
+  offline: true,
   async load(_get, now) {
     const dates: Date[] = [];
     for (let back = 0; back < MONTHS; back += 1) {

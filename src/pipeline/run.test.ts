@@ -43,6 +43,50 @@ const previousItem = (overrides: Partial<Item> = {}): Item => ({
 const empty = { items: [], kevCves: [] };
 
 describe("runPipeline", () => {
+  it("通信する情報源がすべて失敗したら、取得時刻を前回のままにする", async () => {
+    const failing = source("a", async () => {
+      throw new Error("offline");
+    });
+    const computed = {
+      ...source("calc", async () => [entry({ source: "calc", key: "m" })]),
+      offline: true,
+    };
+    const result = await runPipeline([failing, computed], get, now, {
+      items: [],
+      kevCves: [],
+      fetchedAt: "2026-11-06T00:00:00.000Z",
+    });
+    expect(result.allFailed).toBe(true);
+    expect(result.status.fetchedAt).toBe("2026-11-06T00:00:00.000Z");
+  });
+
+  it("1つでも取得できれば、取得時刻を進める", async () => {
+    const failing = source("a", async () => {
+      throw new Error("offline");
+    });
+    const working = source("b", async () => []);
+    const result = await runPipeline([failing, working], get, now, {
+      items: [],
+      kevCves: [],
+      fetchedAt: "2026-11-06T00:00:00.000Z",
+    });
+    expect(result.allFailed).toBe(false);
+    expect(result.status.fetchedAt).toBe(now.toISOString());
+  });
+
+  it("更新がないだけの回は失敗に数えない", async () => {
+    const unchanged = source("a", async () => {
+      throw new NotModifiedError("x");
+    });
+    const result = await runPipeline([unchanged], get, now, {
+      items: [],
+      kevCves: [],
+      fetchedAt: "2026-11-06T00:00:00.000Z",
+    });
+    expect(result.allFailed).toBe(false);
+    expect(result.status.fetchedAt).toBe(now.toISOString());
+  });
+
   it("1つの情報源が失敗しても他は処理を続ける", async () => {
     const { items, status } = await runPipeline(
       [

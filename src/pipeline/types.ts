@@ -93,6 +93,8 @@ export type Get = (
 export interface Source {
   id: string;
   name: string;
+  /** 通信しない情報源。全情報源の失敗の判定と取得時刻の更新に数えない */
+  offline?: boolean;
   load(get: Get, now: Date): Promise<Entry[]>;
 }
 
