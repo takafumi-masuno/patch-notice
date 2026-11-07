@@ -1,5 +1,6 @@
 import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
+import { isHttpsUrl } from "./site.ts";
 
 export const PRODUCT_NAMES: Record<ProductId, string> = {
   "windows-office": "Windows / Microsoft 製品",
@@ -64,6 +65,9 @@ const EMPLOYEE_LEAD: Record<Urgency, string> = {
 const MANAGED_NOTE =
   "会社の管理で更新が配信される端末は、情シスの案内に従ってください。";
 
+/** AI の文章を出す場所では、必ずこの表示を付ける */
+export const AI_SUMMARY_LABEL = "AI 要約";
+
 export interface EmployeeNotice {
   subject: string;
   body: string;
@@ -80,11 +84,40 @@ export interface Notice {
   employee?: EmployeeNotice;
 }
 
+/** confirmed: 項目自体の悪用、related: 関連する CVE の悪用、none: 確認した情報がない */
+export type ExploitationStatus = "confirmed" | "related" | "none";
+
+/** none は「悪用されていない」という意味ではないので、そう読める語を使わない */
+export const EXPLOITATION_LABELS: Record<ExploitationStatus, string> = {
+  confirmed: "悪用確認",
+  related: "関連する CVE の悪用確認",
+  none: "確認情報なし",
+};
+
+export const EXPLOITATION_DETAILS: Record<ExploitationStatus, string> = {
+  confirmed: "悪用が確認されています。",
+  related:
+    "関連する CVE の悪用が確認されています。この項目のすべての CVE が悪用されているとは限りません。",
+  none: "悪用を確認した情報はありません。悪用がないことを示すものではありません。",
+};
+
 /** 関連する CVE の一部だけが悪用されている場合があるので、項目全体の断定と分ける */
-function exploitationNote(item: Item): string {
+export function exploitationStatus(item: Item): ExploitationStatus {
+  if (!item.exploited) return "none";
   return item.urgencyReasons.includes(RELATED_KEV_REASON)
+    ? "related"
+    : "confirmed";
+}
+
+function exploitationNote(item: Item): string {
+  return exploitationStatus(item) === "related"
     ? "関連する CVE の悪用が確認されています。"
     : "悪用が確認されています。";
+}
+
+/** 画面に出す製品名。other は文中向けの語なので、一覧では別の語にする */
+export function productLabel(product: ProductId): string {
+  return product === "other" ? "その他" : PRODUCT_NAMES[product];
 }
 
 /** AI の要約がない項目に出す文。公開データの事実だけで組み立てる */
@@ -143,6 +176,18 @@ function employeeNotice(item: Item): EmployeeNotice | undefined {
     subject: `【${URGENCY_LABELS[item.urgency]}】${PRODUCT_NAMES[item.product]}の更新のお願い`,
     body: lines.join("\n"),
   };
+}
+
+/** 情シスがチャットなどへ貼る文。AI の要約は含めない */
+export function itCopyText(item: Item, notice: Notice): string {
+  const lines = [item.title, notice.itAction];
+  if (isHttpsUrl(item.url)) lines.push(`公式情報: ${item.url}`);
+  return lines.join("\n");
+}
+
+/** 社員へ送る文。AI の要約は含めない */
+export function employeeCopyText(employee: EmployeeNotice): string {
+  return `件名: ${employee.subject}\n\n${employee.body}`;
 }
 
 /**

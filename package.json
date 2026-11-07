@@ -10,6 +10,8 @@
     "format": "biome format --write",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "e2e:build": "node e2e/build.ts",
+    "e2e": "playwright test",
     "pipeline": "node --env-file-if-exists=.env src/pipeline/cli.ts"
   },
   "dependencies": {
@@ -20,7 +22,9 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@biomejs/biome": "2.4.2",
+    "@playwright/test": "1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

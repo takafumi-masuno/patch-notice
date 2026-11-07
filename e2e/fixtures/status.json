@@ -1,0 +1,22 @@
+{
+  "fetchedAt": "2026-11-07T03:00:00.000Z",
+  "sources": [
+    {
+      "id": "sample-feed",
+      "name": "サンプル配信",
+      "ok": true,
+      "notModified": false,
+      "entries": 8,
+      "items": 8
+    },
+    {
+      "id": "broken-feed",
+      "name": "停止中の配信",
+      "ok": false,
+      "notModified": false,
+      "entries": 0,
+      "items": 0,
+      "error": "timeout"
+    }
+  ]
+}

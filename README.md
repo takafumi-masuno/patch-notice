@@ -2,6 +2,38 @@
 
 情シスの周知に使える、脆弱性とアップデートの情報サイトです。現在は開発中です。
 
+## 画面
+
+| URL | 内容 |
+|---|---|
+| `/` | 直近7日の要対応と要確認、絞り込み付きの全件一覧 |
+| `/items/[id]/` | 悪用の状況、要約、情シスの対応、社員向けの周知文、出典 |
+| `/certificates/` | 証明書の期限、認証局の事案 |
+| `/feed.xml` | 全件の RSS（新しい順に50件） |
+| `/feed-action.xml` | 要対応の RSS（新しい順に50件） |
+
+```sh
+pnpm run pipeline  # data/ を作る
+pnpm dev           # http://localhost:3000/patch-notice/
+```
+
+ビルド時に `data/` を読みます。`data/` がなければ、全ページを準備中の表示にします。別の場所を読むときは `PATCH_NOTICE_DATA_DIR` を指定します。
+
+## テスト
+
+```sh
+pnpm test                               # ユニットテスト
+pnpm exec playwright install chromium   # 初回のみ
+pnpm e2e:build                          # E2E 用にデータあり、データなしの2種類を書き出す
+pnpm e2e                                # 画面とアクセシビリティのテスト
+```
+
+E2E のデータは `e2e/fixtures/` の自作データです。実際の記事は使いません。
+
+## 証明書の期限
+
+`src/content/certificates.json` に手で登録します。公式情報を見て日付を確認し、`sourceUrl` と確認日の `checkedAt` を入れます。形式の誤りや `https` でないリンクは、ビルドで止まります。
+
 ## データ取得
 
 ```sh

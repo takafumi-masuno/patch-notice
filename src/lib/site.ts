@@ -11,3 +11,12 @@ export function absoluteUrl(path: string): string {
   }
   return `${SITE_ORIGIN}${BASE_PATH}${path}`;
 }
+
+/** 公開データのリンクに使う。`javascript:` などを画面へ出さない */
+export function isHttpsUrl(url: string): boolean {
+  try {
+    return new URL(url).protocol === "https:";
+  } catch {
+    return false;
+  }
+}

@@ -2,7 +2,15 @@ import { describe, expect, it } from "vitest";
 import { audienceFor } from "../pipeline/products.ts";
 import { RELATED_KEV_REASON } from "../pipeline/reasons.ts";
 import type { Item, ProductId, Urgency } from "../pipeline/types.ts";
-import { noticeFor, PRODUCT_NAMES } from "./notice.ts";
+import {
+  EXPLOITATION_LABELS,
+  employeeCopyText,
+  exploitationStatus,
+  itCopyText,
+  noticeFor,
+  PRODUCT_NAMES,
+  productLabel,
+} from "./notice.ts";
 
 const item = (overrides: Partial<Item> = {}): Item => ({
   id: "1",
@@ -23,6 +31,53 @@ const item = (overrides: Partial<Item> = {}): Item => ({
 
 const PRODUCTS = Object.keys(PRODUCT_NAMES) as ProductId[];
 const URGENCIES: Urgency[] = ["action", "review", "normal"];
+
+describe("exploitationStatus", () => {
+  it("悪用の根拠で3つに分ける", () => {
+    expect(exploitationStatus(item({ exploited: true }))).toBe("confirmed");
+    expect(
+      exploitationStatus(
+        item({ exploited: true, urgencyReasons: [RELATED_KEV_REASON] }),
+      ),
+    ).toBe("related");
+    expect(exploitationStatus(item())).toBe("none");
+  });
+
+  it("確認できていない項目を悪用なしと断定しない", () => {
+    expect(EXPLOITATION_LABELS.none).toBe("確認情報なし");
+    expect(Object.values(EXPLOITATION_LABELS).join()).not.toContain("悪用なし");
+  });
+});
+
+describe("productLabel", () => {
+  it("その他の製品は一覧向けの語にする", () => {
+    expect(productLabel("other")).toBe("その他");
+    expect(productLabel("chrome")).toBe(PRODUCT_NAMES.chrome);
+  });
+});
+
+describe("コピーする文", () => {
+  const ai = item({ summary: { text: "AI の要約", origin: "ai" } });
+
+  it("情シス向けに題名、対応、公式リンクを入れ、AI の要約は入れない", () => {
+    const text = itCopyText(ai, noticeFor(ai));
+    expect(text).toContain("Title");
+    expect(text).toContain(noticeFor(ai).itAction);
+    expect(text).toContain("公式情報: https://example.com/");
+    expect(text).not.toContain("AI の要約");
+  });
+
+  it("https でないリンクはコピーする文に入れない", () => {
+    const unsafe = item({ url: "javascript:alert(1)" });
+    expect(itCopyText(unsafe, noticeFor(unsafe))).not.toContain("javascript");
+  });
+
+  it("社員向けに件名と本文を入れる", () => {
+    expect(employeeCopyText({ subject: "件名A", body: "本文B" })).toBe(
+      "件名: 件名A\n\n本文B",
+    );
+  });
+});
 
 describe("noticeFor", () => {
   it("全ての製品と緊急度で、情シスの対応と要約を出す", () => {
