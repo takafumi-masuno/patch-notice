@@ -290,9 +290,14 @@ test.describe("出典", () => {
     await page.goto(ROOT);
     const card = page.locator("section[aria-labelledby=priority] li").first();
     await expect(card).toContainText("出典: サンプル配信");
-    await expect(page.locator("tbody tr").first()).toContainText(
-      "出典: サンプル配信",
-    );
+    // 幅によって表示する場所が変わるので、見えている要素で確かめる
+    await expect(
+      page
+        .locator("tbody tr")
+        .first()
+        .getByText("出典: サンプル配信")
+        .filter({ visible: true }),
+    ).toHaveCount(1);
     const xml = await (await request.get(`${ROOT}feed.xml`)).text();
     const { rss } = new XMLParser().parse(xml);
     expect(rss.channel.item[0].description).toContain("（出典: サンプル配信）");

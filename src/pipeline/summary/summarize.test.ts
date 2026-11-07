@@ -77,6 +77,15 @@ describe("本文を取得できない項目", () => {
     expect(sourcesNeedingBody([item("a")], store, {}).size).toBe(0);
   });
 
+  it("情報源を読めて本文もあれば、通常どおり要約する", async () => {
+    const summarize = always(success);
+    const { store } = await run([item("a")], summarize, {
+      loadedSources: new Set(["kev"]),
+    });
+    expect(summarize).toHaveBeenCalledTimes(1);
+    expect(store.a.text).toBe(TEXT);
+  });
+
   it("情報源を読めなかった場合は、要約待ちのまま残す", async () => {
     const { store, status } = await run([item("a")], always(success), noBody);
     expect(store.a).toBeUndefined();
