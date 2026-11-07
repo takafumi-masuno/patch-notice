@@ -68,6 +68,16 @@ describe("checkSummary", () => {
     );
   });
 
+  it("語の頭文字が偶然並ぶだけの製品名は通さない", () => {
+    const email = {
+      ...source,
+      body: `${source.body} It is in Cisco Secure Email.`,
+    };
+    expect(checkSummary(email, `${good}Cisco ISE の問題です。`)).toContain(
+      "word:ISE",
+    );
+  });
+
   it("綴りの誤りは略語として通さない", () => {
     expect(problemsOf(`${good}Enginee の問題です。`)).toContain("word:Enginee");
   });

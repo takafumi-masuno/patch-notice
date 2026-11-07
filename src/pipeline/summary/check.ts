@@ -26,14 +26,19 @@ function matches(text: string, pattern: RegExp): string[] {
   return text.match(pattern) ?? [];
 }
 
-/** DoS と denial of service のように、略語が元データの語の頭文字に一致するか */
-function isAbbreviationIn(word: string, lowerSource: string): boolean {
-  if (!/[A-Z]/.test(word) || !/^[A-Za-z]+$/.test(word)) return false;
-  const initials = lowerSource
-    .split(/[^a-z0-9]+/)
-    .map((token) => token.charAt(0))
-    .join("");
-  return initials.includes(word.toLowerCase());
+/** 元データに正式名称があるときだけ通す略語。製品名の取り違えを通さないよう、一覧で限定する */
+const ABBREVIATIONS: Readonly<Record<string, RegExp>> = {
+  dos: /denial[- ]of[- ]service/i,
+  ssrf: /server[- ]side request forgery/i,
+  rce: /remote code execution/i,
+  xss: /cross[- ]site scripting/i,
+  csrf: /cross[- ]site request forgery/i,
+  mfa: /multi[- ]factor authentication/i,
+  gre: /generic routing encapsulation/i,
+};
+
+function isAbbreviationIn(word: string, source: string): boolean {
+  return ABBREVIATIONS[word.toLowerCase()]?.test(source) ?? false;
 }
 
 /**
@@ -67,7 +72,7 @@ export function checkSummary(input: CheckInput, summary: string): string[] {
   for (const word of matches(summary, LATIN_WORD)) {
     if (
       !lowerSource.includes(word.toLowerCase()) &&
-      !isAbbreviationIn(word, lowerSource)
+      !isAbbreviationIn(word, source)
     ) {
       problems.push(`word:${word}`);
     }
