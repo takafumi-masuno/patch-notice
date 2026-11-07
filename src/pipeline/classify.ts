@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { audienceFor, detectProduct } from "./products.ts";
+import { RELATED_KEV_REASON } from "./reasons.ts";
 import { extractCves, isCaIncident, mentionsExploitation } from "./text.ts";
 import type { Entry, Item, ProductId, Urgency } from "./types.ts";
 
@@ -19,7 +20,7 @@ export function applyKev(item: Item, kevCves: ReadonlySet<string>): Item {
     ...item,
     exploited: true,
     urgency: "action",
-    urgencyReasons: ["関連する CVE が KEV に掲載", ...item.urgencyReasons],
+    urgencyReasons: [RELATED_KEV_REASON, ...item.urgencyReasons],
   };
 }
 
@@ -36,7 +37,7 @@ export function classify(entry: Entry, kevCves: ReadonlySet<string>): Item {
 
   const reasons: string[] = [];
   if (inKev) reasons.push("KEV に掲載");
-  if (joinedKev) reasons.push("関連する CVE が KEV に掲載");
+  if (joinedKev) reasons.push(RELATED_KEV_REASON);
   if (vendorExploited || textExploited) reasons.push("メーカーが悪用を明記");
   if (entry.nationalAlert) reasons.push("国内機関の注意喚起");
   const action = reasons.length > 0;

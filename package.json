@@ -10,9 +10,10 @@
     "format": "biome format --write",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "pipeline": "node src/pipeline/cli.ts"
+    "pipeline": "node --env-file-if-exists=.env src/pipeline/cli.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "1.6.0",
     "fast-xml-parser": "5.12.0",
     "next": "16.4.5",
     "react": "19.3.0",

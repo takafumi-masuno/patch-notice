@@ -53,6 +53,16 @@ export interface Entry {
   cveCount?: number;
 }
 
+/** 画面に出す要約 */
+export interface Summary {
+  text: string;
+  /** ai: AI の生成、manual: 手動の差し替え */
+  origin: "ai" | "manual";
+  /** 実際に応答したモデル。フォールバックすると指定と異なる */
+  model?: string;
+  generatedAt?: string;
+}
+
 /** 公開データの1件 */
 export interface Item {
   id: string;
@@ -70,6 +80,7 @@ export interface Item {
   treatment: Treatment;
   version?: string;
   vendorSeverity?: VendorSeverity;
+  summary?: Summary;
 }
 
 export type Get = (
@@ -94,7 +105,24 @@ export interface SourceStatus {
   error?: string;
 }
 
+/** AI 要約の実行結果 */
+export interface AiStatus {
+  /** 今回 API に送った件数 */
+  requested: number;
+  summarized: number;
+  /** 検証で不採用にした件数 */
+  rejected: number;
+  refused: number;
+  errors: number;
+  /** 要約待ちのまま残った件数 */
+  pending: number;
+  costUsd: number;
+  /** 途中で止めた理由。最後まで処理したら省く */
+  stopped?: string;
+}
+
 export interface Status {
   fetchedAt: string;
   sources: SourceStatus[];
+  ai?: AiStatus;
 }

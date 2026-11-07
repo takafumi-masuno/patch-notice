@@ -74,7 +74,8 @@ export const sources: Source[] = [
     id: "mozilla",
     name: "Mozilla Security Blog",
     urls: ["https://blog.mozilla.org/security/feed/"],
-    treatment: "ai-summary",
+    // CC BY-SA のため、要約せずタイトルとリンクで出す。検知は本文で行う
+    treatment: "title-link",
     filter: (entry) => isCaIncident(`${entry.title}\n${entry.body}`),
   }),
   feedSource({
