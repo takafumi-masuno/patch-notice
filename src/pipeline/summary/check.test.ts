@@ -129,10 +129,12 @@ describe("checkSummary", () => {
     ).toEqual([]);
   });
 
-  it("「示されていません」を分からない表現として落とす", () => {
-    expect(problemsOf(`${good}影響は具体的に示されていません。`)).toContain(
-      "mentions-missing",
-    );
+  it.each([
+    "影響は具体的に示されていません。",
+    "内容は記載されておらず、回避策もありません。",
+    "詳細は明記されておらず、不明です。",
+  ])("分からない表現を落とす: %s", (phrase) => {
+    expect(problemsOf(`${good}${phrase}`)).toContain("mentions-missing");
   });
 
   it("日本語でない要約を落とす", () => {
