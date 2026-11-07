@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tls-200-days",
+    "date": "2026-03-15",
+    "kind": "rule",
+    "scope": "server",
+    "title": "TLS 証明書の最長有効期間が 200 日になりました",
+    "detail": "2026年3月15日以降に発行される証明書が対象です。ドメイン名と IP アドレスの検証結果を再利用できる期間も 200 日になりました。",
+    "action": "証明書の更新を手作業で行っている場合は、更新回数の増加に備えて自動化を検討してください。",
+    "sourceName": "CA/Browser Forum TLS Baseline Requirements",
+    "sourceUrl": "https://cabforum.org/working-groups/server/baseline-requirements/requirements/",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "secure-boot-kek-2011",
+    "date": "2026-06-24",
+    "kind": "expiry",
+    "scope": "device",
+    "title": "Microsoft Corporation KEK CA 2011 の有効期限",
+    "detail": "Secure Boot の DB と DBX の更新に署名する証明書です。後継は Microsoft Corporation KEK 2K CA 2023 です。期限後も端末は起動し、通常の Windows Update も続きますが、起動処理の新しい保護を受けられなくなります。",
+    "action": "管理している端末に 2023 年版の証明書が入っているか確認してください。メーカーのファームウェア更新が必要な端末もあります。",
+    "sourceName": "Microsoft Support",
+    "sourceUrl": "https://support.microsoft.com/en-us/servicing/os/secure-boot/2025/06/windows-secure-boot-certificate-expiration-and-ca-updates",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "secure-boot-uefi-2011",
+    "date": "2026-06-27",
+    "kind": "expiry",
+    "scope": "device",
+    "title": "Microsoft UEFI CA 2011 の有効期限",
+    "detail": "他社製のブートローダー、EFI アプリケーション、Option ROM に署名する証明書です。後継は Microsoft UEFI CA 2023 と Microsoft Option ROM UEFI CA 2023 です。期限後も端末は起動し、通常の Windows Update も続きますが、起動処理の新しい保護を受けられなくなります。",
+    "action": "管理している端末に 2023 年版の証明書が入っているか確認してください。メーカーのファームウェア更新が必要な端末もあります。",
+    "sourceName": "Microsoft Support",
+    "sourceUrl": "https://support.microsoft.com/en-us/servicing/os/secure-boot/2025/06/windows-secure-boot-certificate-expiration-and-ca-updates",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "secure-boot-pca-2011",
+    "date": "2026-10-19",
+    "kind": "expiry",
+    "scope": "device",
+    "title": "Microsoft Windows Production PCA 2011 の有効期限",
+    "detail": "Windows のブートローダーに署名する証明書です。後継は Windows UEFI CA 2023 です。期限後も端末は起動し、通常の Windows Update も続きますが、起動処理の新しい保護を受けられなくなります。",
+    "action": "管理している端末に 2023 年版の証明書が入っているか確認してください。メーカーのファームウェア更新が必要な端末もあります。",
+    "sourceName": "Microsoft Support",
+    "sourceUrl": "https://support.microsoft.com/en-us/servicing/os/secure-boot/2025/06/windows-secure-boot-certificate-expiration-and-ca-updates",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "tls-100-days",
+    "date": "2027-03-15",
+    "kind": "rule",
+    "scope": "server",
+    "title": "TLS 証明書の最長有効期間が 100 日になります",
+    "detail": "2027年3月15日以降に発行される証明書が対象です。ドメイン名と IP アドレスの検証結果を再利用できる期間も 100 日になります。",
+    "action": "手作業で更新している証明書を洗い出し、自動更新へ移す計画を立ててください。",
+    "sourceName": "CA/Browser Forum TLS Baseline Requirements",
+    "sourceUrl": "https://cabforum.org/working-groups/server/baseline-requirements/requirements/",
+    "checkedAt": "2026-11-07"
+  },
+  {
+    "id": "tls-47-days",
+    "date": "2029-03-15",
+    "kind": "rule",
+    "scope": "server",
+    "title": "TLS 証明書の最長有効期間が 47 日になります",
+    "detail": "2029年3月15日以降に発行される証明書が対象です。ドメイン名と IP アドレスの検証結果を再利用できる期間は 10 日になります。",
+    "action": "公開サーバーの証明書の自動更新を完了させてください。",
+    "sourceName": "CA/Browser Forum TLS Baseline Requirements",
+    "sourceUrl": "https://cabforum.org/working-groups/server/baseline-requirements/requirements/",
+    "checkedAt": "2026-11-07"
+  }
+]
