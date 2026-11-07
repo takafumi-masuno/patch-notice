@@ -2,15 +2,18 @@
   "name": "patch-notice",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "lint": "biome check",
     "format": "biome format --write",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "pipeline": "node src/pipeline/cli.ts"
   },
   "dependencies": {
+    "fast-xml-parser": "5.12.0",
     "next": "16.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0"
