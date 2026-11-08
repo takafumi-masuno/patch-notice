@@ -4096,22 +4096,5 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
     }
-  },
-  {
-    "id": "ef83e37b08c730cc",
-    "source": "kubernetes",
-    "product": "kubernetes",
-    "title": "CVE-2026-19444",
-    "url": "https://github.com/kubernetes/kubernetes/issues/141294",
-    "publishedAt": "2026-08-10T14:49:49.000Z",
-    "cves": [
-      "CVE-2026-19444"
-    ],
-    "cveCount": 1,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
   }
 ]
