@@ -726,26 +726,5 @@
     "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "01fb1e6166bdb4e8": {
-    "hash": "96a933e2ec195320",
-    "attempts": 1,
-    "text": "Cisco Secure Firewall Adaptive Security Appliance (ASA) および Secure Firewall Threat Defense (FTD) に、ヒープ検査 (heap inspection) に関する脆弱性 (CVE-2026-20349) があります。認証されていないリモートの攻撃者が、デバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "8ebc43cef790338d": {
-    "hash": "5c83477e16239ca0",
-    "attempts": 1,
-    "text": "Microsoft Windows の Ancillary Function Driver for WinSock に、use-after-free(解放後使用)の脆弱性(CVE-2026-68820)があります。権限を持つ攻撃者がローカルで権限を昇格できるおそれがあります。影響を受ける製品は Microsoft Windows の Ancillary Function Driver for WinSock です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "fab09ba699b12110": {
-    "hash": "4989e105743a62f2",
-    "attempts": 1,
-    "text": "MetabaseにSQLインジェクションの脆弱性があり、認証されていないリモートの攻撃者がMetabaseのアプリケーションデータベースに任意のSQLを注入できるおそれがあります。これにより、攻撃者がインスタンスの管理者権限を得られる可能性があります。その結果、アプリケーション設定の変更、接続先データベースの保存済み認証情報の窃取、それらの接続経由で参照できるデータの読み取りやエクスポートが行われるおそれがあります。対象製品はMetabase(CVE-2026-72898)です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
   }
 }

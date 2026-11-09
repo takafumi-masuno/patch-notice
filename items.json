@@ -1,5 +1,110 @@
 [
   {
+    "id": "87d21189e7202b12",
+    "source": "jvn",
+    "product": "other",
+    "title": "SS1／SS1クラウドおよびそのODM製品rocoeyesにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN76179675/",
+    "publishedAt": "2026-11-09T06:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "fe8d914a1e24d1c2",
+    "source": "jvn",
+    "product": "other",
+    "title": "WebSAM WinShareにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN89009783/",
+    "publishedAt": "2026-11-09T05:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "42191561ba1ae0f0",
+    "source": "jvn",
+    "product": "other",
+    "title": "Effekseerにおける入力データ検証不備の脆弱性",
+    "url": "https://jvn.jp/jp/JVN56286875/",
+    "publishedAt": "2026-11-09T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "f2489fa7f0c5eb87",
+    "source": "jvn",
+    "product": "other",
+    "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU92635551/",
+    "publishedAt": "2026-11-09T02:30:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "5101ef889280e88f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Webtop Media Transcoderにおける異なる領域間での不適切なリソースの移動の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU93403064/",
+    "publishedAt": "2026-11-09T02:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "ec75c92a93c68f2a",
+    "source": "jvn",
+    "product": "other",
+    "title": "Zabbix agentにおけるDLL読み込みに関する脆弱性",
+    "url": "https://jvn.jp/jp/JVN42011956/",
+    "publishedAt": "2026-11-09T01:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-09T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "ea6cea835b9807f9",
     "source": "jvn",
     "product": "other",
@@ -38,21 +143,6 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
     }
-  },
-  {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-06T00:00:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
   },
   {
     "id": "f49791178d599ba9",
@@ -4021,80 +4111,5 @@
     ],
     "audience": "both",
     "treatment": "title-link"
-  },
-  {
-    "id": "01fb1e6166bdb4e8",
-    "source": "kev",
-    "product": "cisco",
-    "title": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-11T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-20349"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Cisco Secure Firewall Adaptive Security Appliance (ASA) および Secure Firewall Threat Defense (FTD) に、ヒープ検査 (heap inspection) に関する脆弱性 (CVE-2026-20349) があります。認証されていないリモートの攻撃者が、デバイスを予期せず再起動させ、サービス拒否 (DoS) 状態を引き起こすおそれがあります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "8ebc43cef790338d",
-    "source": "kev",
-    "product": "windows-office",
-    "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-11T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-68820"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "both",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Microsoft Windows の Ancillary Function Driver for WinSock に、use-after-free(解放後使用)の脆弱性(CVE-2026-68820)があります。権限を持つ攻撃者がローカルで権限を昇格できるおそれがあります。影響を受ける製品は Microsoft Windows の Ancillary Function Driver for WinSock です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "fab09ba699b12110",
-    "source": "kev",
-    "product": "other",
-    "title": "Metabase SQL Injection Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-11T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-72898"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "MetabaseにSQLインジェクションの脆弱性があり、認証されていないリモートの攻撃者がMetabaseのアプリケーションデータベースに任意のSQLを注入できるおそれがあります。これにより、攻撃者がインスタンスの管理者権限を得られる可能性があります。その結果、アプリケーション設定の変更、接続先データベースの保存済み認証情報の窃取、それらの接続経由で参照できるデータの読み取りやエクスポートが行われるおそれがあります。対象製品はMetabase(CVE-2026-72898)です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
   }
 ]
