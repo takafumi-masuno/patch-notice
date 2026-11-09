@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-09T06:42:57.814Z",
+  "fetchedAt": "2026-11-09T22:26:02.736Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1769,
-      "items": 104
+      "entries": 1773,
+      "items": 108
     },
     {
       "id": "mozilla",
@@ -31,14 +31,14 @@
       "ok": true,
       "notModified": true,
       "entries": 0,
-      "items": 10
+      "items": 9
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 26
     },
     {
@@ -54,8 +54,8 @@
       "name": "Chrome Releases",
       "ok": true,
       "notModified": false,
-      "entries": 2,
-      "items": 2
+      "entries": 3,
+      "items": 3
     },
     {
       "id": "windows-monthly",
@@ -101,18 +101,18 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 10,
       "items": 6
     }
   ],
   "ai": {
-    "requested": 0,
-    "summarized": 0,
+    "requested": 4,
+    "summarized": 4,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0
+    "costUsd": 0.011023999999999999
   }
 }

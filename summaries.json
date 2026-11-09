@@ -726,5 +726,33 @@
     "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "c7cc12faa573aecc": {
+    "hash": "57917ce4eb9a0317",
+    "attempts": 1,
+    "text": "SignalWire FreeSwitch にコードインジェクションの脆弱性(CVE-2026-116779)があります。この脆弱性により、設定情報や認証情報の漏えい、任意の通話制御、コマンド実行が行われるおそれがあります。影響を受ける製品は SignalWire FreeSwitch です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-09T22:26:02.736Z"
+  },
+  "ea93650a47c7762e": {
+    "hash": "96e5f785fde5130a",
+    "attempts": 1,
+    "text": "OpenBSD OpenSSH に、予期しないステータスコードまたは戻り値に関する脆弱性(CVE-2026-123158)があります。この問題により、認証バイパスが可能になるおそれがあります。影響を受ける製品は Linux 上の OpenBSD OpenSSH です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-09T22:26:02.736Z"
+  },
+  "582c1e0119bd4ad2": {
+    "hash": "680419bb2c4e33f4",
+    "attempts": 1,
+    "text": "GPUStack に不適切な認証の脆弱性(CVE-2026-102895)があり、認証なしで管理者権限のアクセスが可能になるおそれがあります。攻撃者は、ユーザーやモデルの変更、永続的な管理者 API キーの作成、worker やクラウドプロバイダーのシークレットの漏えい、POST /v2/inference-backends/from-yaml を通じたコード実行を行えるおそれがあります。影響を受ける製品は GPUStack です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-09T22:26:02.736Z"
+  },
+  "0f5b5f5a59f2dae8": {
+    "hash": "b03e325fee95bc49",
+    "attempts": 1,
+    "text": "IBM Aspera Faspex に不適切な認可の脆弱性(CVE-2026-123218)があります。認証済みのユーザーが特定のメッセージを細工することで認可を回避し、権限昇格を引き起こすおそれがあります。影響を受ける製品は IBM Aspera Faspex です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-09T22:26:02.736Z"
   }
 }
