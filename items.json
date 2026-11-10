@@ -1,5 +1,22 @@
 [
   {
+    "id": "0fde78fe560a43de",
+    "source": "windows-monthly",
+    "product": "windows-office",
+    "title": "Windows / Office の月例更新日（2026年11月）",
+    "url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Nov",
+    "publishedAt": "2026-11-10T18:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "毎月の定例の更新日"
+    ],
+    "audience": "both",
+    "treatment": "facts"
+  },
+  {
     "id": "ea1fa484e554abd3",
     "source": "jvn",
     "product": "other",
@@ -28,6 +45,152 @@
     "urgencyReasons": [],
     "audience": "it",
     "treatment": "title-link"
+  },
+  {
+    "id": "491361571ea7206b",
+    "source": "kev",
+    "product": "windows-office",
+    "title": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Microsoft Office Outlook に、安全でない可能性のある操作に対してユーザーの操作確認が行われない脆弱性(CVE-2026-124194)があります。認証されていない攻撃者がネットワーク経由でスプーフィングを行えるおそれがあります。影響を受ける製品は Microsoft Office の Outlook です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-10T19:48:14.783Z"
+    }
+  },
+  {
+    "id": "85f526ab5cb10a6c",
+    "source": "kev",
+    "product": "other",
+    "title": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111793"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Openwave Messaging Limited の Webtop Media Transcoder に、領域間でのリソースの不適切な転送(Incorrect Resource Transfer Between Spheres)に関する脆弱性(CVE-2026-111793)があります。認証済みのユーザーが Webmail の画面を経由せずに処理を行うことで、意図されていない種類の文書を処理・変換できてしまうおそれがあります。影響を受ける製品は Openwave Messaging Limited Webtop Media Transcoder です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-10T19:48:14.783Z"
+    }
+  },
+  {
+    "id": "b793db248ef5a465",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "19d38aea9cbd5214",
+    "source": "kev",
+    "product": "other",
+    "title": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111560",
+      "CVE-2026-116606"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Barracuda Networks の複数製品にOSコマンドインジェクションの脆弱性(CVE-2026-111560)があります。認証された管理者が細工したタイムゾーン値を設定すると、その値が後で処理される際にroot権限でOSコマンドが実行されるおそれがあります。この脆弱性はCVE-2026-116606と連鎖させることができます。影響を受ける製品は、Email Security Gateway (ESG)、Load Balancer、Application Delivery Controller (ADC)、Message Archiver (BMA)、WAF Control Center (WCC)、Web Application Firewall (WAF)、Web Security Gateway (WSG)です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-10T19:48:14.783Z"
+    }
+  },
+  {
+    "id": "461142ec2bbf7749",
+    "source": "kev",
+    "product": "other",
+    "title": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111560",
+      "CVE-2026-116606"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Barracuda Networks Email Security Gateway (ESG) に、代替パスまたはチャネルを使用した認証バイパスの脆弱性 (CVE-2026-116606) があります。認証されていないリモートの攻撃者が設定インポート機能を呼び出し、細工された互換性のあるバックアップアーカイブを復元することで、アプライアンスのグローバル設定を不正に変更できるおそれがあります。この脆弱性は CVE-2026-111560 と組み合わせて悪用できる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-10T19:48:14.783Z"
+    }
+  },
+  {
+    "id": "fb1d231f91be84a4",
+    "source": "kev",
+    "product": "chrome",
+    "title": "Google Chromium Use-After-Free Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-125350"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "both",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Google Chromium の XML コンポーネントに use-after-free の脆弱性（CVE-2026-125350）があります。リモートの攻撃者が細工したウェブページを通じて、サンドボックス内で任意のコードを実行できるおそれがあります。Chromium を利用する複数のウェブブラウザーが影響を受ける可能性があり、Google Chrome、Microsoft Edge、Opera などが含まれます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-10T19:48:14.783Z"
+    }
   },
   {
     "id": "cf6be132e06d6fc7",
@@ -66,6 +229,7 @@
     "exploited": true,
     "urgency": "action",
     "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
       "メーカーが悪用を明記"
     ],
     "audience": "both",
@@ -4235,22 +4399,5 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
     }
-  },
-  {
-    "id": "19dd6d12a0f2cddf",
-    "source": "wordpress",
-    "product": "wordpress",
-    "title": "WordPress 7.0.4 Release",
-    "url": "https://wordpress.org/news/2026/08/wordpress-7-0-4-release/",
-    "publishedAt": "2026-08-12T14:45:53.000Z",
-    "cves": [
-      "CVE-2026-65640"
-    ],
-    "cveCount": 1,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "facts"
   }
 ]

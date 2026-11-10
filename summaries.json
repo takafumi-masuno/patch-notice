@@ -754,5 +754,45 @@
     "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "b793db248ef5a465": {
+    "hash": "8a46ca910fc2ec9c",
+    "attempts": 1,
+    "failure": "check:word:XXE"
+  },
+  "491361571ea7206b": {
+    "hash": "4c8ebf326eb136e6",
+    "attempts": 1,
+    "text": "Microsoft Office Outlook に、安全でない可能性のある操作に対してユーザーの操作確認が行われない脆弱性(CVE-2026-124194)があります。認証されていない攻撃者がネットワーク経由でスプーフィングを行えるおそれがあります。影響を受ける製品は Microsoft Office の Outlook です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-10T19:48:14.783Z"
+  },
+  "85f526ab5cb10a6c": {
+    "hash": "550b5a09c91702a5",
+    "attempts": 1,
+    "text": "Openwave Messaging Limited の Webtop Media Transcoder に、領域間でのリソースの不適切な転送(Incorrect Resource Transfer Between Spheres)に関する脆弱性(CVE-2026-111793)があります。認証済みのユーザーが Webmail の画面を経由せずに処理を行うことで、意図されていない種類の文書を処理・変換できてしまうおそれがあります。影響を受ける製品は Openwave Messaging Limited Webtop Media Transcoder です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-10T19:48:14.783Z"
+  },
+  "19d38aea9cbd5214": {
+    "hash": "8e753dd5b3fb823b",
+    "attempts": 1,
+    "text": "Barracuda Networks の複数製品にOSコマンドインジェクションの脆弱性(CVE-2026-111560)があります。認証された管理者が細工したタイムゾーン値を設定すると、その値が後で処理される際にroot権限でOSコマンドが実行されるおそれがあります。この脆弱性はCVE-2026-116606と連鎖させることができます。影響を受ける製品は、Email Security Gateway (ESG)、Load Balancer、Application Delivery Controller (ADC)、Message Archiver (BMA)、WAF Control Center (WCC)、Web Application Firewall (WAF)、Web Security Gateway (WSG)です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-10T19:48:14.783Z"
+  },
+  "461142ec2bbf7749": {
+    "hash": "32f8d018afdd7ff1",
+    "attempts": 1,
+    "text": "Barracuda Networks Email Security Gateway (ESG) に、代替パスまたはチャネルを使用した認証バイパスの脆弱性 (CVE-2026-116606) があります。認証されていないリモートの攻撃者が設定インポート機能を呼び出し、細工された互換性のあるバックアップアーカイブを復元することで、アプライアンスのグローバル設定を不正に変更できるおそれがあります。この脆弱性は CVE-2026-111560 と組み合わせて悪用できる可能性があります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-10T19:48:14.783Z"
+  },
+  "fb1d231f91be84a4": {
+    "hash": "e78dbda231947493",
+    "attempts": 1,
+    "text": "Google Chromium の XML コンポーネントに use-after-free の脆弱性（CVE-2026-125350）があります。リモートの攻撃者が細工したウェブページを通じて、サンドボックス内で任意のコードを実行できるおそれがあります。Chromium を利用する複数のウェブブラウザーが影響を受ける可能性があり、Google Chrome、Microsoft Edge、Opera などが含まれます。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-10T19:48:14.783Z"
   }
 }

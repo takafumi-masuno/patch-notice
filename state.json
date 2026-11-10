@@ -1,12 +1,12 @@
 {
   "http": {
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"36ca-65fe164760380\"",
-      "lastModified": "Tue, 10 Nov 2026 00:45:18 GMT"
+      "etag": "\"36ca-65fe6bf11de40\"",
+      "lastModified": "Tue, 10 Nov 2026 07:08:33 GMT"
     },
     "https://blog.mozilla.org/security/feed/": {
-      "etag": "W/\"173ccd59100e6ade8fbae0f7a7b8113a\"",
-      "lastModified": "Wed, 21 Oct 2026 11:29:19 GMT"
+      "etag": "W/\"69d421e4d5682a20eb147580ef4c46a7\"",
+      "lastModified": "Tue, 10 Nov 2026 18:36:02 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
       "etag": "\"15c9ee7b3062dc9c4c94a47d135466d0e0864e59\"",
@@ -16,23 +16,29 @@
       "lastModified": "Mon, 02 Nov 2026 01:54:48 GMT"
     },
     "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml": {
-      "etag": "W/\"747e984ecb551073cf73b5157ea441bb-ssl\""
+      "etag": "W/\"587dc75cc3a16e1869b7e54fa75c805d-ssl\""
     },
     "https://slack.com/release-notes/mac/rss": {},
     "https://www.php.net/feed.atom": {
-      "etag": "W/\"16f75b-65fc638e0f04a\"",
-      "lastModified": "Sun, 08 Nov 2026 16:20:22 GMT"
+      "etag": "W/\"16f75b-65fe0c429fea7\"",
+      "lastModified": "Tue, 10 Nov 2026 00:00:28 GMT"
     },
     "https://nodejs.org/en/feed/vulnerability.xml": {},
     "https://slack.com/release-notes/windows/rss": {},
     "https://wordpress.org/news/category/security/feed/": {
-      "lastModified": "Mon, 09 Nov 2026 16:01:18 GMT"
+      "lastModified": "Tue, 10 Nov 2026 19:42:17 GMT"
     },
     "https://chromereleases.googleblog.com/feeds/posts/default": {
-      "lastModified": "Tue, 10 Nov 2026 06:09:17 GMT"
+      "lastModified": "Tue, 10 Nov 2026 09:59:28 GMT"
     }
   },
   "kevCves": [
+    "CVE-2026-124194",
+    "CVE-2026-111793",
+    "CVE-2026-20320",
+    "CVE-2026-111560",
+    "CVE-2026-116606",
+    "CVE-2026-125350",
     "CVE-2026-102895",
     "CVE-2026-123158",
     "CVE-2026-116779",

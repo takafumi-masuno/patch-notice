@@ -1,20 +1,20 @@
 {
-  "fetchedAt": "2026-11-10T07:24:30.429Z",
+  "fetchedAt": "2026-11-10T19:48:14.783Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1773,
-      "items": 108
+      "entries": 1779,
+      "items": 114
     },
     {
       "id": "mozilla",
       "name": "Mozilla Security Blog",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 1,
       "items": 1
     },
     {
@@ -37,8 +37,8 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 28
     },
     {
@@ -62,8 +62,8 @@
       "name": "Windows 月例更新日（日付の計算）",
       "ok": true,
       "notModified": false,
-      "entries": 2,
-      "items": 2
+      "entries": 3,
+      "items": 3
     },
     {
       "id": "slack-windows",
@@ -93,26 +93,26 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 280,
       "items": 11
     },
     {
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 6
+      "notModified": false,
+      "entries": 10,
+      "items": 5
     }
   ],
   "ai": {
-    "requested": 0,
-    "summarized": 0,
-    "rejected": 0,
+    "requested": 6,
+    "summarized": 5,
+    "rejected": 1,
     "refused": 0,
     "errors": 0,
-    "pending": 0,
-    "costUsd": 0
+    "pending": 1,
+    "costUsd": 0.019564
   }
 }
