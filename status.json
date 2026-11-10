@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-09T22:26:02.736Z",
+  "fetchedAt": "2026-11-10T07:24:30.429Z",
   "sources": [
     {
       "id": "kev",
@@ -37,9 +37,9 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 26
+      "notModified": false,
+      "entries": 20,
+      "items": 28
     },
     {
       "id": "kubernetes",
@@ -93,26 +93,26 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": false,
-      "entries": 280,
+      "notModified": true,
+      "entries": 0,
       "items": 11
     },
     {
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 6
     }
   ],
   "ai": {
-    "requested": 4,
-    "summarized": 4,
+    "requested": 0,
+    "summarized": 0,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.011023999999999999
+    "costUsd": 0
   }
 }
