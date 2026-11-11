@@ -112,6 +112,21 @@
     "treatment": "title-link"
   },
   {
+    "id": "2174106ead8712a0",
+    "source": "nodejs",
+    "product": "nodejs",
+    "title": "Wednesday, November 11, 2026 Security Releases",
+    "url": "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases",
+    "publishedAt": "2026-11-11T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
     "id": "0fde78fe560a43de",
     "source": "windows-monthly",
     "product": "windows-office",
