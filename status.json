@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T19:48:14.783Z",
+  "fetchedAt": "2026-11-11T06:33:38.244Z",
   "sources": [
     {
       "id": "kev",
@@ -13,8 +13,8 @@
       "id": "mozilla",
       "name": "Mozilla Security Blog",
       "ok": true,
-      "notModified": false,
-      "entries": 1,
+      "notModified": true,
+      "entries": 0,
       "items": 1
     },
     {
@@ -23,23 +23,23 @@
       "ok": true,
       "notModified": false,
       "entries": 6,
-      "items": 6
+      "items": 7
     },
     {
       "id": "ipa",
       "name": "IPA",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 9
+      "notModified": false,
+      "entries": 30,
+      "items": 10
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 28
+      "notModified": false,
+      "entries": 20,
+      "items": 32
     },
     {
       "id": "kubernetes",
@@ -93,26 +93,26 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": false,
-      "entries": 280,
+      "notModified": true,
+      "entries": 0,
       "items": 11
     },
     {
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 5
     }
   ],
   "ai": {
-    "requested": 6,
-    "summarized": 5,
+    "requested": 1,
+    "summarized": 0,
     "rejected": 1,
     "refused": 0,
     "errors": 0,
-    "pending": 1,
-    "costUsd": 0.019564
+    "pending": 0,
+    "costUsd": 0.002784
   }
 }

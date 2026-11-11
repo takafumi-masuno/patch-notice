@@ -1,5 +1,117 @@
 [
   {
+    "id": "178589d0f6d0095b",
+    "source": "jvn",
+    "product": "other",
+    "title": "Intel製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU93337738/",
+    "publishedAt": "2026-11-11T05:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "c72ff2d8cff66b68",
+    "source": "jvn",
+    "product": "apple",
+    "title": "Sleipnir Mobile for iPhone / iPadにおける不適切な証明書検証の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU93068550/",
+    "publishedAt": "2026-11-11T04:30:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "6763b76bf0f4bc4d",
+    "source": "jvn",
+    "product": "php",
+    "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+    "url": "https://jvn.jp/vu/JVNVU99905564/",
+    "publishedAt": "2026-11-11T03:10:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "dface6ed7059fbf1",
+    "source": "jvn",
+    "product": "other",
+    "title": "Movable Typeにおけるコードインジェクションの脆弱性",
+    "url": "https://jvn.jp/jp/JVN11786640/",
+    "publishedAt": "2026-11-11T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "e199321b8b85d77f",
+    "source": "jpcert",
+    "product": "other",
+    "title": "注意喚起: 2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起 (公開)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260035.html",
+    "publishedAt": "2026-11-11T02:20:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "330a6598e47c0c28",
+    "source": "jvn",
+    "product": "other",
+    "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月10日）",
+    "url": "https://jvn.jp/vu/JVNVU92618679/",
+    "publishedAt": "2026-11-11T01:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-11T01:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "0fde78fe560a43de",
     "source": "windows-monthly",
     "product": "windows-office",
@@ -15,6 +127,23 @@
     ],
     "audience": "both",
     "treatment": "facts"
+  },
+  {
+    "id": "48378cb14bff7a41",
+    "source": "ipa",
+    "product": "windows-office",
+    "title": "Microsoft 製品の脆弱性対策について(2026年11月)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/1111-ms.html",
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "both",
+    "treatment": "title-link"
   },
   {
     "id": "ea1fa484e554abd3",
@@ -427,21 +556,6 @@
     }
   },
   {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-09T00:00:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
-  },
-  {
     "id": "ea6cea835b9807f9",
     "source": "jvn",
     "product": "other",
@@ -706,7 +820,6 @@
       "CVE-2026-121098",
       "CVE-2026-121099",
       "CVE-2026-121100",
-      "CVE-2026-121101",
       "CVE-2026-121102",
       "CVE-2026-121103",
       "CVE-2026-121104",
@@ -850,7 +963,7 @@
       "CVE-2026-121256",
       "CVE-2026-121257"
     ],
-    "cveCount": 213,
+    "cveCount": 212,
     "exploited": false,
     "urgency": "normal",
     "urgencyReasons": [],
@@ -1220,26 +1333,6 @@
     "urgencyReasons": [],
     "audience": "it",
     "treatment": "facts"
-  },
-  {
-    "id": "6763b76bf0f4bc4d",
-    "source": "jvn",
-    "product": "php",
-    "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
-    "url": "https://jvn.jp/vu/JVNVU99905564/",
-    "publishedAt": "2026-10-28T07:30:00.000Z",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "cveCount": 2,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "関連する CVE が KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "title-link"
   },
   {
     "id": "f53650f568a1563c",
