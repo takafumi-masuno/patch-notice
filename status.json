@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T19:39:32.069Z",
+  "fetchedAt": "2026-11-12T07:18:27.523Z",
   "sources": [
     {
       "id": "kev",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 6,
       "items": 7
     },
     {
@@ -37,9 +37,9 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 32
+      "notModified": false,
+      "entries": 20,
+      "items": 36
     },
     {
       "id": "kubernetes",
@@ -55,7 +55,7 @@
       "ok": true,
       "notModified": false,
       "entries": 3,
-      "items": 3
+      "items": 4
     },
     {
       "id": "windows-monthly",
@@ -70,16 +70,16 @@
       "name": "Slack (Windows)",
       "ok": true,
       "notModified": false,
-      "entries": 41,
-      "items": 3
+      "entries": 42,
+      "items": 4
     },
     {
       "id": "slack-mac",
       "name": "Slack (Mac)",
       "ok": true,
       "notModified": false,
-      "entries": 44,
-      "items": 3
+      "entries": 45,
+      "items": 4
     },
     {
       "id": "nodejs",
@@ -101,8 +101,8 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 5
     }
   ],
