@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T07:18:27.523Z",
+  "fetchedAt": "2026-11-12T19:59:04.139Z",
   "sources": [
     {
       "id": "kev",
@@ -37,8 +37,8 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 36
     },
     {
