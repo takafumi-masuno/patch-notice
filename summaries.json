@@ -794,5 +794,19 @@
     "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "78cf842c6bd865e2": {
+    "hash": "de5869f2fe40739e",
+    "attempts": 1,
+    "text": "UnrealIRCd に、区切り文字の不適切な無害化(Improper Neutralization of Delimiters)に関する脆弱性(CVE-2026-114713)があります。2台以上のサーバーがリンクされたネットワーク上の任意のユーザーが、サーバー間コマンドを注入し、サーバーの権限で実行させることができるおそれがあります。影響を受ける製品は UnrealIRCd です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-13T19:47:20.014Z"
+  },
+  "e6150b1aa1127c7e": {
+    "hash": "3e80c8a02fc13920",
+    "attempts": 1,
+    "text": "Check Point の複数製品で、重要なリソースに対する不適切な権限設定の脆弱性(CVE-2026-123039)が存在します。Gaia OS の DynamicCLI デーモンが root 権限で動作し、誰でも書き込み可能なローカルソケットで接続元プロセスを認証せずに待ち受けていることが原因です。認証済みのローカルユーザーがソケットにコマンドを送ると、root 権限で実行されるおそれがあります。影響を受ける製品は Check Point Firewall、Multi-Domain Security Management Server、Scalable Platforms、Security Gateway、Security Management Server です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-13T19:47:20.014Z"
   }
 }

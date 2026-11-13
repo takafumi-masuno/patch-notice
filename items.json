@@ -90,6 +90,56 @@
     "treatment": "title-link"
   },
   {
+    "id": "78cf842c6bd865e2",
+    "source": "kev",
+    "product": "other",
+    "title": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-13T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-114713"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "UnrealIRCd に、区切り文字の不適切な無害化(Improper Neutralization of Delimiters)に関する脆弱性(CVE-2026-114713)があります。2台以上のサーバーがリンクされたネットワーク上の任意のユーザーが、サーバー間コマンドを注入し、サーバーの権限で実行させることができるおそれがあります。影響を受ける製品は UnrealIRCd です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-13T19:47:20.014Z"
+    }
+  },
+  {
+    "id": "e6150b1aa1127c7e",
+    "source": "kev",
+    "product": "other",
+    "title": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-13T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Check Point の複数製品で、重要なリソースに対する不適切な権限設定の脆弱性(CVE-2026-123039)が存在します。Gaia OS の DynamicCLI デーモンが root 権限で動作し、誰でも書き込み可能なローカルソケットで接続元プロセスを認証せずに待ち受けていることが原因です。認証済みのローカルユーザーがソケットにコマンドを送ると、root 権限で実行されるおそれがあります。影響を受ける製品は Check Point Firewall、Multi-Domain Security Management Server、Scalable Platforms、Security Gateway、Security Management Server です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-13T19:47:20.014Z"
+    }
+  },
+  {
     "id": "f2489fa7f0c5eb87",
     "source": "jvn",
     "product": "other",
