@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T19:59:04.139Z",
+  "fetchedAt": "2026-11-13T06:51:28.454Z",
   "sources": [
     {
       "id": "kev",
@@ -37,9 +37,9 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 36
+      "notModified": false,
+      "entries": 20,
+      "items": 42
     },
     {
       "id": "kubernetes",
@@ -54,7 +54,7 @@
       "name": "Chrome Releases",
       "ok": true,
       "notModified": false,
-      "entries": 3,
+      "entries": 2,
       "items": 4
     },
     {
@@ -93,8 +93,8 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": false,
-      "entries": 280,
+      "notModified": true,
+      "entries": 0,
       "items": 11
     },
     {
