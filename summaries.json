@@ -1,4 +1,18 @@
 {
+  "78cf842c6bd865e2": {
+    "hash": "de5869f2fe40739e",
+    "attempts": 1,
+    "text": "UnrealIRCd に、区切り文字の不適切な無害化(Improper Neutralization of Delimiters)に関する脆弱性(CVE-2026-114713)があります。2台以上のサーバーがリンクされたネットワーク上の任意のユーザーが、サーバー間コマンドを注入し、サーバーの権限で実行させることができるおそれがあります。影響を受ける製品は UnrealIRCd です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-13T19:47:20.014Z"
+  },
+  "e6150b1aa1127c7e": {
+    "hash": "3e80c8a02fc13920",
+    "attempts": 1,
+    "text": "Check Point の複数製品で、重要なリソースに対する不適切な権限設定の脆弱性(CVE-2026-123039)が存在します。Gaia OS の DynamicCLI デーモンが root 権限で動作し、誰でも書き込み可能なローカルソケットで接続元プロセスを認証せずに待ち受けていることが原因です。認証済みのローカルユーザーがソケットにコマンドを送ると、root 権限で実行されるおそれがあります。影響を受ける製品は Check Point Firewall、Multi-Domain Security Management Server、Scalable Platforms、Security Gateway、Security Management Server です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-13T19:47:20.014Z"
+  },
   "491361571ea7206b": {
     "hash": "4c8ebf326eb136e6",
     "attempts": 1,
@@ -200,13 +214,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "86062448b7f82ce5": {
-    "hash": "1bb9d7edabc9788e",
-    "attempts": 1,
-    "text": "Plex Media Server にサーバーサイドリクエストフォージェリ (SSRF) の脆弱性 (CVE-2026-96652) があります。任意の X-Plex-Token の値を使う攻撃者が、'protocol' パラメーターに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "0eb75c48ab96cfd2": {
     "hash": "22d3e8cb48949541",
     "attempts": 1,
@@ -277,24 +284,10 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "32e9afb64e229c85": {
-    "hash": "f8ebd85f542379b5",
-    "attempts": 1,
-    "text": "ISC BIND にデータ処理エラーの脆弱性(CVE-2015-5477)があります。リモートの攻撃者が TKEY クエリを送ることで、サービス拒否(DoS)を引き起こすおそれがあります。影響を受ける製品は ISC BIND です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "cf1120ddc89fd01c": {
     "hash": "2bde974357b3f88d",
     "attempts": 1,
     "text": "Apache Struts にコマンドインジェクションの脆弱性（CVE-2016-3081）があります。Dynamic Method Invocation が有効な場合、method:prefix を介して、リモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Apache Struts です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "59a9a506b2947179": {
-    "hash": "bf4096d7fe634d59",
-    "attempts": 1,
-    "text": "Strapi に、機密情報が平文で保存される問題 (CVE-2023-22894) があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密情報を取得できるおそれがあります。この脆弱性は CVE-2023-22621 と組み合わせることで、リモートコード実行につながるおそれがあります。影響を受ける製品はサポート終了 (EoL) またはサービス終了 (EoS) の場合があります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -386,20 +379,6 @@
     "hash": "a4f5dd2c1a18e2cb",
     "attempts": 1,
     "text": "WordPress Core にリモートファイルインクルードの脆弱性(CVE-2026-87902)があります。認証されていない攻撃者が、ページテンプレートの解決処理で、有効なテーマのディレクトリ外にある読み取り可能な任意のローカル `.php` ファイルを読み込ませることができ、リモートコード実行につながるおそれがあります。影響を受ける製品は WordPress Core です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "2db4a75bb734488e": {
-    "hash": "896bea42bf517850",
-    "attempts": 1,
-    "text": "WSO2 の複数製品にパストラバーサルの脆弱性(CVE-2026-5430)があります。これにより制限のないファイルアップロードが可能となり、リモートコード実行につながるおそれがあります。影響を受ける製品は WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "9ce4928278f27562": {
-    "hash": "635a6ca4c944147b",
-    "attempts": 1,
-    "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性(CVE-2026-71362)があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を取得できるおそれがあります。影響を受ける製品は Adobe Commerce と Magento です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -613,13 +592,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "cd3144266bc19fa6": {
-    "hash": "67bb62491f51df6c",
-    "attempts": 1,
-    "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の環境では、ネットワークにアクセスできる認証されていない攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "f5760850d270ba9e": {
     "hash": "0d6b16f133c43b41",
     "attempts": 1,
@@ -662,13 +634,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "1a8c5d33557668c8": {
-    "hash": "00667e02a37da98d",
-    "attempts": 1,
-    "text": "Linux Kernel に詳細が特定されていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワークサブシステムを介して権限昇格が可能になるおそれがあります。攻撃者が権限を昇格できる可能性があります。影響を受ける製品は Suse、Red Hat をはじめ、Linux を使用する複数の製品にわたります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "2977d6efd67cbe57": {
     "hash": "bb5b866a7f42d80b",
     "attempts": 2,
@@ -683,13 +648,6 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "0a5d7800fe76d8b2": {
-    "hash": "3b37e8db82a01e7a",
-    "attempts": 1,
-    "text": "Red Hat の libuser に競合状態(レースコンディション)の脆弱性(CVE-2015-3246)があります。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
   "d82828f88a185ce1": {
     "hash": "dc48f302df8dd85e",
     "attempts": 1,
@@ -701,13 +659,6 @@
     "hash": "61e87c1c5a56761c",
     "attempts": 1,
     "text": "Linux Kernelに境界外メモリ書き込み(out-of-bounds write)の脆弱性があります(CVE-2022-0995)。ローカルユーザーが特権を取得したり、システムをサービス拒否(DoS)状態にしたりするおそれがあります。影響を受ける製品はLinux Kernelです。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "8ea3fa7b7a03d0ac": {
-    "hash": "c4390fb7c1069d86",
-    "attempts": 1,
-    "text": "Citrix NetScaler ADC および NetScaler Gateway に、メモリバッファの境界内での操作に対する不適切な制限の脆弱性（CVE-2026-8452）があります。この問題により、サービス拒否（DoS）が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
@@ -795,18 +746,67 @@
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
   },
-  "78cf842c6bd865e2": {
-    "hash": "de5869f2fe40739e",
+  "32e9afb64e229c85": {
+    "hash": "cca7165c422f666c",
     "attempts": 1,
-    "text": "UnrealIRCd に、区切り文字の不適切な無害化(Improper Neutralization of Delimiters)に関する脆弱性(CVE-2026-114713)があります。2台以上のサーバーがリンクされたネットワーク上の任意のユーザーが、サーバー間コマンドを注入し、サーバーの権限で実行させることができるおそれがあります。影響を受ける製品は UnrealIRCd です。",
+    "text": "ISC BIND にデータ処理の誤りに関する脆弱性(CVE-2015-5477)があります。リモートの攻撃者が TKEY クエリを送ることで、サービス拒否(DoS)を引き起こすおそれがあります。影響を受ける製品は ISC BIND です。",
     "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-13T19:47:20.014Z"
+    "generatedAt": "2026-11-14T06:32:16.948Z"
   },
-  "e6150b1aa1127c7e": {
-    "hash": "3e80c8a02fc13920",
+  "86062448b7f82ce5": {
+    "hash": "ba97fc53f7a48992",
     "attempts": 1,
-    "text": "Check Point の複数製品で、重要なリソースに対する不適切な権限設定の脆弱性(CVE-2026-123039)が存在します。Gaia OS の DynamicCLI デーモンが root 権限で動作し、誰でも書き込み可能なローカルソケットで接続元プロセスを認証せずに待ち受けていることが原因です。認証済みのローカルユーザーがソケットにコマンドを送ると、root 権限で実行されるおそれがあります。影響を受ける製品は Check Point Firewall、Multi-Domain Security Management Server、Scalable Platforms、Security Gateway、Security Management Server です。",
+    "text": "Plex Media Server にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-96652)があります。任意の X-Plex-Token 値を使う攻撃者が 'protocol' パラメータに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
     "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-13T19:47:20.014Z"
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "59a9a506b2947179": {
+    "hash": "3daa9b17dee9a15e",
+    "attempts": 1,
+    "text": "Strapiに、機密情報が平文で保存される問題(CVE-2023-22894)があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密性の高い詳細情報を取得できるおそれがあります。この脆弱性はCVE-2023-22621と組み合わせることでリモートコード実行が可能になるとされており、影響を受ける製品はサポート終了(EoL/EoS)の可能性があります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "2db4a75bb734488e": {
+    "hash": "a83199f4444f1796",
+    "attempts": 1,
+    "text": "WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway にパストラバーサルの脆弱性(CVE-2026-5430)があります。この問題により、ファイルの無制限なアップロードが可能となるおそれがあります。その結果、リモートコード実行につながるおそれがあります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "cd3144266bc19fa6": {
+    "hash": "051cc4a7b8d185f8",
+    "attempts": 1,
+    "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の場合、ネットワークにアクセスできる未認証の攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "9ce4928278f27562": {
+    "hash": "20de1e5c272de01e",
+    "attempts": 1,
+    "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を得られるおそれがあります。影響を受ける製品は Adobe Commerce と Magento で、CVE-2026-71362 として識別されています。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "1a8c5d33557668c8": {
+    "hash": "b564e8011b251ea1",
+    "attempts": 1,
+    "text": "Linux Kernel に詳細が明らかにされていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワーキングサブシステムを介して権限昇格が可能になるおそれがあります。影響を受ける製品には Suse や Red Hat など、Linux を使用する複数の製品が含まれますが、これらに限られません。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "0a5d7800fe76d8b2": {
+    "hash": "33f350aec5673d01",
+    "attempts": 1,
+    "text": "Red Hat の libuser に競合状態(race condition)の脆弱性があり、CVE-2015-3246 として識別されています。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否(DoS)や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
+  },
+  "8ea3fa7b7a03d0ac": {
+    "hash": "c1ffdea6beae83eb",
+    "attempts": 1,
+    "text": "Citrix NetScaler ADC と NetScaler Gateway に、メモリバッファの境界内での操作の不適切な制限に関する脆弱性(CVE-2026-8452)があります。この脆弱性により、サービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-14T06:32:16.948Z"
   }
 }

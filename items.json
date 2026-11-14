@@ -2387,10 +2387,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Plex Media Server にサーバーサイドリクエストフォージェリ (SSRF) の脆弱性 (CVE-2026-96652) があります。任意の X-Plex-Token の値を使う攻撃者が、'protocol' パラメーターに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
+      "text": "Plex Media Server にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-96652)があります。任意の X-Plex-Token 値を使う攻撃者が 'protocol' パラメータに完全な URL を含めることで、Plex サーバーから攻撃者が選んだ宛先へ POST リクエストを送信させるおそれがあります。この脆弱性は CVE-2026-96654、CVE-2026-96655、CVE-2026-96656 と連鎖させることができます。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -2737,7 +2737,7 @@
     "id": "32e9afb64e229c85",
     "source": "kev",
     "product": "other",
-    "title": " ISC BIND Data Processing Errors Vulnerability",
+    "title": "ISC BIND Data Processing Errors Vulnerability",
     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
     "publishedAt": "2026-10-08T00:00:00.000Z",
     "cves": [
@@ -2752,10 +2752,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "ISC BIND にデータ処理エラーの脆弱性(CVE-2015-5477)があります。リモートの攻撃者が TKEY クエリを送ることで、サービス拒否(DoS)を引き起こすおそれがあります。影響を受ける製品は ISC BIND です。",
+      "text": "ISC BIND にデータ処理の誤りに関する脆弱性(CVE-2015-5477)があります。リモートの攻撃者が TKEY クエリを送ることで、サービス拒否(DoS)を引き起こすおそれがあります。影響を受ける製品は ISC BIND です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -2803,10 +2803,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Strapi に、機密情報が平文で保存される問題 (CVE-2023-22894) があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密情報を取得できるおそれがあります。この脆弱性は CVE-2023-22621 と組み合わせることで、リモートコード実行につながるおそれがあります。影響を受ける製品はサポート終了 (EoL) またはサービス終了 (EoS) の場合があります。",
+      "text": "Strapiに、機密情報が平文で保存される問題(CVE-2023-22894)があります。管理パネルにアクセスできる攻撃者が、クエリフィルターを通じてユーザーの機密性の高い詳細情報を取得できるおそれがあります。この脆弱性はCVE-2023-22621と組み合わせることでリモートコード実行が可能になるとされており、影響を受ける製品はサポート終了(EoL/EoS)の可能性があります。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -3275,7 +3275,7 @@
     "id": "2db4a75bb734488e",
     "source": "kev",
     "product": "other",
-    "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+    "title": "WSO2 Multiple Products Path Traversal Vulnerability",
     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
     "publishedAt": "2026-09-24T00:00:00.000Z",
     "cves": [
@@ -3290,17 +3290,17 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "WSO2 の複数製品にパストラバーサルの脆弱性(CVE-2026-5430)があります。これにより制限のないファイルアップロードが可能となり、リモートコード実行につながるおそれがあります。影響を受ける製品は WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway です。",
+      "text": "WSO2 API Control Plane、API Manager、Traffic Manager、Universal Gateway にパストラバーサルの脆弱性(CVE-2026-5430)があります。この問題により、ファイルの無制限なアップロードが可能となるおそれがあります。その結果、リモートコード実行につながるおそれがあります。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
     "id": "9ce4928278f27562",
     "source": "kev",
     "product": "adobe",
-    "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+    "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability",
     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
     "publishedAt": "2026-09-24T00:00:00.000Z",
     "cves": [
@@ -3315,10 +3315,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性(CVE-2026-71362)があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を取得できるおそれがあります。影響を受ける製品は Adobe Commerce と Magento です。",
+      "text": "Adobe Commerce と Magento に、不適切な認可(Incorrect Authorization)の脆弱性があります。攻撃者がこの脆弱性を利用すると、ユーザーの操作なしに、機密性の高いリソースへの昇格したアクセス権を得られるおそれがあります。影響を受ける製品は Adobe Commerce と Magento で、CVE-2026-71362 として識別されています。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -4210,10 +4210,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の環境では、ネットワークにアクセスできる認証されていない攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
+      "text": "JFrog Artifactory に不適切な認証の脆弱性(CVE-2026-82329)があります。デフォルト設定の場合、ネットワークにアクセスできる未認証の攻撃者が管理者権限を取得できるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -4387,10 +4387,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Linux Kernel に詳細が特定されていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワークサブシステムを介して権限昇格が可能になるおそれがあります。攻撃者が権限を昇格できる可能性があります。影響を受ける製品は Suse、Red Hat をはじめ、Linux を使用する複数の製品にわたります。",
+      "text": "Linux Kernel に詳細が明らかにされていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワーキングサブシステムを介して権限昇格が可能になるおそれがあります。影響を受ける製品には Suse や Red Hat など、Linux を使用する複数の製品が含まれますが、これらに限られません。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -4462,10 +4462,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Red Hat の libuser に競合状態(レースコンディション)の脆弱性(CVE-2015-3246)があります。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
+      "text": "Red Hat の libuser に競合状態(race condition)の脆弱性があり、CVE-2015-3246 として識別されています。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否(DoS)や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {
@@ -4537,10 +4537,10 @@
     "audience": "it",
     "treatment": "ai-summary",
     "summary": {
-      "text": "Citrix NetScaler ADC および NetScaler Gateway に、メモリバッファの境界内での操作に対する不適切な制限の脆弱性（CVE-2026-8452）があります。この問題により、サービス拒否（DoS）が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
+      "text": "Citrix NetScaler ADC と NetScaler Gateway に、メモリバッファの境界内での操作の不適切な制限に関する脆弱性(CVE-2026-8452)があります。この脆弱性により、サービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
+      "generatedAt": "2026-11-14T06:32:16.948Z"
     }
   },
   {

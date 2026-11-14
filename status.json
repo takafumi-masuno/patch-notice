@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T19:47:20.014Z",
+  "fetchedAt": "2026-11-14T06:32:16.948Z",
   "sources": [
     {
       "id": "kev",
@@ -101,18 +101,18 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 5
     }
   ],
   "ai": {
-    "requested": 2,
-    "summarized": 2,
+    "requested": 9,
+    "summarized": 9,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.006902
+    "costUsd": 0.025820000000000003
   }
 }
