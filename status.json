@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T06:32:16.948Z",
+  "fetchedAt": "2026-11-14T18:10:37.328Z",
   "sources": [
     {
       "id": "kev",
@@ -107,12 +107,12 @@
     }
   ],
   "ai": {
-    "requested": 9,
-    "summarized": 9,
+    "requested": 0,
+    "summarized": 0,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.025820000000000003
+    "costUsd": 0
   }
 }
