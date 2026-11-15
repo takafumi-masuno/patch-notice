@@ -4817,30 +4817,5 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
     }
-  },
-  {
-    "id": "031f65aaf44edc65",
-    "source": "kev",
-    "product": "other",
-    "title": "Ray-Project Ray Code Injection Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-17T00:00:00.000Z",
-    "cves": [
-      "CVE-2025-62593"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
   }
 ]

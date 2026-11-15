@@ -801,12 +801,5 @@
     "text": "Apple macOS に不適切な認証の脆弱性(CVE-2026-65400)があります。ネットワーク上の攻撃者が、有効な認証情報なしで画面共有(Screen Sharing)に認証できるおそれがあります。影響を受ける製品は Apple macOS です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "031f65aaf44edc65": {
-    "hash": "dbb1f4e0f056b90f",
-    "attempts": 1,
-    "text": "Ray-Project Ray にコードインジェクションの脆弱性(CVE-2025-62593)があり、リモートコード実行につながるおそれがあります。Ray を開発ツールとして使用する開発者が影響を受ける可能性があり、Firefox と Safari を通じて攻撃される可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
   }
 }

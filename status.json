@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-14T22:29:47.401Z",
+  "fetchedAt": "2026-11-15T06:41:07.458Z",
   "sources": [
     {
       "id": "kev",
@@ -7,7 +7,7 @@
       "ok": true,
       "notModified": false,
       "entries": 1781,
-      "items": 116
+      "items": 115
     },
     {
       "id": "mozilla",
@@ -45,8 +45,8 @@
       "id": "kubernetes",
       "name": "Kubernetes",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 95,
       "items": 3
     },
     {
