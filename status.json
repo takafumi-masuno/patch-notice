@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-17T07:59:54.339Z",
+  "fetchedAt": "2026-11-17T20:59:31.929Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1781,
-      "items": 110
+      "entries": 1782,
+      "items": 111
     },
     {
       "id": "mozilla",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": false,
-      "entries": 6,
+      "notModified": true,
+      "entries": 0,
       "items": 7
     },
     {
@@ -37,8 +37,8 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 47
     },
     {
@@ -68,11 +68,10 @@
     {
       "id": "slack-windows",
       "name": "Slack (Windows)",
-      "ok": false,
+      "ok": true,
       "notModified": false,
-      "entries": 0,
-      "items": 4,
-      "error": "fetch failed"
+      "entries": 42,
+      "items": 4
     },
     {
       "id": "slack-mac",
@@ -102,18 +101,18 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 10,
       "items": 5
     }
   ],
   "ai": {
-    "requested": 0,
-    "summarized": 0,
+    "requested": 1,
+    "summarized": 1,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0
+    "costUsd": 0.003914
   }
 }

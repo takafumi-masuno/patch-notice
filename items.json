@@ -75,6 +75,31 @@
     "treatment": "title-link"
   },
   {
+    "id": "14ea5fe08a6b8b7e",
+    "source": "kev",
+    "product": "other",
+    "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-17T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-115731"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Perforce Puppet Enterprise のレポート処理コードに、信頼できないデータのデシリアライズに関する脆弱性（CVE-2026-115731）があります。CA が署名したエージェント証明書を持つクライアントが、細工したリッチデータ型を含むレポートを PUT リクエストで送信することで、Puppet Server 上でサービスユーザーとして任意のコードを実行できるおそれがあります。認証局が強力な検証なしに自動で署名する設定の場合、認証されていないネットワーク上の攻撃者でも有効な証明書を取得して、この脆弱性を悪用できる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-17T20:59:31.929Z"
+    }
+  },
+  {
     "id": "d9f15f59de27dee7",
     "source": "jvn",
     "product": "other",
