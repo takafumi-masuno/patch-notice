@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T22:11:06.683Z",
+  "fetchedAt": "2026-11-17T07:59:54.339Z",
   "sources": [
     {
       "id": "kev",
@@ -7,7 +7,7 @@
       "ok": true,
       "notModified": false,
       "entries": 1781,
-      "items": 111
+      "items": 110
     },
     {
       "id": "mozilla",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 6,
       "items": 7
     },
     {
@@ -37,9 +37,9 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 42
+      "notModified": false,
+      "entries": 20,
+      "items": 47
     },
     {
       "id": "kubernetes",
@@ -68,10 +68,11 @@
     {
       "id": "slack-windows",
       "name": "Slack (Windows)",
-      "ok": true,
+      "ok": false,
       "notModified": false,
-      "entries": 42,
-      "items": 4
+      "entries": 0,
+      "items": 4,
+      "error": "fetch failed"
     },
     {
       "id": "slack-mac",
@@ -93,8 +94,8 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 280,
       "items": 11
     },
     {

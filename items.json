@@ -1,5 +1,80 @@
 [
   {
+    "id": "0e1fd2cacfd584ad",
+    "source": "jvn",
+    "product": "other",
+    "title": "プリザンターにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN02242982/",
+    "publishedAt": "2026-11-17T06:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "7dd5d8fe5bb9bedc",
+    "source": "jvn",
+    "product": "other",
+    "title": "エレコム製無線LANルータにおける複数の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU91615135/",
+    "publishedAt": "2026-11-17T05:45:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "c2fdc30ecbfcc86e",
+    "source": "jvn",
+    "product": "other",
+    "title": "エレコム製無線LANルータにおけるOSコマンドインジェクションの脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU92504317/",
+    "publishedAt": "2026-11-17T05:30:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "2cc859af7df725db",
+    "source": "jvn",
+    "product": "apple",
+    "title": "複数製品におけるmacOS（APFS）とのUnicode正規化不整合によるファイルアクセス制限回避の脆弱性",
+    "url": "https://jvn.jp/vu/JVNVU93605944/",
+    "publishedAt": "2026-11-17T01:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "title-link"
+  },
+  {
+    "id": "18d08900491270c0",
+    "source": "jvn",
+    "product": "other",
+    "title": "富士電機製TELLUSにおける複数の脆弱性（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU97628215/",
+    "publishedAt": "2026-11-17T00:50:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "d9f15f59de27dee7",
     "source": "jvn",
     "product": "other",
@@ -4688,31 +4763,6 @@
     "treatment": "ai-summary",
     "summary": {
       "text": "TrueConf Server に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-72529)があります。ネットワーク経由で 4307/TCP ポートにアクセスできる認証されていないリモートの攻撃者が、任意のスクリプトを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "48e00341981dc3b1",
-    "source": "kev",
-    "product": "other",
-    "title": "MLflow Server-Side Request Forgery Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-19T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-64849"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "MLflow にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-64849)があります。攻撃者が内部サービスやクラウドのメタデータサービスにアクセスし、response_status と response_body を受け取ることができるおそれがあります。影響を受ける製品は MLflow です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"

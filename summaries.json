@@ -766,12 +766,5 @@
     "text": "TrueConf Server に、重要な機能に対する認証が欠如している脆弱性(CVE-2026-72529)があります。ネットワーク経由で 4307/TCP ポートにアクセスできる認証されていないリモートの攻撃者が、任意のスクリプトを実行できるおそれがあります。影響を受ける製品は TrueConf Server です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "48e00341981dc3b1": {
-    "hash": "b0524727cfe7cd05",
-    "attempts": 1,
-    "text": "MLflow にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性(CVE-2026-64849)があります。攻撃者が内部サービスやクラウドのメタデータサービスにアクセスし、response_status と response_body を受け取ることができるおそれがあります。影響を受ける製品は MLflow です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
   }
 }
