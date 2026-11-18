@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-18T07:35:42.382Z",
+  "fetchedAt": "2026-11-18T20:37:36.011Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1782,
-      "items": 109
+      "entries": 1786,
+      "items": 113
     },
     {
       "id": "mozilla",
@@ -29,16 +29,16 @@
       "id": "ipa",
       "name": "IPA",
       "ok": true,
-      "notModified": false,
-      "entries": 30,
+      "notModified": true,
+      "entries": 0,
       "items": 11
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 52
     },
     {
@@ -101,18 +101,18 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 5
+      "notModified": false,
+      "entries": 10,
+      "items": 6
     }
   ],
   "ai": {
-    "requested": 0,
-    "summarized": 0,
-    "rejected": 0,
+    "requested": 4,
+    "summarized": 3,
+    "rejected": 1,
     "refused": 0,
     "errors": 0,
-    "pending": 0,
-    "costUsd": 0
+    "pending": 1,
+    "costUsd": 0.013336
   }
 }

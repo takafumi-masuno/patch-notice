@@ -1,5 +1,20 @@
 [
   {
+    "id": "4a9ac89196abb0f8",
+    "source": "wordpress",
+    "product": "wordpress",
+    "title": "WordPress 7.1.5 Release",
+    "url": "https://wordpress.org/news/2026/11/wordpress-7-1-5-release/",
+    "publishedAt": "2026-11-18T17:08:59.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
     "id": "8862eb8ce2a51044",
     "source": "jvn",
     "product": "other",
@@ -60,6 +75,100 @@
     "urgencyReasons": [],
     "audience": "it",
     "treatment": "title-link"
+  },
+  {
+    "id": "7c9972b3786d0bd8",
+    "source": "kev",
+    "product": "other",
+    "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2024-10441"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Synology DiskStation Manager (DSM) のシステムプラグインデーモンに、出力の不適切なエンコードまたはエスケープ処理の問題があります（CVE-2024-10441）。リモートの攻撃者が、詳細不明の方法で任意のコードを実行できるおそれがあります。影響を受ける製品は Synology DiskStation Manager (DSM) で、Synology BeeStation OS (BSM) のシステムプラグインデーモンにも関係しています。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-18T20:37:36.011Z"
+    }
+  },
+  {
+    "id": "63d520b844a9490b",
+    "source": "kev",
+    "product": "other",
+    "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-40217"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "BerriAI LiteLLM に、保護されていない代替チャネルの脆弱性(CVE-2026-40217)があります。/guardrails/test_custom_code の URI を通じたバイトコードの書き換えにより、リモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-18T20:37:36.011Z"
+    }
+  },
+  {
+    "id": "24a1aeb3e1281b1c",
+    "source": "kev",
+    "product": "other",
+    "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-90817"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "93986d6b314fbd25",
+    "source": "kev",
+    "product": "other",
+    "title": "Apache Axis Unsafe Reflection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-90436"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apache Axis に unsafe reflection(安全でないリフレクション)の脆弱性(CVE-2026-90436)があります。細工された SOAP fault メッセージにより、攻撃者が指定したクラスを Axis が読み込んでインスタンス化し、アプリケーションのクラスパス上に適切なクラスが存在する場合に、認証なしのリモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Apache Axis で、すでにサポート終了(EoL/EoS)となっている可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-18T20:37:36.011Z"
+    }
   },
   {
     "id": "cc3d3f122cbd1f6f",
