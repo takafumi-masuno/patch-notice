@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T20:59:31.929Z",
+  "fetchedAt": "2026-11-18T07:35:42.382Z",
   "sources": [
     {
       "id": "kev",
@@ -7,7 +7,7 @@
       "ok": true,
       "notModified": false,
       "entries": 1782,
-      "items": 111
+      "items": 109
     },
     {
       "id": "mozilla",
@@ -21,25 +21,25 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 6,
       "items": 7
     },
     {
       "id": "ipa",
       "name": "IPA",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 10
+      "notModified": false,
+      "entries": 30,
+      "items": 11
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 47
+      "notModified": false,
+      "entries": 20,
+      "items": 52
     },
     {
       "id": "kubernetes",
@@ -54,8 +54,8 @@
       "name": "Chrome Releases",
       "ok": true,
       "notModified": false,
-      "entries": 2,
-      "items": 4
+      "entries": 3,
+      "items": 5
     },
     {
       "id": "windows-monthly",
@@ -93,26 +93,26 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": false,
-      "entries": 280,
+      "notModified": true,
+      "entries": 0,
       "items": 11
     },
     {
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 5
     }
   ],
   "ai": {
-    "requested": 1,
-    "summarized": 1,
+    "requested": 0,
+    "summarized": 0,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.003914
+    "costUsd": 0
   }
 }
