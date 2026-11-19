@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T07:32:07.319Z",
+  "fetchedAt": "2026-11-19T20:42:30.155Z",
   "sources": [
     {
       "id": "kev",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": false,
-      "entries": 6,
+      "notModified": true,
+      "entries": 0,
       "items": 7
     },
     {
@@ -31,14 +31,14 @@
       "ok": true,
       "notModified": false,
       "entries": 30,
-      "items": 12
+      "items": 13
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 54
     },
     {
@@ -94,8 +94,8 @@
       "name": "PHP",
       "ok": true,
       "notModified": false,
-      "entries": 281,
-      "items": 12
+      "entries": 285,
+      "items": 16
     },
     {
       "id": "wordpress",
@@ -107,12 +107,12 @@
     }
   ],
   "ai": {
-    "requested": 1,
-    "summarized": 1,
+    "requested": 0,
+    "summarized": 0,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.00378
+    "costUsd": 0
   }
 }

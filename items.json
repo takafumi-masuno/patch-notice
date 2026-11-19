@@ -1,5 +1,65 @@
 [
   {
+    "id": "c945b251341af5b5",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.5.13 Released!",
+    "url": "https://www.php.net/index.php#2026-11-19-4",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "5ab605a875274e8e",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.4.28 Released!",
+    "url": "https://www.php.net/index.php#2026-11-19-3",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "02b2894808708710",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.3.37 Released!",
+    "url": "https://www.php.net/index.php#2026-11-19-2",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
+    "id": "345486d81c11bc5c",
+    "source": "php",
+    "product": "php",
+    "title": "PHP 8.2.36 Released!",
+    "url": "https://www.php.net/index.php#2026-11-19-1",
+    "publishedAt": "2026-11-19T14:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "facts"
+  },
+  {
     "id": "182b0f510fd2c7be",
     "source": "jvn",
     "product": "other",
@@ -89,6 +149,23 @@
       "CVE-2026-123633"
     ],
     "cveCount": 2,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "ac2e1f9d02bf5a07",
+    "source": "ipa",
+    "product": "php",
+    "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について（11月）",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261119.html",
+    "publishedAt": "2026-11-18T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
     "exploited": false,
     "urgency": "action",
     "urgencyReasons": [
