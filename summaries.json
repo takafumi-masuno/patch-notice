@@ -1,4 +1,32 @@
 {
+  "7c9972b3786d0bd8": {
+    "hash": "34a5e58773fd3a86",
+    "attempts": 1,
+    "text": "Synology DiskStation Manager (DSM) のシステムプラグインデーモンに、出力の不適切なエンコードまたはエスケープ処理の問題があります（CVE-2024-10441）。リモートの攻撃者が、詳細不明の方法で任意のコードを実行できるおそれがあります。影響を受ける製品は Synology DiskStation Manager (DSM) で、Synology BeeStation OS (BSM) のシステムプラグインデーモンにも関係しています。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-18T20:37:36.011Z"
+  },
+  "63d520b844a9490b": {
+    "hash": "b9814959a8c202f6",
+    "attempts": 1,
+    "text": "BerriAI LiteLLM に、保護されていない代替チャネルの脆弱性(CVE-2026-40217)があります。/guardrails/test_custom_code の URI を通じたバイトコードの書き換えにより、リモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-18T20:37:36.011Z"
+  },
+  "24a1aeb3e1281b1c": {
+    "hash": "920e8bdfdc74b490",
+    "attempts": 2,
+    "text": "Vanderbilt University の Research Electronic Data Capture (REDCap) にコードインジェクションの脆弱性 (CVE-2026-90817) があり、認証されていない攻撃者がサーバー上で任意のコードを実行できるおそれがあります。公開サーベイの文脈から意図されていないコントローラーのルートにアクセスし、データインポート処理の際に細工したファイルパスまたはストリームのパラメーターを渡す、細工した HTTP リクエストによって攻撃される可能性があります。攻撃には有効な公開サーベイのハッシュの把握が必要です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-19T07:32:07.319Z"
+  },
+  "93986d6b314fbd25": {
+    "hash": "705d3f1b91c010f3",
+    "attempts": 1,
+    "text": "Apache Axis に unsafe reflection(安全でないリフレクション)の脆弱性(CVE-2026-90436)があります。細工された SOAP fault メッセージにより、攻撃者が指定したクラスを Axis が読み込んでインスタンス化し、アプリケーションのクラスパス上に適切なクラスが存在する場合に、認証なしのリモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Apache Axis で、すでにサポート終了(EoL/EoS)となっている可能性があります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-18T20:37:36.011Z"
+  },
   "14ea5fe08a6b8b7e": {
     "hash": "4050d457cbb3b55e",
     "attempts": 1,
@@ -752,38 +780,5 @@
     "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "7bf9b2525ac085d7": {
-    "hash": "85b731382cb246aa",
-    "attempts": 1,
-    "text": "Synacor の Zimbra Collaboration Suite (ZCS) に OS コマンドインジェクションの脆弱性 (CVE-2026-73570) があります。認証されていない攻撃者が細工した SMTP リクエストを送信することで、Zimbra ユーザーの権限で任意のオペレーティングシステムコマンドを実行されるおそれがあります。影響を受ける製品は Zimbra Collaboration Suite (ZCS) です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "63d520b844a9490b": {
-    "hash": "b9814959a8c202f6",
-    "attempts": 1,
-    "text": "BerriAI LiteLLM に、保護されていない代替チャネルの脆弱性(CVE-2026-40217)があります。/guardrails/test_custom_code の URI を通じたバイトコードの書き換えにより、リモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は BerriAI LiteLLM です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-18T20:37:36.011Z"
-  },
-  "7c9972b3786d0bd8": {
-    "hash": "34a5e58773fd3a86",
-    "attempts": 1,
-    "text": "Synology DiskStation Manager (DSM) のシステムプラグインデーモンに、出力の不適切なエンコードまたはエスケープ処理の問題があります（CVE-2024-10441）。リモートの攻撃者が、詳細不明の方法で任意のコードを実行できるおそれがあります。影響を受ける製品は Synology DiskStation Manager (DSM) で、Synology BeeStation OS (BSM) のシステムプラグインデーモンにも関係しています。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-18T20:37:36.011Z"
-  },
-  "24a1aeb3e1281b1c": {
-    "hash": "920e8bdfdc74b490",
-    "attempts": 1,
-    "failure": "check:advice"
-  },
-  "93986d6b314fbd25": {
-    "hash": "705d3f1b91c010f3",
-    "attempts": 1,
-    "text": "Apache Axis に unsafe reflection(安全でないリフレクション)の脆弱性(CVE-2026-90436)があります。細工された SOAP fault メッセージにより、攻撃者が指定したクラスを Axis が読み込んでインスタンス化し、アプリケーションのクラスパス上に適切なクラスが存在する場合に、認証なしのリモートの攻撃者が任意のコードを実行できるおそれがあります。影響を受ける製品は Apache Axis で、すでにサポート終了(EoL/EoS)となっている可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-18T20:37:36.011Z"
   }
 }

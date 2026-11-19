@@ -1,5 +1,68 @@
 [
   {
+    "id": "182b0f510fd2c7be",
+    "source": "jvn",
+    "product": "other",
+    "title": "ブラウザ拡張機能「Win Bird 授業支援」におけるクロスサイトスクリプティングの脆弱性",
+    "url": "https://jvn.jp/jp/JVN29068051/",
+    "publishedAt": "2026-11-19T05:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "f70a37312ff459af",
+    "source": "jvn",
+    "product": "other",
+    "title": "複数のRuijie Networks製品におけるOSコマンドインジェクションの脆弱性",
+    "url": "https://jvn.jp/jp/JVN28897261/",
+    "publishedAt": "2026-11-19T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "44b59a97b21acafa",
+    "source": "php",
+    "product": "php",
+    "title": "Upcoming Critical PHP Security Release",
+    "url": "https://www.php.net/index.php#2026-11-18-1",
+    "publishedAt": "2026-11-18T17:09:51.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "review",
+    "urgencyReasons": [
+      "メーカーの評価が critical"
+    ],
+    "audience": "it",
+    "treatment": "facts",
+    "vendorSeverity": "critical"
+  },
+  {
     "id": "4a9ac89196abb0f8",
     "source": "wordpress",
     "product": "wordpress",
@@ -13,6 +76,26 @@
     "urgencyReasons": [],
     "audience": "it",
     "treatment": "facts"
+  },
+  {
+    "id": "ef0ce24bbf9ccc48",
+    "source": "ipa",
+    "product": "other",
+    "title": "NGINXの複数の脆弱性対策について（CVE-2026-123007、CVE-2026-123633等）",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+    "publishedAt": "2026-11-18T15:00:00.000Z",
+    "cves": [
+      "CVE-2026-123007",
+      "CVE-2026-123633"
+    ],
+    "cveCount": 2,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
   },
   {
     "id": "8862eb8ce2a51044",
@@ -143,7 +226,13 @@
       "KEV に掲載"
     ],
     "audience": "it",
-    "treatment": "ai-summary"
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Vanderbilt University の Research Electronic Data Capture (REDCap) にコードインジェクションの脆弱性 (CVE-2026-90817) があり、認証されていない攻撃者がサーバー上で任意のコードを実行できるおそれがあります。公開サーベイの文脈から意図されていないコントローラーのルートにアクセスし、データインポート処理の際に細工したファイルパスまたはストリームのパラメーターを渡す、細工した HTTP リクエストによって攻撃される可能性があります。攻撃には有効な公開サーベイのハッシュの把握が必要です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-19T07:32:07.319Z"
+    }
   },
   {
     "id": "93986d6b314fbd25",
@@ -931,21 +1020,6 @@
     "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月10日）",
     "url": "https://jvn.jp/vu/JVNVU92618679/",
     "publishedAt": "2026-11-11T01:15:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
-  },
-  {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-11T01:00:00.000Z",
     "cves": [],
     "cveCount": 0,
     "exploited": false,
@@ -5137,31 +5211,6 @@
     "treatment": "ai-summary",
     "summary": {
       "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "7bf9b2525ac085d7",
-    "source": "kev",
-    "product": "other",
-    "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-21T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-73570"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Synacor の Zimbra Collaboration Suite (ZCS) に OS コマンドインジェクションの脆弱性 (CVE-2026-73570) があります。認証されていない攻撃者が細工した SMTP リクエストを送信することで、Zimbra ユーザーの権限で任意のオペレーティングシステムコマンドを実行されるおそれがあります。影響を受ける製品は Zimbra Collaboration Suite (ZCS) です。",
       "origin": "ai",
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
