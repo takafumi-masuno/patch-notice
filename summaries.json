@@ -780,5 +780,33 @@
     "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T16:05:31.182Z"
+  },
+  "0daf4719dccc1e07": {
+    "hash": "237a27dd25d6d8cb",
+    "attempts": 1,
+    "text": "SAP NetWeaver Enterprise Portal に、データクエリ処理で特殊要素が適切に無害化されない脆弱性（CVE-2025-42884）があります。認証されていない攻撃者が、JNDI の環境プロパティや JNDI ルックアップ処理で使われる URL に値を注入することで、サーバー情報を開示または改ざんできるおそれがあります。影響を受ける製品は SAP NetWeaver です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-20T20:26:59.762Z"
+  },
+  "e611ce104f441e53": {
+    "hash": "4ca4aca986246883",
+    "attempts": 1,
+    "text": "Broadcom VMware vCenter の VMware Directory Service に、代替パスまたはチャネルを使用した認証回避の脆弱性があります（CVE-2026-123890）。vCenter にネットワークアクセスできる未認証の攻撃者が、認証を回避してシステムへ不正にアクセスできるおそれがあります。影響を受ける製品は Broadcom VMware vCenter です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-20T20:26:59.762Z"
+  },
+  "3b5e27ddf379a55f": {
+    "hash": "ee83d2740ca20def",
+    "attempts": 1,
+    "text": "Apache Roller に、信頼できないデータのデシリアライゼーションに関する脆弱性(CVE-2026-129448)があります。XML-RPC エンドポイントが認証の前にベンダー拡張型を受け付けてデシリアライズするため、認証されていないリモートの攻撃者が任意のコードを実行できるおそれがあります。この CVE は CVE-2026-82384 と同じ根本的な脆弱性を対象としており、より広い範囲の影響を受けるバージョンに適用されます。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-20T20:26:59.762Z"
+  },
+  "28867e2095fb87b6": {
+    "hash": "ee36d8f7177d4025",
+    "attempts": 1,
+    "text": "Cisco Expressway Series に、ハードコードされた認証情報が使用されている脆弱性(CVE-2026-76466)があります。認証されていないリモートの攻撃者が、永続的なクッキーとネットワークアクセスを持っている場合、クラスタ構成のデバイス上でデータベースサービスを経由して root 権限でコマンドを実行できるおそれがあります。影響を受ける製品は Cisco Expressway Series です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-20T20:26:59.762Z"
   }
 }

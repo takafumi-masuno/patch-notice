@@ -51,6 +51,107 @@
     "treatment": "title-link"
   },
   {
+    "id": "3b5e27ddf379a55f",
+    "source": "kev",
+    "product": "other",
+    "title": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-129448",
+      "CVE-2026-82384"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Apache Roller に、信頼できないデータのデシリアライゼーションに関する脆弱性(CVE-2026-129448)があります。XML-RPC エンドポイントが認証の前にベンダー拡張型を受け付けてデシリアライズするため、認証されていないリモートの攻撃者が任意のコードを実行できるおそれがあります。この CVE は CVE-2026-82384 と同じ根本的な脆弱性を対象としており、より広い範囲の影響を受けるバージョンに適用されます。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-20T20:26:59.762Z"
+    }
+  },
+  {
+    "id": "e611ce104f441e53",
+    "source": "kev",
+    "product": "other",
+    "title": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Broadcom VMware vCenter の VMware Directory Service に、代替パスまたはチャネルを使用した認証回避の脆弱性があります（CVE-2026-123890）。vCenter にネットワークアクセスできる未認証の攻撃者が、認証を回避してシステムへ不正にアクセスできるおそれがあります。影響を受ける製品は Broadcom VMware vCenter です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-20T20:26:59.762Z"
+    }
+  },
+  {
+    "id": "0daf4719dccc1e07",
+    "source": "kev",
+    "product": "other",
+    "title": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2025-42884"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "SAP NetWeaver Enterprise Portal に、データクエリ処理で特殊要素が適切に無害化されない脆弱性（CVE-2025-42884）があります。認証されていない攻撃者が、JNDI の環境プロパティや JNDI ルックアップ処理で使われる URL に値を注入することで、サーバー情報を開示または改ざんできるおそれがあります。影響を受ける製品は SAP NetWeaver です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-20T20:26:59.762Z"
+    }
+  },
+  {
+    "id": "28867e2095fb87b6",
+    "source": "kev",
+    "product": "cisco",
+    "title": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-76466"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Cisco Expressway Series に、ハードコードされた認証情報が使用されている脆弱性(CVE-2026-76466)があります。認証されていないリモートの攻撃者が、永続的なクッキーとネットワークアクセスを持っている場合、クラスタ構成のデバイス上でデータベースサービスを経由して root 権限でコマンドを実行できるおそれがあります。影響を受ける製品は Cisco Expressway Series です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-20T20:26:59.762Z"
+    }
+  },
+  {
     "id": "30ac2c411408378f",
     "source": "jvn",
     "product": "other",
