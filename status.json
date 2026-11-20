@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T20:42:30.155Z",
+  "fetchedAt": "2026-11-20T07:23:22.851Z",
   "sources": [
     {
       "id": "kev",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 6,
       "items": 7
     },
     {
@@ -31,15 +31,15 @@
       "ok": true,
       "notModified": false,
       "entries": 30,
-      "items": 13
+      "items": 14
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 54
+      "notModified": false,
+      "entries": 20,
+      "items": 55
     },
     {
       "id": "kubernetes",
@@ -93,8 +93,8 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": false,
-      "entries": 285,
+      "notModified": true,
+      "entries": 0,
       "items": 16
     },
     {

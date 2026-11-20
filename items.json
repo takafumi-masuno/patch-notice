@@ -1,5 +1,88 @@
 [
   {
+    "id": "9e050b2d957b71a3",
+    "source": "jpcert",
+    "product": "php",
+    "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
+    "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+    "publishedAt": "2026-11-20T04:40:00.000Z",
+    "cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "cveCount": 2,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "0c38bb21bb687173",
+    "source": "jvn",
+    "product": "other",
+    "title": "SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性",
+    "url": "https://jvn.jp/jp/JVN64740097/",
+    "publishedAt": "2026-11-20T01:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "15ef7c88c6a2034a",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月19日）",
+    "url": "https://jvn.jp/vu/JVNVU92814490/",
+    "publishedAt": "2026-11-20T00:30:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "ecc05bc021ccf2d0",
+    "source": "ipa",
+    "product": "php",
+    "title": "PHPの脆弱性対策について（2026年11月）",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261120.html",
+    "publishedAt": "2026-11-19T15:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "action",
+    "urgencyReasons": [
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "c945b251341af5b5",
     "source": "php",
     "product": "php",
@@ -81,21 +164,6 @@
     "title": "複数のRuijie Networks製品におけるOSコマンドインジェクションの脆弱性",
     "url": "https://jvn.jp/jp/JVN28897261/",
     "publishedAt": "2026-11-19T03:00:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
-  },
-  {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-19T00:00:00.000Z",
     "cves": [],
     "cveCount": 0,
     "exploited": false,
@@ -870,21 +938,6 @@
     "title": "三菱電機数値制御装置におけるサービス運用妨害（DoS）の脆弱性",
     "url": "https://jvn.jp/vu/JVNVU95523788/",
     "publishedAt": "2026-11-12T03:15:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
-  },
-  {
-    "id": "0c38bb21bb687173",
-    "source": "jvn",
-    "product": "other",
-    "title": "SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性",
-    "url": "https://jvn.jp/jp/JVN64740097/",
-    "publishedAt": "2026-11-12T03:00:00.000Z",
     "cves": [],
     "cveCount": 0,
     "exploited": false,
@@ -2257,27 +2310,6 @@
     "audience": "both",
     "treatment": "facts",
     "version": "4.53.276"
-  },
-  {
-    "id": "9e050b2d957b71a3",
-    "source": "jpcert",
-    "product": "php",
-    "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
-    "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
-    "publishedAt": "2026-10-29T06:43:00.000Z",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "cveCount": 2,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "関連する CVE が KEV に掲載",
-      "国内機関の注意喚起"
-    ],
-    "audience": "it",
-    "treatment": "title-link"
   },
   {
     "id": "ac1ad87ec883bad9",
