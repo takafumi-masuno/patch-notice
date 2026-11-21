@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-20T20:26:59.762Z",
+  "fetchedAt": "2026-11-21T07:16:08.800Z",
   "sources": [
     {
       "id": "kev",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": false,
-      "entries": 6,
+      "notModified": true,
+      "entries": 0,
       "items": 7
     },
     {
@@ -101,18 +101,18 @@
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": false,
-      "entries": 10,
+      "notModified": true,
+      "entries": 0,
       "items": 6
     }
   ],
   "ai": {
-    "requested": 4,
-    "summarized": 4,
+    "requested": 0,
+    "summarized": 0,
     "rejected": 0,
     "refused": 0,
     "errors": 0,
     "pending": 0,
-    "costUsd": 0.012604
+    "costUsd": 0
   }
 }
