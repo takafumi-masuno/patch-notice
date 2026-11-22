@@ -5400,30 +5400,5 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
     }
-  },
-  {
-    "id": "a90b5c576e2f583f",
-    "source": "kev",
-    "product": "oracle",
-    "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-24T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-21962"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in に、不適切なアクセス制御の脆弱性(CVE-2026-21962)があります。この脆弱性により、重要なデータに対する不正な作成、削除、変更や、不正なアクセスが行われるおそれがあります。また、Oracle HTTP Server と Oracle WebLogic Server Proxy Plug-in からアクセス可能なすべてのデータに完全にアクセスされるおそれがあります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
   }
 ]
