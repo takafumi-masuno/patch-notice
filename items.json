@@ -1,5 +1,73 @@
 [
   {
+    "id": "5ab4b14efd6bc0b9",
+    "source": "chrome",
+    "product": "chrome",
+    "title": "Chrome 158.0.8127.88（Stable）",
+    "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01734282054.html",
+    "publishedAt": "2026-11-23T20:52:51.321Z",
+    "cves": [
+      "CVE-2026-134401"
+    ],
+    "cveCount": 1,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "both",
+    "treatment": "facts",
+    "version": "158.0.8127.88"
+  },
+  {
+    "id": "30255b9a2955ea1c",
+    "source": "kev",
+    "product": "other",
+    "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-133968"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "Project MONAI の MONAI Label にパストラバーサルの脆弱性があります(CVE-2026-133968)。認証されていないリモートの攻撃者が、本来のデータストアのディレクトリの外に任意のファイルを書き込めるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-23T23:57:54.373Z"
+    }
+  },
+  {
+    "id": "3f27a7cbd7f2c481",
+    "source": "kev",
+    "product": "other",
+    "title": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-134624"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary",
+    "summary": {
+      "text": "N-able MailAssure (SpamExperts) のLDAP同期の接続確認機能にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性があります(CVE-2026-134624)。認証済みのAPIユーザーが、任意の内部ホストとポートに接続して到達可能かどうかを判別し、内部サービスに細工したデータを送信できるおそれがあります。影響を受ける製品はN-able MailAssure (SpamExperts)です。",
+      "origin": "ai",
+      "model": "claude-sonnet-5-5",
+      "generatedAt": "2026-11-23T23:57:54.373Z"
+    }
+  },
+  {
     "id": "9e050b2d957b71a3",
     "source": "jpcert",
     "product": "php",
