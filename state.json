@@ -1,22 +1,22 @@
 {
   "http": {
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-660b1086b6dc0\"",
-      "lastModified": "Fri, 20 Nov 2026 08:28:47 GMT"
+      "etag": "\"5124-660feae454980\"",
+      "lastModified": "Tue, 24 Nov 2026 05:07:02 GMT"
     },
     "https://blog.mozilla.org/security/feed/": {
       "etag": "W/\"69d421e4d5682a20eb147580ef4c46a7\"",
       "lastModified": "Tue, 10 Nov 2026 18:36:02 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"7c3e8f6f040babea60378a9a3c5c7f35968a0ac5\"",
-      "lastModified": "Fri, 20 Nov 2026 01:00:12 GMT"
+      "etag": "\"cf13ece62cb5f0874e312362a588f5f5183bf7d6\"",
+      "lastModified": "Tue, 24 Nov 2026 03:00:07 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
-      "lastModified": "Fri, 20 Nov 2026 02:35:17 GMT"
+      "lastModified": "Tue, 24 Nov 2026 02:32:56 GMT"
     },
     "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml": {
-      "etag": "W/\"667a9f66078ca2bceb52aa9beb5da7e1-ssl\""
+      "etag": "W/\"7aa12ad3fc6051233b21f5081b25729e-ssl\""
     },
     "https://slack.com/release-notes/mac/rss": {},
     "https://www.php.net/feed.atom": {
@@ -29,7 +29,7 @@
       "lastModified": "Mon, 23 Nov 2026 19:07:18 GMT"
     },
     "https://chromereleases.googleblog.com/feeds/posts/default": {
-      "lastModified": "Mon, 23 Nov 2026 23:12:39 GMT"
+      "lastModified": "Tue, 24 Nov 2026 04:13:31 GMT"
     }
   },
   "kevCves": [

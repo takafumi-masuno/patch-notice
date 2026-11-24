@@ -1,5 +1,35 @@
 [
   {
+    "id": "4004e1fc6d5a17ff",
+    "source": "jvn",
+    "product": "other",
+    "title": "Zoraxyにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN84156789/",
+    "publishedAt": "2026-11-24T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "5ab4b14efd6bc0b9",
     "source": "chrome",
     "product": "chrome",
@@ -16,6 +46,26 @@
     "audience": "both",
     "treatment": "facts",
     "version": "158.0.8127.88"
+  },
+  {
+    "id": "38a911824e8f0508",
+    "source": "ipa",
+    "product": "other",
+    "title": "VMware製品の脆弱性対策について(CVE-2026-123890)",
+    "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261124.html",
+    "publishedAt": "2026-11-23T15:00:00.000Z",
+    "cves": [
+      "CVE-2026-123890"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "関連する CVE が KEV に掲載",
+      "国内機関の注意喚起"
+    ],
+    "audience": "it",
+    "treatment": "title-link"
   },
   {
     "id": "30255b9a2955ea1c",
@@ -218,21 +268,6 @@
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-20T20:26:59.762Z"
     }
-  },
-  {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-20T00:00:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
   },
   {
     "id": "ecc05bc021ccf2d0",
@@ -5292,156 +5327,6 @@
       "origin": "ai",
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T23:42:01.559Z"
-    }
-  },
-  {
-    "id": "02457117d280f5e0",
-    "source": "kev",
-    "product": "other",
-    "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2021-23758"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Ajax.NET Professional(AjaxPro)に、信頼できないデータのデシリアライズに関する脆弱性(CVE-2021-23758)があります。任意の .NET クラスを介してリモートコード実行が可能になるおそれがあります。影響を受ける製品は Ajax.NET Professional で、サポート終了(EoL/EoS)となっている可能性があります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "0a5d7800fe76d8b2",
-    "source": "kev",
-    "product": "other",
-    "title": "Red Hat Libuser Race Condition Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2015-3246"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Red Hat の libuser に競合状態(race condition)の脆弱性があり、CVE-2015-3246 として識別されています。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否(DoS)や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-14T06:32:16.948Z"
-    }
-  },
-  {
-    "id": "d82828f88a185ce1",
-    "source": "kev",
-    "product": "other",
-    "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2015-5287"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Red Hat Automatic Bug Reporting Tool (ABRT) に権限昇格の脆弱性があります(CVE-2015-5287)。予測可能な名前のファイルに対するシンボリックリンク攻撃により、特定の権限を持つローカルユーザーが権限を取得できるおそれがあります。影響を受ける製品は Red Hat Automatic Bug Reporting Tool (ABRT) で、サポートが終了している可能性があります。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "5d9e9d80c228bc6b",
-    "source": "kev",
-    "product": "other",
-    "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2022-0995"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Linux Kernelに境界外メモリ書き込み(out-of-bounds write)の脆弱性があります(CVE-2022-0995)。ローカルユーザーが特権を取得したり、システムをサービス拒否(DoS)状態にしたりするおそれがあります。影響を受ける製品はLinux Kernelです。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "8ea3fa7b7a03d0ac",
-    "source": "kev",
-    "product": "citrix",
-    "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-8452"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Citrix NetScaler ADC と NetScaler Gateway に、メモリバッファの境界内での操作の不適切な制限に関する脆弱性(CVE-2026-8452)があります。この脆弱性により、サービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-14T06:32:16.948Z"
-    }
-  },
-  {
-    "id": "106fea48675949de",
-    "source": "kev",
-    "product": "windows-office",
-    "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-26T00:00:00.000Z",
-    "cves": [
-      "CVE-2019-1068"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Microsoft SQL Server にリモートコード実行の脆弱性(CVE-2019-1068)があります。攻撃者が SQL Server Database Engine のサービスアカウントの権限でコードを実行できるおそれがあります。影響を受ける製品は Microsoft SQL Server です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
     }
   }
 ]

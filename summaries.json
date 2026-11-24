@@ -1,4 +1,18 @@
 {
+  "30255b9a2955ea1c": {
+    "hash": "b32b7cb06f53adcf",
+    "attempts": 1,
+    "text": "Project MONAI の MONAI Label にパストラバーサルの脆弱性があります(CVE-2026-133968)。認証されていないリモートの攻撃者が、本来のデータストアのディレクトリの外に任意のファイルを書き込めるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-23T23:57:54.373Z"
+  },
+  "3f27a7cbd7f2c481": {
+    "hash": "2526eb79d03a4f17",
+    "attempts": 1,
+    "text": "N-able MailAssure (SpamExperts) のLDAP同期の接続確認機能にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性があります(CVE-2026-134624)。認証済みのAPIユーザーが、任意の内部ホストとポートに接続して到達可能かどうかを判別し、内部サービスに細工したデータを送信できるおそれがあります。影響を受ける製品はN-able MailAssure (SpamExperts)です。",
+    "model": "claude-sonnet-5-5",
+    "generatedAt": "2026-11-23T23:57:54.373Z"
+  },
   "3b5e27ddf379a55f": {
     "hash": "ee83d2740ca20def",
     "attempts": 1,
@@ -752,61 +766,5 @@
     "text": "JFrog Artifactory に、パス名が制限されたディレクトリに適切に制限されない問題(CVE-2026-66384)があります。特定のリモートリポジトリの条件下で、認証済みのユーザーが本来の Docker キャッシュのパスの外にデータを書き込めるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
     "model": "claude-sonnet-5-5",
     "generatedAt": "2026-11-07T23:42:01.559Z"
-  },
-  "02457117d280f5e0": {
-    "hash": "f5e52c6c0560fb32",
-    "attempts": 1,
-    "text": "Ajax.NET Professional(AjaxPro)に、信頼できないデータのデシリアライズに関する脆弱性(CVE-2021-23758)があります。任意の .NET クラスを介してリモートコード実行が可能になるおそれがあります。影響を受ける製品は Ajax.NET Professional で、サポート終了(EoL/EoS)となっている可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "0a5d7800fe76d8b2": {
-    "hash": "33f350aec5673d01",
-    "attempts": 1,
-    "text": "Red Hat の libuser に競合状態(race condition)の脆弱性があり、CVE-2015-3246 として識別されています。認証されたローカルユーザーが /etc/passwd ファイルを破損させ、サービス拒否(DoS)や権限昇格を引き起こすおそれがあります。影響を受ける製品は Red Hat libuser です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-14T06:32:16.948Z"
-  },
-  "d82828f88a185ce1": {
-    "hash": "dc48f302df8dd85e",
-    "attempts": 1,
-    "text": "Red Hat Automatic Bug Reporting Tool (ABRT) に権限昇格の脆弱性があります(CVE-2015-5287)。予測可能な名前のファイルに対するシンボリックリンク攻撃により、特定の権限を持つローカルユーザーが権限を取得できるおそれがあります。影響を受ける製品は Red Hat Automatic Bug Reporting Tool (ABRT) で、サポートが終了している可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "5d9e9d80c228bc6b": {
-    "hash": "61e87c1c5a56761c",
-    "attempts": 1,
-    "text": "Linux Kernelに境界外メモリ書き込み(out-of-bounds write)の脆弱性があります(CVE-2022-0995)。ローカルユーザーが特権を取得したり、システムをサービス拒否(DoS)状態にしたりするおそれがあります。影響を受ける製品はLinux Kernelです。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "8ea3fa7b7a03d0ac": {
-    "hash": "c1ffdea6beae83eb",
-    "attempts": 1,
-    "text": "Citrix NetScaler ADC と NetScaler Gateway に、メモリバッファの境界内での操作の不適切な制限に関する脆弱性(CVE-2026-8452)があります。この脆弱性により、サービス拒否(DoS)が引き起こされるおそれがあります。影響を受ける製品は Citrix NetScaler ADC と NetScaler Gateway です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-14T06:32:16.948Z"
-  },
-  "106fea48675949de": {
-    "hash": "2280aa51ad01f206",
-    "attempts": 1,
-    "text": "Microsoft SQL Server にリモートコード実行の脆弱性(CVE-2019-1068)があります。攻撃者が SQL Server Database Engine のサービスアカウントの権限でコードを実行できるおそれがあります。影響を受ける製品は Microsoft SQL Server です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-07T16:05:31.182Z"
-  },
-  "30255b9a2955ea1c": {
-    "hash": "b32b7cb06f53adcf",
-    "attempts": 1,
-    "text": "Project MONAI の MONAI Label にパストラバーサルの脆弱性があります(CVE-2026-133968)。認証されていないリモートの攻撃者が、本来のデータストアのディレクトリの外に任意のファイルを書き込めるおそれがあります。その結果、リモートコード実行につながる可能性があります。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-23T23:57:54.373Z"
-  },
-  "3f27a7cbd7f2c481": {
-    "hash": "2526eb79d03a4f17",
-    "attempts": 1,
-    "text": "N-able MailAssure (SpamExperts) のLDAP同期の接続確認機能にサーバーサイドリクエストフォージェリ(SSRF)の脆弱性があります(CVE-2026-134624)。認証済みのAPIユーザーが、任意の内部ホストとポートに接続して到達可能かどうかを判別し、内部サービスに細工したデータを送信できるおそれがあります。影響を受ける製品はN-able MailAssure (SpamExperts)です。",
-    "model": "claude-sonnet-5-5",
-    "generatedAt": "2026-11-23T23:57:54.373Z"
   }
 }
