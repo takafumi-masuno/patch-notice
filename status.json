@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-24T09:59:07.192Z",
+  "fetchedAt": "2026-11-24T22:30:22.712Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1792,
-      "items": 110
+      "entries": 1795,
+      "items": 113
     },
     {
       "id": "mozilla",
@@ -21,24 +21,24 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": false,
-      "entries": 6,
+      "notModified": true,
+      "entries": 0,
       "items": 7
     },
     {
       "id": "ipa",
       "name": "IPA",
       "ok": true,
-      "notModified": false,
-      "entries": 30,
+      "notModified": true,
+      "entries": 0,
       "items": 15
     },
     {
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 56
     },
     {
@@ -93,26 +93,27 @@
       "id": "php",
       "name": "PHP",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 285,
       "items": 16
     },
     {
       "id": "wordpress",
       "name": "WordPress",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
+      "notModified": false,
+      "entries": 10,
       "items": 6
     }
   ],
   "ai": {
-    "requested": 0,
+    "requested": 3,
     "summarized": 0,
     "rejected": 0,
     "refused": 0,
-    "errors": 0,
-    "pending": 0,
-    "costUsd": 0
+    "errors": 3,
+    "pending": 3,
+    "costUsd": 0,
+    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChNYYFJM8mpyUiBcA16a8\"}"
   }
 }

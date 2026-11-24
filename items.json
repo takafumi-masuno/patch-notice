@@ -15,6 +15,63 @@
     "treatment": "title-link"
   },
   {
+    "id": "d1a45aa03e76a3ea",
+    "source": "kev",
+    "product": "other",
+    "title": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-132224"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "dbc2d9f0c134ad0e",
+    "source": "kev",
+    "product": "other",
+    "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-131914"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "0cf86020f9dd5888",
+    "source": "kev",
+    "product": "other",
+    "title": "Drupal Core Remote Code Execution Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-132165"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
     "id": "30ac2c411408378f",
     "source": "jvn",
     "product": "other",
