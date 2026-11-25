@@ -1,5 +1,80 @@
 [
   {
+    "id": "4433ceab548ce233",
+    "source": "jvn",
+    "product": "other",
+    "title": "Apache Tomcatにおける複数の脆弱性（2026年11月19日）",
+    "url": "https://jvn.jp/vu/JVNVU92527429/",
+    "publishedAt": "2026-11-25T06:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "9e69381f50678d2b",
+    "source": "jvn",
+    "product": "other",
+    "title": "源内Webにおけるサーバサイドリクエストフォージェリの脆弱性",
+    "url": "https://jvn.jp/jp/JVN78929433/",
+    "publishedAt": "2026-11-25T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "30ac2c411408378f",
+    "source": "jvn",
+    "product": "other",
+    "title": "Siemens製品に対するアップデート（2026年11月）",
+    "url": "https://jvn.jp/vu/JVNVU98354779/",
+    "publishedAt": "2026-11-25T00:15:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "1ff0eda1ee907e8f",
+    "source": "jvn",
+    "product": "other",
+    "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月24日）",
+    "url": "https://jvn.jp/vu/JVNVU95723901/",
+    "publishedAt": "2026-11-25T00:00:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "19741d6dee6def9d",
+    "source": "jvn",
+    "product": "other",
+    "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月24日）",
+    "url": "https://jvn.jp/vu/JVNVU93291989/",
+    "publishedAt": "2026-11-25T00:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "4004e1fc6d5a17ff",
     "source": "jvn",
     "product": "other",
@@ -70,21 +145,6 @@
     ],
     "audience": "it",
     "treatment": "ai-summary"
-  },
-  {
-    "id": "30ac2c411408378f",
-    "source": "jvn",
-    "product": "other",
-    "title": "Siemens製品に対するアップデート（2026年11月）",
-    "url": "https://jvn.jp/vu/JVNVU98354779/",
-    "publishedAt": "2026-11-24T00:00:00.000Z",
-    "cves": [],
-    "cveCount": 0,
-    "exploited": false,
-    "urgency": "normal",
-    "urgencyReasons": [],
-    "audience": "it",
-    "treatment": "title-link"
   },
   {
     "id": "5ab4b14efd6bc0b9",
@@ -5309,81 +5369,6 @@
       "origin": "ai",
       "model": "claude-sonnet-5-5",
       "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "989aa559dde3d5b9",
-    "source": "kev",
-    "product": "other",
-    "title": "ownCloud Improper Authentication Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-27T00:00:00.000Z",
-    "cves": [
-      "CVE-2023-49105"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "ownCloud に不適切な認証の脆弱性（CVE-2023-49105）があります。被害者のユーザー名が分かっており、かつ被害者に signing-key が設定されていない場合、攻撃者が認証なしで任意のファイルにアクセスしたり、変更したり、削除したりできるおそれがあります。影響を受ける製品は ownCloud です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T16:05:31.182Z"
-    }
-  },
-  {
-    "id": "1a8c5d33557668c8",
-    "source": "kev",
-    "product": "other",
-    "title": "Linux Kernel Unspecified Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-27T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-53362"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "Linux Kernel に詳細が明らかにされていない脆弱性(CVE-2026-53362)があり、IPv6 ネットワーキングサブシステムを介して権限昇格が可能になるおそれがあります。影響を受ける製品には Suse や Red Hat など、Linux を使用する複数の製品が含まれますが、これらに限られません。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-14T06:32:16.948Z"
-    }
-  },
-  {
-    "id": "2977d6efd67cbe57",
-    "source": "kev",
-    "product": "other",
-    "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-08-27T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-66384"
-    ],
-    "cveCount": 1,
-    "exploited": true,
-    "urgency": "action",
-    "urgencyReasons": [
-      "KEV に掲載"
-    ],
-    "audience": "it",
-    "treatment": "ai-summary",
-    "summary": {
-      "text": "JFrog Artifactory に、パス名が制限されたディレクトリに適切に制限されない問題(CVE-2026-66384)があります。特定のリモートリポジトリの条件下で、認証済みのユーザーが本来の Docker キャッシュのパスの外にデータを書き込めるおそれがあります。影響を受ける製品は JFrog Artifactory です。",
-      "origin": "ai",
-      "model": "claude-sonnet-5-5",
-      "generatedAt": "2026-11-07T23:42:01.559Z"
     }
   }
 ]
