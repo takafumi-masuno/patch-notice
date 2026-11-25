@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-25T08:42:55.890Z",
+  "fetchedAt": "2026-11-25T21:45:35.538Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1795,
-      "items": 110
+      "entries": 1805,
+      "items": 120
     },
     {
       "id": "mozilla",
@@ -37,8 +37,8 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 60
     },
     {
@@ -112,8 +112,8 @@
     "rejected": 0,
     "refused": 0,
     "errors": 3,
-    "pending": 3,
+    "pending": 13,
     "costUsd": 0,
-    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChPMFRN5R6GAigM7DaMJo\"}"
+    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChQNvypuRxtkRB919XGH7\"}"
   }
 }
