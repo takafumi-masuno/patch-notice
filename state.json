@@ -16,12 +16,12 @@
       "lastModified": "Tue, 24 Nov 2026 02:32:56 GMT"
     },
     "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml": {
-      "etag": "W/\"3c72af29153bbe3063ef725664383c10-ssl\""
+      "etag": "W/\"de430d77d198aeb74ff40dc3d4859a1c-ssl\""
     },
     "https://slack.com/release-notes/mac/rss": {},
     "https://www.php.net/feed.atom": {
-      "etag": "W/\"172c8c-66105fdbdb562\"",
-      "lastModified": "Tue, 24 Nov 2026 13:50:20 GMT"
+      "etag": "W/\"17329f-66121a6a4fe1a\"",
+      "lastModified": "Wed, 25 Nov 2026 22:50:17 GMT"
     },
     "https://nodejs.org/en/feed/vulnerability.xml": {},
     "https://slack.com/release-notes/windows/rss": {},
