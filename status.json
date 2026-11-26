@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T21:45:35.538Z",
+  "fetchedAt": "2026-11-26T08:27:12.999Z",
   "sources": [
     {
       "id": "kev",
@@ -37,9 +37,9 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": true,
-      "entries": 0,
-      "items": 60
+      "notModified": false,
+      "entries": 20,
+      "items": 62
     },
     {
       "id": "kubernetes",
@@ -114,6 +114,6 @@
     "errors": 3,
     "pending": 13,
     "costUsd": 0,
-    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChQNvypuRxtkRB919XGH7\"}"
+    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChRDrqCLYkJV2FHToSmbm\"}"
   }
 }

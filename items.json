@@ -1,5 +1,35 @@
 [
   {
+    "id": "f31797dd11a56ec4",
+    "source": "jvn",
+    "product": "other",
+    "title": "Androidアプリ「東京消防庁公式アプリ」におけるパストラバーサルの脆弱性",
+    "url": "https://jvn.jp/jp/JVN16383801/",
+    "publishedAt": "2026-11-26T03:00:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "6a8271a1a3fb3b3e",
+    "source": "jvn",
+    "product": "other",
+    "title": "baserCMSにおける複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN25972114/",
+    "publishedAt": "2026-11-26T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "4433ceab548ce233",
     "source": "jvn",
     "product": "other",
