@@ -1,5 +1,35 @@
 [
   {
+    "id": "088cbfb18b6fc915",
+    "source": "jvn",
+    "product": "other",
+    "title": "EspoCRMにおけるクロスサイトスクリプティングの脆弱性",
+    "url": "https://jvn.jp/jp/JVN36592422/",
+    "publishedAt": "2026-11-27T03:00:15.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
+    "id": "c25735f0acb19340",
+    "source": "jvn",
+    "product": "other",
+    "title": "スマートフォンアプリ「マイナアプリ（旧マイナポータルアプリ）」における入力リストによる制限が不十分なことに起因する複数の脆弱性",
+    "url": "https://jvn.jp/jp/JVN19729125/",
+    "publishedAt": "2026-11-27T03:00:00.000Z",
+    "cves": [],
+    "cveCount": 0,
+    "exploited": false,
+    "urgency": "normal",
+    "urgencyReasons": [],
+    "audience": "it",
+    "treatment": "title-link"
+  },
+  {
     "id": "f31797dd11a56ec4",
     "source": "jvn",
     "product": "other",
