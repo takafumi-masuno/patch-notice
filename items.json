@@ -30,6 +30,71 @@
     "treatment": "title-link"
   },
   {
+    "id": "f18078baddeac6d3",
+    "source": "kev",
+    "product": "other",
+    "title": "OSGeo GeoServer XML Injection Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129242",
+      "CVE-2026-129243",
+      "CVE-2026-129244",
+      "CVE-2026-129245"
+    ],
+    "cveCount": 5,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "cc8c2302d6c2472a",
+    "source": "kev",
+    "product": "other",
+    "title": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-120705",
+      "CVE-2026-129242",
+      "CVE-2026-129243",
+      "CVE-2026-129244",
+      "CVE-2026-129245"
+    ],
+    "cveCount": 5,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
+    "id": "62dd71a5a898091f",
+    "source": "kev",
+    "product": "other",
+    "title": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-27T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-136716"
+    ],
+    "cveCount": 1,
+    "exploited": true,
+    "urgency": "action",
+    "urgencyReasons": [
+      "KEV に掲載"
+    ],
+    "audience": "it",
+    "treatment": "ai-summary"
+  },
+  {
     "id": "f31797dd11a56ec4",
     "source": "jvn",
     "product": "other",

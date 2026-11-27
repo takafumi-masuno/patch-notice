@@ -1,13 +1,13 @@
 {
-  "fetchedAt": "2026-11-27T08:42:14.888Z",
+  "fetchedAt": "2026-11-27T21:22:56.152Z",
   "sources": [
     {
       "id": "kev",
       "name": "CISA KEV",
       "ok": true,
       "notModified": false,
-      "entries": 1805,
-      "items": 120
+      "entries": 1808,
+      "items": 123
     },
     {
       "id": "mozilla",
@@ -21,8 +21,8 @@
       "id": "jpcert",
       "name": "JPCERT/CC",
       "ok": true,
-      "notModified": false,
-      "entries": 6,
+      "notModified": true,
+      "entries": 0,
       "items": 7
     },
     {
@@ -37,8 +37,8 @@
       "id": "jvn",
       "name": "JVN",
       "ok": true,
-      "notModified": false,
-      "entries": 20,
+      "notModified": true,
+      "entries": 0,
       "items": 64
     },
     {
@@ -112,8 +112,8 @@
     "rejected": 0,
     "refused": 0,
     "errors": 3,
-    "pending": 13,
+    "pending": 16,
     "costUsd": 0,
-    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChT8pE6LviwQozxu3Zwyu\"}"
+    "stopped": "api-error: 400: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChU8pgNeaJZzxhZ9xMBR6\"}"
   }
 }
