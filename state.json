@@ -16,7 +16,7 @@
       "lastModified": "Tue, 24 Nov 2026 02:32:56 GMT"
     },
     "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml": {
-      "etag": "W/\"078e42901e4ee5605aa635b7997b1626-ssl\""
+      "etag": "W/\"387f6c13d9cc81f7ac66a1becfc1bc4c-ssl\""
     },
     "https://slack.com/release-notes/mac/rss": {},
     "https://www.php.net/feed.atom": {
@@ -29,7 +29,7 @@
       "lastModified": "Tue, 24 Nov 2026 16:57:59 GMT"
     },
     "https://chromereleases.googleblog.com/feeds/posts/default": {
-      "lastModified": "Fri, 27 Nov 2026 19:31:05 GMT"
+      "lastModified": "Sat, 28 Nov 2026 00:04:05 GMT"
     }
   },
   "kevCves": [
